@@ -118,9 +118,8 @@ else
 // Dash
 #region
 
-if dash_time > 0
+if dash_time > 0 && vweapon.combo_0 == 1
 {
-	combo_0 = 1
 	dash_time = dash_time - 1
 	if dash_dir == 0
 	{
@@ -154,6 +153,7 @@ if keyboard_check_pressed(vk_shift) && dash_wait == 0
 #endregion
 
 // Combo
+/*
 #region
 
 if (!jump)
@@ -308,6 +308,7 @@ if mouse_check_button_pressed (mb_left)
 }
 
 #endregion
+*/
 
 // Die
 #region
