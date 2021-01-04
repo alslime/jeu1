@@ -89,7 +89,7 @@ else if keyboard_check( ord("D") ) // && ( !Collision_Wall_R( self) ) && (combo_
 else
 {
 	phy_speed_x = 0
-	if (!jump)
+	if (!jump) && (!regen)
 	{
 		if (dir == 180)
 		{
@@ -305,6 +305,63 @@ if mouse_check_button_pressed (mb_left)
 			combo_finish_1 = 30
 		}
 	}
+}
+
+#endregion
+
+// Die
+#region
+
+if hplost == hpmax
+{
+	hplost = 0
+}
+
+#endregion
+
+// Max hp/energy up
+#region
+
+if keyboard_check_pressed (ord("W"))
+{
+	hpmax += 5
+	energymax += 5
+}
+
+#endregion
+
+// Regen
+#region
+
+if keyboard_check (ord("S")) && (hplost > 0) && (!jump) && (energylost < energymax)
+{
+    regen = true
+	hplost = hplost - 1
+    energylost -= 2
+    phy_speed_x = 0
+    if dir == 0
+    {
+        sprite_index = sp_hero_regen_r
+    }
+    else if dir == 180
+    {
+        sprite_index = sp_hero_regen_l
+    } 
+}
+else
+{
+	regen = false
+}
+
+#endregion
+
+
+// Energy
+#region
+
+if energylost > 0
+{
+energylost = energylost - 0.5
 }
 
 #endregion
