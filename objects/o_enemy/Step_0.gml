@@ -1,4 +1,4 @@
 if hplost >= hpmax
 {
-	instance_destroy()
+	hplost = 0
 }

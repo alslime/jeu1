@@ -1,3 +1,11 @@
+//physics_fixture_add_point(fixture1, -sprite_width/2, sprite_height/2)
+//physics_fixture_add_point(fixture1, -sprite_width/2, -sprite_height/2)
+//physics_fixture_add_point(fixture1, sprite_width/2, -sprite_height/2)
+//physics_fixture_add_point(fixture1, sprite_width/2, sprite_height/2)
+//physics_fixture_add_point(fix, 0,0);
+//physics_fixture_add_point(fix, -40, -100);
+//physics_fixture_add_point(fix, 40, -100);
+
 // Combo
 #region
 
@@ -53,37 +61,43 @@ if combo_1 == 1
 	{
 		image_index = 0
 		combo1_start = false
-	}
-	visible = 1
-	if type == "spear"
-	{
-		if owner.dir == 0
+		
+		visible = 1
+		if type == "spear"
 		{
-			sprite_index = sp_spear1_r
-		}
-		else if owner.dir == 180
-		{
-			sprite_index = sp_spear1_l
+			physics_remove_fixture(id, fixbind)
+			fixbind = physics_fixture_bind_ext(fix,id, 0, 0)
+			if owner.dir == 0
+			{
+				sprite_index = sp_spear1_r
+			}
+			else if owner.dir == 180
+			{
+				sprite_index = sp_spear1_l
+			}
 		}
 	}
 }
 if combo_2 == 1 && combo_finish_1 <= 0
 {
-	if combo1_start == true
+	if combo2_start == true
 	{
 		image_index = 0
 		combo2_start = false
-	}
-    visible = 1
-	if type == "spear"
-	{
-		if owner.dir == 0
+
+	    visible = 1
+		if type == "spear"
 		{
-			sprite_index = sp_spear2_r
-		}
-		else if owner.dir == 180
-		{
-			sprite_index = sp_spear2_l
+			physics_remove_fixture(id, fixbind)
+			fixbind = physics_fixture_bind_ext(fix,id, 0.1*(sprite_width/2), 0.1*(sprite_height/2))
+			if owner.dir == 0
+			{
+				sprite_index = sp_spear2_r
+			}
+			else if owner.dir == 180
+			{
+				sprite_index = sp_spear2_l
+			}
 		}
 	}
 }
@@ -93,17 +107,20 @@ if combo_3 == 1 && combo_finish_2 <= 0
 	{
 		image_index = 0
 		combo3_start = false
-	}
-	visible = 1
-	if type == "spear"
-	{
-		if owner.dir == 0
+
+		visible = 1
+		if type == "spear"
 		{
-			sprite_index = sp_spear3_r
-		}
-		else if owner.dir == 180
-		{
-			sprite_index = sp_spear3_l
+			physics_remove_fixture(id, fixbind)
+			fixbind = physics_fixture_bind_ext(fix,id, 1, 1)
+			if owner.dir == 0
+			{
+				sprite_index = sp_spear3_r
+			}
+			else if owner.dir == 180
+			{
+				sprite_index = sp_spear3_l
+			}
 		}
 	}
 }
