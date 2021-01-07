@@ -3,7 +3,7 @@
     "name": "sp_hero_regen_l",
     "path": "sprites/sp_hero_regen_l/sp_hero_regen_l.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
