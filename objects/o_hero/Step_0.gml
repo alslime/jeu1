@@ -35,7 +35,7 @@ if keyboard_check_pressed( ord("D") ) // && ( !Collision_Wall_R( self) ) && (com
 }
 if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) //&& (combo_1 = 0) && (combo_2 = 0) && (combo_3 = 0)
 {
-	if dir == 180 //&&  ( !Collision_Wall_L(self) )
+	if dir == 180
 	{
 		phy_speed_x = -4
 	    if (!jump)
@@ -47,7 +47,7 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) //&& (combo_1 = 0) &
 	        sprite_index = sp_hero_jump_l
 	    }
 	}
-	else if dir == 0 //&& ( !Collision_Wall_R(self) )
+	else if dir == 0
 	{
 	    phy_speed_x = 4
 	    if (!jump)
@@ -56,7 +56,7 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) //&& (combo_1 = 0) &
 	    }
 	    else if jump
 	    {
-	        sprite_index = sp_hero_r
+	        sprite_index = sp_hero_jump_r
 		}
 	}
 }

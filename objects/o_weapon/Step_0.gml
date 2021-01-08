@@ -1,35 +1,32 @@
 // Combo
 #region
 
-if (!owner.jump)
+if combo_finish_1 > 0
 {
-	if combo_finish_1 > 0
+	combo_finish_1 -= 1
+	if combo_finish_1 == 0
 	{
-		combo_finish_1 -= 1
-		if combo_finish_1 == 0
-		{
-			combo_1 = 0
-			combo_finish_1 = -1
-		}
+		combo_1 = 0
+		combo_finish_1 = -1
 	}
-	if combo_finish_2 > 0 && combo_finish_1 <= 0
+}
+if combo_finish_2 > 0 && combo_finish_1 <= 0
+{
+	  combo_finish_2 -= 1
+	if combo_finish_2 == 0
 	{
-	    combo_finish_2 -= 1
-		if combo_finish_2 == 0
-		{
-			combo_2 = 0
-			combo_finish_2 = -1
-		}
+		combo_2 = 0
+		combo_finish_2 = -1
 	}
-	if combo_finish_3 > 0 && combo_finish_2 <= 0
-	{
-	    combo_finish_3 -= 1
-		if combo_finish_3 == 0
-	    {
-			combo_3 = 0
-			combo_finish_3 = -1
-	    }
-	}
+}
+if combo_finish_3 > 0 && combo_finish_2 <= 0
+{
+    combo_finish_3 -= 1
+	if combo_finish_3 == 0
+    {
+		combo_3 = 0
+		combo_finish_3 = -1
+    }
 }
 if owner.jump
 {
@@ -40,6 +37,10 @@ if combo_0 == 1
 	combo_1 = 0
 	combo_2 = 0
 	combo_3 = 0
+	phy_position_x = 0
+	phy_position_y = 0
+	phy_rotation = 0
+	i = 0
 }
 
 #endregion
@@ -122,7 +123,7 @@ if mouse_check_button_pressed (mb_left)
 	}
 	if combo_0 == 1
 	{
-		combo1_start = 1
+		combo1_start = true
 		combo_0 = 0
 	    combo_1 = 1
 		combo_finish_1 = combo_finish_1_value
@@ -131,6 +132,11 @@ if mouse_check_button_pressed (mb_left)
 
 #endregion
 
-combo_x = phy_position_x
-combo_y = phy_position_y
+// X/Y/Rot
+#region
+
+combo_x = phy_position_x + owner.sprite_width/2 - sprite_width/2 + mod_x
+combo_y = phy_position_y + owner.sprite_height/2 - sprite_height/2 + mod_y
 combo_rot = phy_rotation
+
+#endregion
