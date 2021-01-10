@@ -12,7 +12,7 @@
     "path": "objects/o_weapon/o_weapon.yy",
   },
   "physicsObject": true,
-  "physicsSensor": false,
+  "physicsSensor": true,
   "physicsShape": 2,
   "physicsGroup": 0,
   "physicsDensity": 0.5,
