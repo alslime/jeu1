@@ -44,7 +44,6 @@ if combo_0 == 1
 	temp_position_x = 0
 	temp_position_y = 0
 	temp_rotation = 0
-	i = 0
 }
 
 #endregion
@@ -54,11 +53,6 @@ if combo_0 == 1
 
 if combo_1 == 1
 {
-	current_combo_idx = 1
-	i += 1/3
-	temp_position_x = anim_x[0,i]
-	temp_position_y = anim_y[0,i]
-	temp_rotation = anim_rot[0,i]
 	if combo1_start == true
 	{
 		current_combo_idx = 1
@@ -68,13 +62,14 @@ if combo_1 == 1
 		combo_y = 0
 		combo_rot = 0
 	}
+	current_combo_idx = 1
+	i += 1/3
+	temp_position_x = anim_x[0,i]
+	temp_position_y = anim_y[0,i]
+	temp_rotation = anim_rot[0,i]
 }
 if combo_2 == 1 && combo_finish_1 <= 0
 {
-	i += 1/3
-	temp_position_x = anim_x[1,i]
-	temp_position_y = anim_y[1,i]
-	temp_rotation = anim_rot[1,i]
 	if combo2_start == true
 	{
 		current_combo_idx = 2
@@ -84,13 +79,13 @@ if combo_2 == 1 && combo_finish_1 <= 0
 		temp_position_y = 0
 		temp_rotation = 0
 	}
+	i += 1/3
+	temp_position_x = anim_x[1,i]
+	temp_position_y = anim_y[1,i]
+	temp_rotation = anim_rot[1,i]
 }
 if combo_3 == 1 && combo_finish_2 <= 0
 {
-	i += 1/3
-	temp_position_x = anim_x[2,i]
-	temp_position_y = anim_y[2,i]
-	temp_rotation = anim_rot[2,i]
 	if combo3_start == true
 	{
 		current_combo_idx = 3
@@ -100,6 +95,10 @@ if combo_3 == 1 && combo_finish_2 <= 0
 		temp_position_y = 0
 		temp_rotation = 0
 	}
+	i += 1/3
+	temp_position_x = anim_x[2,i]
+	temp_position_y = anim_y[2,i]
+	temp_rotation = anim_rot[2,i]
 }
 if combo_1 == 0 && combo_finish_1 <= 0 && combo_2 == 0 && combo_finish_2 <= 0 && combo_3 == 0 && combo_finish_3 <= 0
 {
