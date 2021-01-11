@@ -37,12 +37,7 @@ if	col_with_weapon && current_weapon_combo != last_contact_combo_idx && current_
 if hplost >= hpmax
 {
 	instance_destroy()
-	in_essence_value = instance_create_layer(x,y,"lay_hero",o_essence_value)
-	
-	
-	
-	//happens after creating event... need to fix this
-	in_essence_value.num = essence_drop_value
+	script_execute(create_essence,essence_drop_value,x,y)
 }
 
 #endregion
