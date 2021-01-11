@@ -11,7 +11,7 @@
     "name": "o_weapon",
     "path": "objects/o_weapon/o_weapon.yy",
   },
-  "physicsObject": true,
+  "physicsObject": false,
   "physicsSensor": true,
   "physicsShape": 2,
   "physicsGroup": 0,

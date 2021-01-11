@@ -1,4 +1,4 @@
-// Collision with Weapon
+// Collision with weapon and set damage 
 #region
 
 // Are we collinding with a weapon ?
@@ -15,15 +15,19 @@ if( current_weapon_combo != last_combo_idx )
 }
 last_combo_idx = current_weapon_combo
 
-// Do we need to decrement our HP ?
-if	col_with_weapon &&
-	current_weapon_combo != last_contact_combo_idx &&
-	current_weapon_combo != 0
-{
-	hplost += 1
-	last_contact_combo_idx = current_weapon_combo
-}
+// Set damage
+dmg = vweapon.base_dmg[current_weapon_combo - 1]
 
+// Do we need to decrement our HP ?
+if	col_with_weapon && current_weapon_combo != last_contact_combo_idx && current_weapon_combo != 0
+{
+	hplost += dmg
+	last_contact_combo_idx = current_weapon_combo
+	in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
+	in_hit_text.dmg = dmg
+	in_hit_text.x = x + sprite_width/2
+	in_hit_text.y = y - 16
+}
 
 #endregion
 
@@ -32,7 +36,13 @@ if	col_with_weapon &&
 
 if hplost >= hpmax
 {
-	hplost = 0
+	instance_destroy()
+	in_essence_value = instance_create_layer(x,y,"lay_hero",o_essence_value)
+	
+	
+	
+	//happens after creating event... need to fix this
+	in_essence_value.num = essence_drop_value
 }
 
 #endregion

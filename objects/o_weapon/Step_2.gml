@@ -1,8 +1,12 @@
 if owner.dir == 0
 {
-	//physics_fixture_delete(fix_l)
-	//sprite_index = sprite_r
-	
+	if owner.dir != last_dir
+	{
+		sprite_index = sprite_r
+		physics_remove_fixture(id,fix_bind)
+		fix_bind = physics_fixture_bind_ext(fix_r,id,0,0)
+		last_dir = 0
+	}
 	x = owner.x + combo_x
 	y = owner.y + combo_y
 	phy_position_x = x
@@ -11,10 +15,14 @@ if owner.dir == 0
 }
 else if owner.dir == 180
 {
-	//sprite_index = sprite_l
-	image_xscale = -1
-	
-	x = owner.x - sprite_width + owner.sprite_width - combo_x
+	if owner.dir != last_dir
+	{
+		sprite_index = sprite_l
+		physics_remove_fixture(id,fix_bind)
+		fix_bind = physics_fixture_bind_ext(fix_l,id,0,0)
+		last_dir = 180
+	}
+	x = owner.x - combo_x
 	y = owner.y + combo_y
 	phy_position_x = x
 	phy_position_y = y	

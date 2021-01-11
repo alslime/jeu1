@@ -142,8 +142,14 @@ if mouse_check_button_pressed (mb_left)
 
 // X/Y/Rot
 #region
-
-combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 + mod_x
+if owner.dir == 0
+{
+	combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 + mod_x
+}
+else
+{
+	combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 - mod_x - 2
+}
 combo_y = temp_position_y + owner.sprite_height/2 - sprite_height/2 + mod_y
 combo_rot = temp_rotation
 
