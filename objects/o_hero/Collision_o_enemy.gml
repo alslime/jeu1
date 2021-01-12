@@ -1,14 +1,8 @@
-hplost = hplost + 5
-countdown = 10
-if countdown > 0
+nearest_enemy = instance_nearest(x + sprite_width/2,y + sprite_height/2,o_enemy)
+dir_to_enemy = point_direction(x + sprite_width/2, y + sprite_height/2,nearest_enemy.x + nearest_enemy.sprite_width/2, nearest_enemy.y + nearest_enemy.sprite_height/2)
+
+if countdown == 0
 {
-    countdown = countdown - 1
-    if dir == 180
-    {
-		sprite_index = sp_hero_hit_l
-    }
-    if dir == 0
-    {
-		sprite_index = sp_hero_hit_r
-    }
+	hplost += nearest_enemy.enemy_dmg
 }
+countdown = 10

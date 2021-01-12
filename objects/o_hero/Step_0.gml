@@ -208,3 +208,31 @@ energylost = energylost - 0.5
 }
 
 #endregion
+
+nearest_enemy = instance_nearest(x + sprite_width/2,y + sprite_height/2,o_enemy)
+dir_to_enemy = point_direction(x + sprite_width/2, y + sprite_height/2,nearest_enemy.x + nearest_enemy.sprite_width/2, nearest_enemy.y + nearest_enemy.sprite_height/2)
+
+if countdown > 0
+{
+    countdown = countdown - 1
+    if dir_to_enemy > 90 && dir_to_enemy < 270
+    {
+		phy_speed_x = 5
+		sprite_index = sp_hero_hit_l
+		dir = 180
+		if dir_to_enemy > 180
+		{
+			phy_speed_y = -2
+		}
+    }
+    if dir_to_enemy <= 90 || dir_to_enemy >= 270
+    {
+		phy_speed_x = -5
+		sprite_index = sp_hero_hit_r
+		dir = 0
+		if dir_to_enemy > 180
+		{
+			phy_speed_y = -2
+		}
+    }
+}

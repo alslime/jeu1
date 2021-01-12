@@ -142,6 +142,7 @@ if mouse_check_button_pressed (mb_left)
 
 // X/Y/Rot
 #region
+
 if owner.dir == 0
 {
 	combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 + mod_x

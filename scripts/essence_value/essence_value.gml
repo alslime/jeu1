@@ -2,8 +2,8 @@
 // argument1 = evalue
 function essence_value()
 {
-	argument0.phy_speed_x = random_range(-4,4)
-	argument0.phy_speed_y = random_range(-4,4)
+	argument0.phy_speed_x = random_range(-3,3)
+	argument0.phy_speed_y = random_range(-3,3)
 	argument0.countdown = 120
 	argument0.essValue = argument1
 
