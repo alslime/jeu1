@@ -27,6 +27,12 @@ if	col_with_weapon && current_weapon_combo != last_contact_combo_idx && current_
 	in_hit_text.dmg = dmg
 	in_hit_text.x = x + sprite_width/2
 	in_hit_text.y = y - 16
+	// Blood
+	for (i = 0; i < amount_of_blood; i += 1)
+	{
+		inst_blood = instance_create_layer(x,y,"lay_front",o_blood)
+		script_execute (create_blood,id,inst_blood)
+	}
 }
 
 #endregion

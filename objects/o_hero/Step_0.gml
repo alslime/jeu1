@@ -209,6 +209,9 @@ energylost = energylost - 0.5
 
 #endregion
 
+// Bounce when hit
+#region
+
 nearest_enemy = instance_nearest(x + sprite_width/2,y + sprite_height/2,o_enemy)
 if instance_exists(o_enemy)
 {
@@ -239,3 +242,5 @@ if countdown > 0
 		}
     }
 }
+
+#endregion
