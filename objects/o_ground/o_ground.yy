@@ -22,9 +22,7 @@
     {"x":64.0,"y":32.0,},
     {"x":0.0,"y":32.0,},
   ],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_ground","path":"objects/o_ground/o_ground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
