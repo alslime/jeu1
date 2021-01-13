@@ -48,10 +48,10 @@ if hplost >= hpmax
 
 #endregion
 
-
-
 // Moving algorithm
 #region
+
+dir_to_hero = point_direction(x, y, inst_hero.x + inst_hero.sprite_width/2, inst_hero.y + inst_hero.sprite_height/2)
 
 x1 = x
 x2 = x1 + sprite_width
@@ -70,29 +70,55 @@ if jump
 	state = last_state
 }
 
-state_countdown -= 1
-if state_countdown <= 0
+if distance_to_object(inst_hero) > 200
 {
-	state_countdown = state_countdown_time
-	if !jump
+	follow_hero = false
+	state_countdown -= 1
+	if state_countdown <= 0
 	{
-		state = irandom(2)
+		state_countdown = state_countdown_time
+		if !jump
+		{
+			state = irandom(2)
+		}
 	}
 }
-
+else
+{
+	follow_hero = true
+	if dir_to_hero < 70 || dir_to_hero > 290
+	{
+		state = 2
+	}
+	else if dir_to_hero > 110 && dir_to_hero < 250
+	{
+		state = 1
+	}
+}
+// State 0 = do not move
+// State 1 = left	// State 2 = right
 if !physics_test_overlap(x2+1,y1,0,o_ground) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
 {
-	state = 1
+	if follow_hero = true && (dir_to_hero < 70 || dir_to_hero > 290)
+	{
+		state = 0
+	}
+	else						// collision does calculate if it will happen in the futur
+	{
+		state = 1
+	}
 }
 if !physics_test_overlap(x1-1,y1,0,o_ground) || collision_line(x1-1,y,x1-1,y1-1,o_ground,false,true)
 {
-	state = 2
+	if follow_hero = true && (110 && dir_to_hero < 250)
+	{
+		state = 0
+	}
+	else
+	{
+		state = 2
+	}
 }
-
-
-// State 0 = do not move
-// State 1 = left
-// State 2 = right
 if state = 0 
 {
 	if last_state == 1
@@ -108,15 +134,30 @@ if state = 0
 }
 else if state = 1		// if speed is too high will fall because
 {
+	if follow_hero = true
+	{
+		phy_speed_x = -follow_spd
+	}
+	else
+	{
+		phy_speed_x = -spd
+	}
 	sprite_index = sp_e_walk_l
-	phy_speed_x = -1
 	last_state = 1
 }
 else if state = 2
 {
+	if follow_hero = true
+	{
+		phy_speed_x = follow_spd
+	}
+	else
+	{
+		phy_speed_x = spd
+	}
 	sprite_index = sp_e_walk_r
-	phy_speed_x = 1
 	last_state = 2
 }
+
 
 #endregion
