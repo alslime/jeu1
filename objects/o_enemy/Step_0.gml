@@ -47,3 +47,32 @@ if hplost >= hpmax
 }
 
 #endregion
+
+
+
+// Moving algorithm
+#region
+
+state_countdown -= 1
+if state_countdown <= 0
+{
+	state_countdown = state_countdown_time
+	state = irandom(2)
+}
+// State 0 = do not move
+// State 1 = left
+// State 2 = right
+if state = 0 
+{
+	phy_speed_x = 0
+}
+else if state = 1
+{
+	phy_speed_x = -1
+}
+else if state = 2
+{
+	phy_speed_x = 1
+}
+
+#endregion

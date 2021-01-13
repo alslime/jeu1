@@ -38,6 +38,7 @@
     {"varType":7,"value":"c_red","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"blood_colour1","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FF0000CC","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"blood_colour2","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FF000099","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"blood_colour3","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"300","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"state_countdown_time","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
