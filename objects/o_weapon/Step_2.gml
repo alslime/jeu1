@@ -4,7 +4,7 @@ if owner.dir == 0
 	{
 		sprite_index = sprite_r
 		physics_remove_fixture(id,fix_bind)
-		fix_bind = physics_fixture_bind_ext(fix_r,id,0,0)
+		fix_bind = physics_fixture_bind(fix_r,id)
 		last_dir = 0
 	}
 	x = owner.x + combo_x
@@ -19,7 +19,7 @@ else if owner.dir == 180
 	{
 		sprite_index = sprite_l
 		physics_remove_fixture(id,fix_bind)
-		fix_bind = physics_fixture_bind_ext(fix_l,id,0,0)
+		fix_bind = physics_fixture_bind(fix_l,id)
 		last_dir = 180
 	}
 	x = owner.x - combo_x

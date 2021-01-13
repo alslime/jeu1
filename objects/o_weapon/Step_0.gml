@@ -41,9 +41,9 @@ if combo_0 == 1
 	combo_finish_2 = 0
 	combo_3 = 0
 	combo_finish_3 = 0
-	temp_position_x = 0
-	temp_position_y = 0
-	temp_rotation = 0
+	temp_position_x = anim_x[3,0]
+	temp_position_y = anim_y[3,0]
+	temp_rotation = anim_rot[3,0]
 }
 
 #endregion
@@ -104,9 +104,6 @@ if combo_1 == 0 && combo_finish_1 <= 0 && combo_2 == 0 && combo_finish_2 <= 0 &&
 {
 	current_combo_idx = 0
 	combo_0 = 1
-	temp_position_x = 0
-	temp_position_y = 0
-	temp_rotation = 0
 	i = 0
 }
 
@@ -149,7 +146,7 @@ if owner.dir == 0
 }
 else
 {
-	combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 - mod_x - 2
+	combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 - mod_x - 4
 }
 combo_y = temp_position_y + owner.sprite_height/2 - sprite_height/2 + mod_y
 combo_rot = temp_rotation
