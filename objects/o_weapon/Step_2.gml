@@ -1,9 +1,3 @@
-if owner.dir != last_dir && combo_0 == 1
-{
-	kasmdka= 1
-}
-
-
 // Combo
 #region
 
@@ -51,7 +45,7 @@ if combo_0 == 1
 	combo_y = 0
 	combo_rot = 0
 	temp_position_x = anim_x[0,0]
-	temp_position_y = anim_y[0,0]
+	temp_position_y = anim_y[0,0] - (owner.sprite_height/2 - sprite_height/2 + 2*mod_y) + owner.sprite_height
 	temp_rotation = anim_rot[0,0]
 }
 
