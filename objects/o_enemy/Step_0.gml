@@ -53,26 +53,70 @@ if hplost >= hpmax
 // Moving algorithm
 #region
 
+x1 = x
+x2 = x1 + sprite_width
+y1 = y + sprite_height + 1
+
+if collision_line (x1,y1,x2,y1,o_ground,false,true)
+{
+ 	jump = false
+}
+else
+{
+	jump = true
+}
+if jump
+{
+	state = last_state
+}
+
 state_countdown -= 1
 if state_countdown <= 0
 {
 	state_countdown = state_countdown_time
-	state = irandom(2)
+	if !jump
+	{
+		state = irandom(2)
+	}
 }
+
+if !physics_test_overlap(x2+1,y1,0,o_ground) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
+{
+	state = 1
+}
+if !physics_test_overlap(x1-1,y1,0,o_ground) || collision_line(x1-1,y,x1-1,y1-1,o_ground,false,true)
+{
+	state = 2
+}
+
+
 // State 0 = do not move
 // State 1 = left
 // State 2 = right
 if state = 0 
 {
+	if last_state == 1
+	{
+		sprite_index = sp_e_l
+	}
+	else if last_state == 2
+	{
+		sprite_index = sp_e_r
+	}
 	phy_speed_x = 0
+	last_state = 0
 }
-else if state = 1
+else if state = 1		// if speed is too high will fall because
 {
+	sprite_index = sp_e_walk_l
 	phy_speed_x = -1
+	last_state = 1
 }
 else if state = 2
 {
+	sprite_index = sp_e_walk_r
 	phy_speed_x = 1
+	last_state = 2
 }
 
 #endregion

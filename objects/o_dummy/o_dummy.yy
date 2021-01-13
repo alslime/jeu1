@@ -38,7 +38,11 @@
     {"varType":7,"value":"c_red","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"blood_colour1","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FF0000CC","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"blood_colour2","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FF000099","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"blood_colour3","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"300","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"state_countdown_time","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"120","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"state_countdown_time","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"sp_hero_l","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sp_e_l","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"sp_hero_r","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sp_e_r","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"sp_hero_walk_l","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sp_e_walk_l","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":4,"value":"sp_hero_walk_r","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"sp_e_walk_r","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
