@@ -95,8 +95,17 @@ else
 		state = 1
 	}
 }
+
+
+
+
+
+
+
+
 // State 0 = do not move
-// State 1 = left	// State 2 = right
+// State 1 = left	
+// State 2 = right
 if !physics_test_overlap(x2+1,y1,0,o_ground) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
 {
 	if follow_hero = true && (dir_to_hero < 70 || dir_to_hero > 290)
@@ -161,3 +170,18 @@ else if state = 2
 
 
 #endregion
+
+// does not work
+
+if physics_test_overlap(x1 + 10*phy_speed_x,y1,0,o_ground) //|| physics_test_overlap(x2 + phy_speed_x,y1,0,o_ground)
+{
+	n = 0
+}
+else if !physics_test_overlap(x1 + phy_speed_x,y1,0,o_ground)
+{
+	while physics_test_overlap(x1 + n,y1,0,o_ground)
+	{
+		n -= 1
+	}
+	phy_speed_x = 0.1*n
+}
