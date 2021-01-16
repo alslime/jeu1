@@ -141,7 +141,7 @@ if state = 0
 	phy_speed_x = 0
 	last_state = 0
 }
-else if state = 1		// if speed is too high will fall because
+else if state = 1
 {
 	if follow_hero = true
 	{
@@ -168,20 +168,22 @@ else if state = 2
 	last_state = 2
 }
 
-
-#endregion
-
-// does not work
-
-if physics_test_overlap(x1 + 10*phy_speed_x,y1,0,o_ground) //|| physics_test_overlap(x2 + phy_speed_x,y1,0,o_ground)
+// To not fall but right is weird
+if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) || !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false)
 {
 	n = 0
-}
-else if !physics_test_overlap(x1 + phy_speed_x,y1,0,o_ground)
-{
-	while physics_test_overlap(x1 + n,y1,0,o_ground)
+	while collision_point(x1 + n,y1,o_ground,false,false)
 	{
-		n -= 1
+		if	(phy_speed_x < 0)
+		{
+			n -= 1
+		}
+		else
+		{
+			n += 1
+		}
 	}
 	phy_speed_x = 0.1*n
 }
+
+#endregion
