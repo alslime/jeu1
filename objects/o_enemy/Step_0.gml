@@ -95,29 +95,21 @@ else
 		state = 1
 	}
 }
-
-
-
-
-
-
-
-
 // State 0 = do not move
 // State 1 = left	
 // State 2 = right
-if !physics_test_overlap(x2+1,y1,0,o_ground) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
+if !collision_point(x2+1,y1,o_ground,false,false) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
 {
 	if follow_hero = true && (dir_to_hero < 70 || dir_to_hero > 290)
 	{
 		state = 0
 	}
-	else						// collision does calculate if it will happen in the futur
+	else						
 	{
 		state = 1
 	}
 }
-if !physics_test_overlap(x1-1,y1,0,o_ground) || collision_line(x1-1,y,x1-1,y1-1,o_ground,false,true)
+if !collision_point(x1-1,y1,o_ground,false,false) || collision_line(x1-1,y,x1-1,y1-1,o_ground,false,true)
 {
 	if follow_hero = true && (110 && dir_to_hero < 250)
 	{
@@ -168,20 +160,22 @@ else if state = 2
 	last_state = 2
 }
 
-// To not fall but right is weird
-if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) || !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false)
+// To not fall but is weird and stops before if speed is to high
+if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false)
 {
 	n = 0
-	while collision_point(x1 + n,y1,o_ground,false,false)
+	while collision_point(x1 + n,y1,o_ground,false,false) && n > 10*phy_speed_x
 	{
-		if	(phy_speed_x < 0)
-		{
-			n -= 1
-		}
-		else
-		{
-			n += 1
-		}
+		n -= 1
+	}
+	phy_speed_x = 0.1*n
+}
+if !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false)
+{
+	n = 0
+	while collision_point(x2 + n,y1,o_ground,false,false) && n < 10*phy_speed_x
+	{
+		n += 1
 	}
 	phy_speed_x = 0.1*n
 }
