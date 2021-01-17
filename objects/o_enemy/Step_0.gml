@@ -161,7 +161,7 @@ else if state = 2
 }
 
 // To not fall but is weird and stops before if speed is to high
-if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false)
+if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_l == true
 {
 	n = 0
 	while collision_point(x1 + n,y1,o_ground,false,false) && n > 10*phy_speed_x
@@ -169,8 +169,13 @@ if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false)
 		n -= 1
 	}
 	phy_speed_x = 0.1*n
+	stop_at_corner_l = false
 }
-if !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false)
+else
+{
+	stop_at_corner_l = true
+}
+if !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_r == true
 {
 	n = 0
 	while collision_point(x2 + n,y1,o_ground,false,false) && n < 10*phy_speed_x
@@ -178,6 +183,11 @@ if !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false)
 		n += 1
 	}
 	phy_speed_x = 0.1*n
+	stop_at_corner_r = false
+}
+else
+{
+	stop_at_corner_r = true
 }
 
 #endregion
