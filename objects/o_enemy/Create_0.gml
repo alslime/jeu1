@@ -4,6 +4,8 @@ if instance_exists(o_hero)
 }
 phy_fixed_rotation =  true
 
+countdown = 0
+
 state_countdown = state_countdown_time
 
 stop_at_corner_l = false

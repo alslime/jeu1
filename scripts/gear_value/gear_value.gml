@@ -9,30 +9,30 @@ function gear_value()
 
 	if argument1 = 1000
 	{
-		argument0.sprite_index = sp_essence1000
+		argument0.sprite_index = sp_gear1000
 	}
 	else if argument1 = 500
 	{
-		argument0.sprite_index = sp_essence500
+		argument0.sprite_index = sp_gear500
 	}
 	else if argument1 = 100
 	{
-		argument0.sprite_index = sp_essence100
+		argument0.sprite_index = sp_gear100
 	}
 	else if argument1 = 50
 	{
-		argument0.sprite_index = sp_essence50
+		argument0.sprite_index = sp_gear50
 	}
 	else if argument1 = 10
 	{
-		argument0.sprite_index = sp_essence10
+		argument0.sprite_index = sp_gear10
 	}
 	else if argument1 = 5
 	{
-		argument0.sprite_index = sp_essence5
+		argument0.sprite_index = sp_gear5
 	}
 	else if argument1 = 1
 	{
-		argument0.sprite_index = sp_essence1
+		argument0.sprite_index = sp_gear1
 	}
 }

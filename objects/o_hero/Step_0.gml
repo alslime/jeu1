@@ -1,16 +1,20 @@
 //Choose weapon
+#region
+
 if keyboard_check_pressed(ord("1"))
 {
 	instance_destroy (vweapon)
-	vweapon = instance_create_layer(x,y,"lay_front",o_spear)
+	vweapon = instance_create_layer(x,y,"lay_weapon",o_spear)
 	vweapon.owner = id
 }
 if keyboard_check_pressed(ord("2"))
 {
 	instance_destroy (vweapon)
-	vweapon = instance_create_layer(x,y,"lay_front",o_blade)
+	vweapon = instance_create_layer(x,y,"lay_weapon",o_blade)
 	vweapon.owner = id
 }
+
+#endregion
 
 // Disable rotation
 phy_fixed_rotation = true
@@ -235,25 +239,21 @@ if instance_exists(o_enemy)
 if countdown > 0
 {
     countdown = countdown - 1
+	if dir_to_enemy > 180
+	{
+		phy_speed_y = -lengthdir_y(2,dir_to_enemy)
+	}
     if dir_to_enemy > 90 && dir_to_enemy < 270
     {
 		phy_speed_x = 5
 		sprite_index = sp_hero_hit_l
 		dir = 180
-		if dir_to_enemy > 180
-		{
-			phy_speed_y = -2
-		}
     }
     if dir_to_enemy <= 90 || dir_to_enemy >= 270
     {
 		phy_speed_x = -5
 		sprite_index = sp_hero_hit_r
 		dir = 0
-		if dir_to_enemy > 180
-		{
-			phy_speed_y = -2
-		}
     }
 }
 

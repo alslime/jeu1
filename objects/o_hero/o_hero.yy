@@ -31,8 +31,9 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_room_left","path":"objects/o_room_left/o_room_left.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_room_bottom","path":"objects/o_room_bottom/o_room_bottom.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_room_right","path":"objects/o_room_right/o_room_right.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_room_left","path":"objects/o_room_left/o_room_left.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":3,"value":"False","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"jump","tags":[],"resourceType":"GMObjectProperty",},

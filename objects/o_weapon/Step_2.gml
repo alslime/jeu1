@@ -149,7 +149,7 @@ if owner.dir == 0
 }
 else
 {
-	combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 - mod_x - 4
+	combo_x = temp_position_x - owner.sprite_width/2 - sprite_width/2 + mod_x
 }
 combo_y = temp_position_y + owner.sprite_height/2 - sprite_height/2 + mod_y
 combo_rot = temp_rotation

@@ -138,7 +138,7 @@ if state = 0
 	phy_speed_x = 0
 	last_state = 0
 }
-else if state = 1
+else if state = 1 && countdown = 0
 {
 	if follow_hero = true
 	{
@@ -152,7 +152,7 @@ else if state = 1
 	}
 	last_state = 1
 }
-else if state = 2
+else if state = 2 && countdown = 0
 {
 	if follow_hero = true
 	{
@@ -167,7 +167,7 @@ else if state = 2
 	last_state = 2
 }
 
-// To not fall but is weird and stops before if speed is to high
+// To not fall
 if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_l == true
 {
 	n = 0
@@ -195,6 +195,44 @@ if !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corn
 else
 {
 	stop_at_corner_r = true
+}
+
+#endregion
+
+// Bounce when hit
+#region
+if place_meeting(x,y,o_weapon)
+{
+	if countdown == 0 && inst_hero.vweapon.combo_0 != 1
+	{
+		countdown = 20
+	}
+}
+nearest_hero = instance_nearest(x + sprite_width/2,y + sprite_height/2,o_hero)
+if instance_exists(o_hero)
+{
+	dir_to_hero = point_direction(x + sprite_width/2, y + sprite_height/2,nearest_hero.x + nearest_hero.sprite_width/2, nearest_hero.y + nearest_hero.sprite_height/2)
+}
+
+if countdown > 0
+{
+    countdown = countdown - 1
+	if dir_to_hero > 180
+	{
+		phy_speed_y = -lengthdir_y(2,dir_to_hero)
+	}
+    if dir_to_hero > 90 && dir_to_hero < 270
+    {
+		state = 1
+		phy_speed_x = 1
+		//sprite_index = sp_hero_hit_l
+    }
+    if dir_to_hero <= 90 || dir_to_hero >= 270
+    {
+		state = 2
+		phy_speed_x = -1
+		//sprite_index = sp_hero_hit_r
+    }
 }
 
 #endregion

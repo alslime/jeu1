@@ -11,28 +11,14 @@ if distance_to_object(o_hero) < 200 && countdown == 0
 {
 	begin_follow = true
 }
-if begin_follow == false
+else
 {
-	if phy_speed_x > 0
-	{
-		phy_speed_x -= 0.05
-	}
-	else if phy_speed_x < 0
-	{
-		phy_speed_x += 0.05
-	}
-	if phy_speed_y > 0
-	{
-		phy_speed_y -= 0.05
-	}
-	else if phy_speed_y < 0
-	{
-		phy_speed_y += 0.05
-	}
+	begin_follow = false
+	spd = 0
 }
 if begin_follow == true
 {
 	phy_speed_x = test_x
 	phy_speed_y = test_y
-	spd += 0.05	
+	spd += 0.5
 }
