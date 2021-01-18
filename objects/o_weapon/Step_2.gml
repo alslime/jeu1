@@ -156,9 +156,6 @@ combo_rot = temp_rotation
 
 #endregion
 
-
-
-
 if owner.dir == 0
 {
 	x = owner.x + combo_x

@@ -1,3 +1,8 @@
+if instance_exists(o_weapon)
+{
+	vweapon = instance_find(o_weapon,0)
+}
+
 // Collision with weapon and set damage 
 #region
 
@@ -43,7 +48,7 @@ if	col_with_weapon && current_weapon_combo != last_contact_combo_idx && current_
 if hplost >= hpmax
 {
 	instance_destroy()
-	script_execute(create_essence,essence_drop_value,x,y)
+	script_execute(create_gear,gear_drop_value,x,y)
 }
 
 #endregion
@@ -138,12 +143,13 @@ else if state = 1
 	if follow_hero = true
 	{
 		phy_speed_x = -follow_spd
+		sprite_index = sp_e_run_l
 	}
 	else
 	{
 		phy_speed_x = -spd
+		sprite_index = sp_e_walk_l
 	}
-	sprite_index = sp_e_walk_l
 	last_state = 1
 }
 else if state = 2
@@ -151,12 +157,13 @@ else if state = 2
 	if follow_hero = true
 	{
 		phy_speed_x = follow_spd
+		sprite_index = sp_e_run_r
 	}
 	else
 	{
 		phy_speed_x = spd
+		sprite_index = sp_e_walk_r
 	}
-	sprite_index = sp_e_walk_r
 	last_state = 2
 }
 
