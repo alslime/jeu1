@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Jeu1",
-    "path": "Jeu1.yyp",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "vertex_blade",
+  "name": "draw_sprite_skew_ext",
   "tags": [],
   "resourceType": "GMScript",
 }

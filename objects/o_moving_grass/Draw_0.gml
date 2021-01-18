@@ -1,8 +1,1 @@
-if dir_to_hero < 90 || dir_to_hero > 270
-{
-	draw_line_width_color(x,y,x - xVar, y - height*10 + yVar, 2, dark_green,col[rdm])
-}
-else
-{
-	draw_line_width_color(x,y,x + xVar, y - height*10 + yVar, 2, dark_green,col[rdm])
-}
+draw_sprite_skew_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha, image_xskew, image_yskew);

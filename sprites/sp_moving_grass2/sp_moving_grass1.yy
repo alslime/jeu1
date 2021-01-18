@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 1,
   "bbox_top": 0,
-  "bbox_bottom": 11,
+  "bbox_bottom": 3,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
-  "height": 12,
+  "width": 2,
+  "height": 4,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 4,
   "gridY": 4,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"420c58fc-7154-4fa1-98e9-751db907d713","path":"sprites/sp_moving_grass3/sp_moving_grass3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"420c58fc-7154-4fa1-98e9-751db907d713","path":"sprites/sp_moving_grass3/sp_moving_grass3.yy",},"LayerId":{"name":"eb2d5683-353f-425b-b3f6-5ff497f021f9","path":"sprites/sp_moving_grass3/sp_moving_grass3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_moving_grass3","path":"sprites/sp_moving_grass3/sp_moving_grass3.yy",},"resourceVersion":"1.0","name":"420c58fc-7154-4fa1-98e9-751db907d713","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"420c58fc-7154-4fa1-98e9-751db907d713","path":"sprites/sp_moving_grass1/sp_moving_grass1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"420c58fc-7154-4fa1-98e9-751db907d713","path":"sprites/sp_moving_grass1/sp_moving_grass1.yy",},"LayerId":{"name":"eb2d5683-353f-425b-b3f6-5ff497f021f9","path":"sprites/sp_moving_grass1/sp_moving_grass1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sp_moving_grass1","path":"sprites/sp_moving_grass1/sp_moving_grass1.yy",},"resourceVersion":"1.0","name":"420c58fc-7154-4fa1-98e9-751db907d713","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sp_moving_grass3","path":"sprites/sp_moving_grass3/sp_moving_grass3.yy",},
+    "spriteId": {"name":"sp_moving_grass1","path":"sprites/sp_moving_grass1/sp_moving_grass1.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d8b5ba7d-de67-47a1-ae39-e422a3fb55c0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"420c58fc-7154-4fa1-98e9-751db907d713","path":"sprites/sp_moving_grass3/sp_moving_grass3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ad7bde88-c616-4352-bcfe-fd25ef856857","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"420c58fc-7154-4fa1-98e9-751db907d713","path":"sprites/sp_moving_grass1/sp_moving_grass1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sp_moving_grass3","path":"sprites/sp_moving_grass3/sp_moving_grass3.yy",},
+    "parent": {"name":"sp_moving_grass1","path":"sprites/sp_moving_grass1/sp_moving_grass1.yy",},
     "resourceVersion": "1.3",
-    "name": "sp_moving_grass3",
+    "name": "sp_moving_grass1",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites/Deco.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sp_moving_grass3",
+  "name": "sp_moving_grass1",
   "tags": [],
   "resourceType": "GMSprite",
 }
