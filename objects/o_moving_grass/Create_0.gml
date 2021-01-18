@@ -1,22 +1,7 @@
-rdm = irandom(3)
-if rdm == 0
-{
-	sprite_index = sp_moving_grass
-}
-if rdm == 1
-{
-	sprite_index = sp_moving_grass1
-}
-if rdm == 2
-{
-	sprite_index = sp_moving_grass2
-}
-if rdm == 3
-{
-	sprite_index = sp_moving_grass3
-}
+height = irandom_range (4,12)
+rdm = irandom(2)
 
-
+col = [dark_green, green, light_green]
 
 if instance_exists(o_hero)
 {

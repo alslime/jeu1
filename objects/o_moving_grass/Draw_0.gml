@@ -1,1 +1,8 @@
-draw_sprite_pos(sprite_index,0,bbox_left + xVar, bbox_top + yVar, bbox_right + xVar, bbox_top + yVar, bbox_right, bbox_bottom +1, bbox_left, bbox_bottom +1, 1)
+if dir_to_hero < 90 || dir_to_hero > 270
+{
+	draw_line_width_color(x,y,x - xVar, y - height*10 + yVar, 2, dark_green,col[rdm])
+}
+else
+{
+	draw_line_width_color(x,y,x + xVar, y - height*10 + yVar, 2, dark_green,col[rdm])
+}

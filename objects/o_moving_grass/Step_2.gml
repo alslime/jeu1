@@ -1,2 +1,2 @@
-xVar = xVar*0.8
-yVar = yVar*0.8
+xVar = xVar*0.7
+yVar = yVar*0.7

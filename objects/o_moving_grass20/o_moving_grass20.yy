@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_invisible",
-    "path": "sprites/sp_invisible/sp_invisible.yy",
+    "name": "sp_moving_grass",
+    "path": "sprites/sp_moving_grass/sp_moving_grass.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,10 +26,10 @@
     {"x":0.0,"y":32.0,},
   ],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_moving_grass","path":"objects/o_moving_grass/o_moving_grass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_moving_grass","path":"objects/o_moving_grass/o_moving_grass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_moving_grass","path":"objects/o_moving_grass/o_moving_grass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_moving_grass","path":"objects/o_moving_grass/o_moving_grass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_moving_grass20","path":"objects/o_moving_grass20/o_moving_grass20.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"parent":{"name":"o_moving_grass20","path":"objects/o_moving_grass20/o_moving_grass20.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_moving_grass20","path":"objects/o_moving_grass20/o_moving_grass20.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_moving_grass20","path":"objects/o_moving_grass20/o_moving_grass20.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":7,"value":"$FF007F00","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"dark_green","tags":[],"resourceType":"GMObjectProperty",},
@@ -42,7 +42,7 @@
     "path": "folders/Objects/Deco.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_moving_grass",
+  "name": "o_moving_grass20",
   "tags": [],
   "resourceType": "GMObject",
 }
