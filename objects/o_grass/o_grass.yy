@@ -33,7 +33,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Ground",
-    "path": "folders/Objects/Ground.yy",
+    "path": "folders/Objects/Deco/Ground.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_grass",

@@ -43,15 +43,15 @@ if keyboard_check_pressed (vk_space) && (!jump)
 // Movments left/right
 #region
 
-if keyboard_check_pressed(ord("A")) //&&  ( !Collision_Wall_L(self) ) && (combo_1 = 0) && (combo_2 = 0) && (combo_3 = 0)
+if keyboard_check_pressed(ord("A"))
 {
 	dir = 180
 }
-if keyboard_check_pressed( ord("D") ) // && ( !Collision_Wall_R( self) ) && (combo_1 = 0) && (combo_2 = 0) && (combo_3 = 0)
+if keyboard_check_pressed( ord("D") )
 {
 	dir = 0
 }
-if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) //&& (combo_1 = 0) && (combo_2 = 0) && (combo_3 = 0)
+if keyboard_check( ord("A") ) && keyboard_check( ord("D") )
 {
 	if dir == 180
 	{
@@ -78,7 +78,7 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) //&& (combo_1 = 0) &
 		}
 	}
 }
-else if keyboard_check( ord("A") ) // &&  ( !Collision_Wall_L(self) ) && (combo_1 = 0) && (combo_2 = 0) && (combo_3 = 0)
+else if keyboard_check( ord("A") )
 {
 	phy_speed_x = -4
 	dir = 180
@@ -91,7 +91,7 @@ else if keyboard_check( ord("A") ) // &&  ( !Collision_Wall_L(self) ) && (combo_
 		sprite_index = sp_hero_jump_l
 	}
 }
-else if keyboard_check( ord("D") ) // && ( !Collision_Wall_R( self) ) && (combo_1 = 0) && (combo_2 = 0) && (combo_3 = 0)
+else if keyboard_check( ord("D") )
 {
 	phy_speed_x = 4
 	dir = 0
@@ -136,7 +136,7 @@ else
 // Dash
 #region
 
-if dash_time > 0 && vweapon.combo_0 == 1
+if dash_time > 0
 {
 	dash_time = dash_time - 1
 	if dash_dir == 0
@@ -216,13 +216,16 @@ else
 
 #endregion
 
-
-// Energy
+// Hit
 #region
 
-if energylost > 0
+if place_meeting (x,y,o_enemy) && dash_time == 0
 {
-energylost = energylost - 0.5
+	if countdown == 0
+	{
+		hplost += nearest_enemy.enemy_dmg
+		countdown = 10
+	}
 }
 
 #endregion

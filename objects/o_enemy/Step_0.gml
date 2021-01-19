@@ -167,7 +167,11 @@ else if state = 2 && countdown = 0
 	last_state = 2
 }
 
+#endregion
+
 // To not fall
+#region
+
 if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_l == true
 {
 	n = 0
@@ -201,6 +205,7 @@ else
 
 // Bounce when hit
 #region
+
 if place_meeting(x,y,o_weapon)
 {
 	if countdown == 0 && inst_hero.vweapon.combo_0 != 1
@@ -217,10 +222,6 @@ if instance_exists(o_hero)
 if countdown > 0
 {
     countdown = countdown - 1
-	if dir_to_hero > 180
-	{
-		phy_speed_y = -lengthdir_y(2,dir_to_hero)
-	}
     if dir_to_hero > 90 && dir_to_hero < 270
     {
 		state = 1

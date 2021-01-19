@@ -8,8 +8,10 @@
     {"id":{"name":"o_gear_icon","path":"objects/o_gear_icon/o_gear_icon.yy",},"order":5,},
     {"id":{"name":"o_dirt","path":"objects/o_dirt/o_dirt.yy",},"order":5,},
     {"id":{"name":"sp_spear3_r","path":"sprites/sp_spear3_r/sp_spear3_r.yy",},"order":5,},
+    {"id":{"name":"sp_sky56","path":"sprites/sp_sky56/sp_sky56.yy",},"order":1,},
     {"id":{"name":"o_spear","path":"objects/o_spear/o_spear.yy",},"order":1,},
     {"id":{"name":"sp_hero_l","path":"sprites/sp_hero_l/sp_hero_l.yy",},"order":9,},
+    {"id":{"name":"Hq","path":"rooms/Hq/Hq.yy",},"order":1,},
     {"id":{"name":"sp_spider_run_l","path":"sprites/sp_spider_run_l/sp_spider_run_l.yy",},"order":5,},
     {"id":{"name":"sp_spider_walk_l","path":"sprites/sp_spider_walk_l/sp_spider_walk_l.yy",},"order":3,},
     {"id":{"name":"sp_spear3_l","path":"sprites/sp_spear3_l/sp_spear3_l.yy",},"order":4,},
@@ -99,6 +101,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Hq","path":"rooms/Hq/Hq.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -117,7 +120,7 @@
     {"folderPath":"folders/Extensions.yy","order":9,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/hero.yy","order":0,"resourceVersion":"1.0","name":"hero","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Ground.yy","order":1,"resourceVersion":"1.0","name":"Ground","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/Ground.yy","order":0,"resourceVersion":"1.0","name":"Ground","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Deco/Ground.yy","order":3,"resourceVersion":"1.0","name":"Ground","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Weapons.yy","order":2,"resourceVersion":"1.0","name":"Weapons","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Weapons/Spear.yy","order":0,"resourceVersion":"1.0","name":"Spear","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemies.yy","order":1,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
@@ -128,6 +131,7 @@
     {"folderPath":"folders/Objects/Game.yy","order":4,"resourceVersion":"1.0","name":"Game","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemies.yy","order":8,"resourceVersion":"1.0","name":"enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Weapons/blade.yy","order":1,"resourceVersion":"1.0","name":"blade","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Background.yy","order":9,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

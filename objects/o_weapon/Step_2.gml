@@ -1,6 +1,10 @@
 // Combo
 #region
 
+if owner.dash_time != 0
+{
+	combo_0 = 1
+}
 if combo_finish_1 > 0
 {
 	combo_finish_1 -= 1
@@ -27,10 +31,6 @@ if combo_finish_3 > 0 && combo_finish_2 <= 0
 		combo_3 = 0
 		combo_finish_3 = -1
     }
-}
-if owner.jump
-{
-	combo_0 = 1
 }
 if combo_0 == 1
 {
