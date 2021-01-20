@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sp_gear50","path":"sprites/sp_gear50/sp_gear50.yy",},"order":13,},
+    {"id":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"order":6,},
     {"id":{"name":"sp_grass_corner_down_r","path":"sprites/sp_grass_corner_down_r/sp_grass_corner_down_r.yy",},"order":4,},
     {"id":{"name":"sp_spider_run_r","path":"sprites/sp_spider_run_r/sp_spider_run_r.yy",},"order":4,},
     {"id":{"name":"sp_spear1_l","path":"sprites/sp_spear1_l/sp_spear1_l.yy",},"order":0,},
@@ -16,6 +17,7 @@
     {"id":{"name":"sp_spider_walk_l","path":"sprites/sp_spider_walk_l/sp_spider_walk_l.yy",},"order":3,},
     {"id":{"name":"sp_spear3_l","path":"sprites/sp_spear3_l/sp_spear3_l.yy",},"order":4,},
     {"id":{"name":"o_grass_corner_r","path":"objects/o_grass_corner_r/o_grass_corner_r.yy",},"order":3,},
+    {"id":{"name":"sp_warp","path":"sprites/sp_warp/sp_warp.yy",},"order":8,},
     {"id":{"name":"o_weapon","path":"objects/o_weapon/o_weapon.yy",},"order":0,},
     {"id":{"name":"sp_spear_r","path":"sprites/sp_spear_r/sp_spear_r.yy",},"order":6,},
     {"id":{"name":"sp_spear1_r","path":"sprites/sp_spear1_r/sp_spear1_r.yy",},"order":1,},
@@ -129,9 +131,9 @@
     {"folderPath":"folders/Sprites/Deco.yy","order":4,"resourceVersion":"1.0","name":"Deco","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Deco.yy","order":3,"resourceVersion":"1.0","name":"Deco","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Game.yy","order":4,"resourceVersion":"1.0","name":"Game","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/enemies.yy","order":8,"resourceVersion":"1.0","name":"enemies","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/enemies.yy","order":6,"resourceVersion":"1.0","name":"enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Weapons/blade.yy","order":1,"resourceVersion":"1.0","name":"blade","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/Background.yy","order":9,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Background.yy","order":7,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -54,6 +54,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"o_dirt","path":"objects/o_dirt/o_dirt.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-64.0,"y":832.0,"resourceVersion":"1.0","name":"inst_6E98C3A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"o_grass_corner_down_r","path":"objects/o_grass_corner_down_r/o_grass_corner_down_r.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":1024.0,"resourceVersion":"1.0","name":"inst_76FBE251","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"o_grass","path":"objects/o_grass/o_grass.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":1024.0,"resourceVersion":"1.0","name":"inst_5291E108","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":8.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":0.0,"resourceVersion":"1.0","name":"inst_499C5547","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_shape_deco","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"o_cloud","path":"objects/o_cloud/o_cloud.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":64.0,"resourceVersion":"1.0","name":"inst_7AC8D99D","tags":[],"resourceType":"GMRInstance",},
@@ -105,6 +106,7 @@
     {"name":"inst_6E98C3A","path":"rooms/Hq/Hq.yy",},
     {"name":"inst_76FBE251","path":"rooms/Hq/Hq.yy",},
     {"name":"inst_5291E108","path":"rooms/Hq/Hq.yy",},
+    {"name":"inst_499C5547","path":"rooms/Hq/Hq.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
