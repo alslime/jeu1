@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Ground",
-    "path": "folders/Objects/Deco/Ground.yy",
+    "name": "Grass and dirt",
+    "path": "folders/Objects/Deco/Ground/Grass and dirt.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_dirt",

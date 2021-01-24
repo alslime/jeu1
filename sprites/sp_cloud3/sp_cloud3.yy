@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2 (2)","resourceVersion":"1.0","name":"4cd0ec18-f71e-4b3f-9bd1-b2617761922b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Deco",
-    "path": "folders/Sprites/Deco.yy",
+    "name": "Clouds",
+    "path": "folders/Sprites/Deco/Ground and Walls/Clouds.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_cloud3",

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"967b2f04-aa86-4e93-93fc-cf5acac7a2dc","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Ground",
-    "path": "folders/Sprites/Ground.yy",
+    "name": "Grass and dirt",
+    "path": "folders/Sprites/Deco/Ground and Walls/Grass and dirt.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_dirt",
