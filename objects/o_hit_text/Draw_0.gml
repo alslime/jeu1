@@ -1,7 +1,7 @@
-draw_set_font(font10)
+draw_set_font(fontsmall)
 
 if draw_hplost_countdown > 0
 {
-	draw_text_transformed_color(x - font_get_size(font10)/2, y - font_get_size(font10), dmg,1,1,0,c_red,c_red,c_red,c_red,1)
+	draw_text_transformed_color(x - font_get_size(fontsmall)/2, y - font_get_size(fontsmall), dmg,1,1,0,c_red,c_red,c_red,c_red,1)
 	draw_hplost_countdown -= 1
 }

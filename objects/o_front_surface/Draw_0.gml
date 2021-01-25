@@ -1,0 +1,1 @@
+draw_surface(front_surf,0,0)
