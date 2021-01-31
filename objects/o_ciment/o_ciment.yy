@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_ciment",
-    "path": "sprites/sp_ciment/sp_ciment.yy",
+    "name": "sp_ciment69",
+    "path": "sprites/sp_ciment69/sp_ciment69.yy",
   },
   "solid": true,
   "visible": true,

@@ -102,8 +102,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"63194c26-efe4-4a2e-b790-be9e2c598933","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "blade",
-    "path": "folders/Sprites/Weapons/blade.yy",
+    "name": "unused",
+    "path": "folders/Sprites/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_blade_l2",

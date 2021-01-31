@@ -104,8 +104,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f38f35cb-b831-4550-89a7-d86159b8e13a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Spear",
-    "path": "folders/Sprites/Weapons/Spear.yy",
+    "name": "unused",
+    "path": "folders/Sprites/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spear2_l",
