@@ -12,8 +12,8 @@ if instance_exists(o_front_surface)
 		// Clean surface
 		draw_clear_alpha(c_black,0)
 	
-		script_execute(text_outline,x1 + 62, y1 + 72,total_gears)
-		draw_text_transformed_color(x1 + 62, y1 + 72,total_gears,1,1,0,c_yellow,c_yellow,c_red,c_red,1)
+		script_execute(text_outline,x1 + 62, y1 + 69,total_gears)
+		draw_text_transformed_color(x1 + 62, y1 + 69,total_gears,1,1,0,c_yellow,c_yellow,c_red,c_red,1)
 		gear_icon.strg_width = string_width(total_gears)
 
 		draw_set_font(fontsmall)
@@ -38,13 +38,13 @@ if instance_exists(o_front_surface)
 		black = 99/100*255
 		var col = make_color_rgb(black,black,black)
 		gpu_set_blendmode(bm_subtract)
-		draw_circle_color(x + sprite_width/2, y+ sprite_height/2,150,c_black,col,false)
+		draw_circle_color(x + sprite_width/2, y+ sprite_height/2,151,c_black,col,false)
 		gpu_set_blendmode( bm_normal )
 
 		surface_set_target(inst_shadow.surf)
 		// Clean surface
 		draw_clear_alpha(c_black,0)
-		draw_set_alpha(0.99)
+		draw_set_alpha(0.995)
 		draw_rectangle_color(0,0,room_width,room_height,c_black,c_black,c_black,c_black,false)
 		draw_set_alpha(1)
 	
@@ -55,5 +55,6 @@ if instance_exists(o_front_surface)
 		surface_reset_target()
 	}
 }
+
 
 draw_self()

@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Deco",
-    "path": "folders/Objects/Deco.yy",
+    "name": "Sky",
+    "path": "folders/Objects/Deco/Sky.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_cloud",

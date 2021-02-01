@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Ground",
-    "path": "folders/Objects/Deco/Ground.yy",
+    "name": "Deco",
+    "path": "folders/Objects/Deco.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_brick",

@@ -138,6 +138,19 @@ else
 
 if dash_time > 0
 {
+	if dash_begin = true
+	{
+		aftimg_interval = 2
+		dash_begin = false
+	}
+	//afterimage
+	aftimg_interval -= 1
+	if aftimg_interval == 0
+	{
+		aftimg_interval = 2
+		inst_aftimg = instance_create_layer(x,y,"lay_hero",o_afterimage)
+		script_execute (afterimage,inst_aftimg,id,10)
+	}
 	dash_time = dash_time - 1
 	if dash_dir == 0
 	{
@@ -156,6 +169,7 @@ if dash_wait > 0
 }
 if keyboard_check_pressed(vk_shift) && dash_wait == 0
 {
+	dash_begin = true
 	dash_time = 20
 	dash_wait = 50
 	if dir == 0

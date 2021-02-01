@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Deco",
-    "path": "folders/Objects/Deco.yy",
+    "name": "Grass and dirt",
+    "path": "folders/Objects/Deco/Grass and dirt.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_moving_grass_creater",

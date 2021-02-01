@@ -33,7 +33,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Ciment",
-    "path": "folders/Objects/Deco/Ground/Ciment.yy",
+    "path": "folders/Objects/Deco/Ciment.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_ciment4",

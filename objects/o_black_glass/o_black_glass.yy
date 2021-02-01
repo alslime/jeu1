@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Deco",
-    "path": "folders/Objects/Deco.yy",
+    "name": "facility",
+    "path": "folders/Objects/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_black_glass",

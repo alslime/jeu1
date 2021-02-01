@@ -33,7 +33,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "facility",
-    "path": "folders/Objects/Deco/Ground/facility.yy",
+    "path": "folders/Objects/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_ceiling_facility",
