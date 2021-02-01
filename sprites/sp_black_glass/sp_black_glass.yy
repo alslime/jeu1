@@ -26,8 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"640d2d12-a015-47cb-b105-13539f04ef24","path":"sprites/sp_black_glass/sp_black_glass.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"640d2d12-a015-47cb-b105-13539f04ef24","path":"sprites/sp_black_glass/sp_black_glass.yy",},"LayerId":{"name":"6d8fd2ff-6323-4a76-b801-46e0ccb948b3","path":"sprites/sp_black_glass/sp_black_glass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"640d2d12-a015-47cb-b105-13539f04ef24","path":"sprites/sp_black_glass/sp_black_glass.yy",},"LayerId":{"name":"1cdc21a0-8985-416f-a8b2-ff78956120c0","path":"sprites/sp_black_glass/sp_black_glass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"640d2d12-a015-47cb-b105-13539f04ef24","path":"sprites/sp_black_glass/sp_black_glass.yy",},"LayerId":{"name":"cb14d192-d772-4520-a23f-3f4894b78018","path":"sprites/sp_black_glass/sp_black_glass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_black_glass","path":"sprites/sp_black_glass/sp_black_glass.yy",},"resourceVersion":"1.0","name":"640d2d12-a015-47cb-b105-13539f04ef24","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -71,7 +69,7 @@
   ],
   "parent": {
     "name": "facility",
-    "path": "folders/Sprites/Deco/Ground and Walls/facility.yy",
+    "path": "folders/Sprites/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_black_glass",

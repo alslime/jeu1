@@ -25,12 +25,10 @@
   "gridY": 2,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"97c8fb60-a704-482c-8cfd-3218f329e2ce","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"209263f9-2dc9-471a-8103-20eadbeec7b1","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"6a71c57a-6642-4d9a-bdc1-57cf537ef9b6","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"bee51773-a355-422c-8224-b1cf9cbd5d94","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"5845e07a-d417-4965-a443-00bd4266776e","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"22fe430f-43fd-4550-9ab6-7b68dead76c8","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"5845e07a-d417-4965-a443-00bd4266776e","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","path":"sprites/sp_ciment69/sp_ciment69.yy",},"LayerId":{"name":"6a71c57a-6642-4d9a-bdc1-57cf537ef9b6","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_ciment69","path":"sprites/sp_ciment69/sp_ciment69.yy",},"resourceVersion":"1.0","name":"2a4b4313-5989-4a5b-b9b3-24503ea45b75","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -77,7 +75,7 @@
   ],
   "parent": {
     "name": "Ciment",
-    "path": "folders/Sprites/Deco/Ground and Walls/Ciment.yy",
+    "path": "folders/Sprites/Deco/Ciment.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_ciment69",

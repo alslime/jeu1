@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "facility",
-    "path": "folders/Sprites/Deco/Ground and Walls/facility.yy",
+    "path": "folders/Sprites/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_small_ground_facility",

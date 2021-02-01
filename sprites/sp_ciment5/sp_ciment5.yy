@@ -71,7 +71,7 @@
   ],
   "parent": {
     "name": "Ciment",
-    "path": "folders/Sprites/Deco/Ground and Walls/Ciment.yy",
+    "path": "folders/Sprites/Deco/Ciment.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_ciment5",

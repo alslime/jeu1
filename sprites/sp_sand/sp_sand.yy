@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"209263f9-2dc9-471a-8103-20eadbeec7b1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Ground and Walls",
-    "path": "folders/Sprites/Deco/Ground and Walls.yy",
+    "name": "Deco",
+    "path": "folders/Sprites/Deco.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_sand",

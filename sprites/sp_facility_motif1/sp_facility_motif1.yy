@@ -25,9 +25,11 @@
   "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"LayerId":{"name":"a159b1fa-c05f-47b5-ace0-8b84877a1983","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"LayerId":{"name":"86aef5e7-85aa-483e-ad01-cfc34cf8680a","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"LayerId":{"name":"0e9bbfd9-bb88-4c04-af28-c2194a151e17","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"LayerId":{"name":"a159b1fa-c05f-47b5-ace0-8b84877a1983","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"LayerId":{"name":"5e51d8f8-ede8-4ec6-b588-2fea1a24570b","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"LayerId":{"name":"5b437c6b-175e-46d4-bacf-63374301db6e","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_facility_motif1","path":"sprites/sp_facility_motif1/sp_facility_motif1.yy",},"resourceVersion":"1.0","name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -67,13 +69,11 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"a159b1fa-c05f-47b5-ace0-8b84877a1983","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"86aef5e7-85aa-483e-ad01-cfc34cf8680a","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0e9bbfd9-bb88-4c04-af28-c2194a151e17","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5b437c6b-175e-46d4-bacf-63374301db6e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "facility",
-    "path": "folders/Sprites/Deco/Ground and Walls/facility.yy",
+    "path": "folders/Sprites/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_facility_motif1",

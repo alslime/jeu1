@@ -25,9 +25,9 @@
   "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"LayerId":{"name":"190c5781-d786-4d8a-963f-33ea07bb5da6","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"LayerId":{"name":"86aef5e7-85aa-483e-ad01-cfc34cf8680a","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"LayerId":{"name":"0e9bbfd9-bb88-4c04-af28-c2194a151e17","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"LayerId":{"name":"190c5781-d786-4d8a-963f-33ea07bb5da6","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_facility_motif175","path":"sprites/sp_facility_motif175/sp_facility_motif175.yy",},"resourceVersion":"1.0","name":"3270da9f-14d7-4f37-99b0-24ad67cbe480","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "facility",
-    "path": "folders/Sprites/Deco/Ground and Walls/facility.yy",
+    "path": "folders/Sprites/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_facility_motif175",
