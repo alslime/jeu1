@@ -188,3 +188,12 @@ else if owner.dir == 180
 		last_dir = 180
 	}
 }
+	
+//afterimage
+aftimg_interval -= 1
+if aftimg_interval == 0
+{
+	aftimg_interval = 1
+	inst_aftimg = instance_create_layer(x,y,"lay_weapon",o_afterimage)
+	script_execute (afterimage,inst_aftimg,id,10)
+}

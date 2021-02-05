@@ -9,8 +9,6 @@ if instance_exists(o_front_surface)
 	{
 		draw_set_font(fontbig)
 		surface_set_target(inst_front_surface.front_surf)
-		// Clean surface
-		draw_clear_alpha(c_black,0)
 	
 		script_execute(text_outline,x1 + 62, y1 + 69,total_gears)
 		draw_text_transformed_color(x1 + 62, y1 + 69,total_gears,1,1,0,c_yellow,c_yellow,c_red,c_red,1)
@@ -35,21 +33,10 @@ if instance_exists(o_front_surface)
 
 	if surface_exists(inst_shadow.surf)
 	{
-		black = 99/100*255
-		var col = make_color_rgb(black,black,black)
-		gpu_set_blendmode(bm_subtract)
-		draw_circle_color(x + sprite_width/2, y+ sprite_height/2,151,c_black,col,false)
-		gpu_set_blendmode( bm_normal )
-
 		surface_set_target(inst_shadow.surf)
-		// Clean surface
-		draw_clear_alpha(c_black,0)
-		draw_set_alpha(0.995)
-		draw_rectangle_color(0,0,room_width,room_height,c_black,c_black,c_black,c_black,false)
-		draw_set_alpha(1)
 	
 		gpu_set_blendmode(bm_subtract)
-		draw_circle(x + sprite_width/2, y+ sprite_height/2,150,false)
+		draw_sprite(sp_hero_light,0,x + sprite_width/2,y + sprite_height/2)
 		gpu_set_blendmode( bm_normal )
 	
 		surface_reset_target()
