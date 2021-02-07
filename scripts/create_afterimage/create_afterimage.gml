@@ -6,8 +6,8 @@ function afterimage()
 	
 	inst_aftimg.x = aftimg_owner.x
 	inst_aftimg.y = aftimg_owner.y
+	inst_aftimg.image_angle = aftimg_owner.image_angle
 	inst_aftimg.sprite_index = aftimg_owner.sprite_index
 	inst_aftimg.countdown = time
 	inst_aftimg.maxcountdown = time
-
 }
