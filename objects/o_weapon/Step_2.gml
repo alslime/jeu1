@@ -45,7 +45,7 @@ if combo_0 == 1
 	combo_y = 0
 	combo_rot = 0
 	temp_position_x = anim_x[0,0]
-	temp_position_y = anim_y[0,0] - (owner.sprite_height/2 - sprite_height/2 + 2*mod_y) + owner.sprite_height
+	temp_position_y = anim_y[0,0]
 	temp_rotation = anim_rot[0,0]
 }
 
@@ -145,13 +145,13 @@ if mouse_check_button_pressed (mb_left)
 
 if owner.dir == 0
 {
-	combo_x = temp_position_x + owner.sprite_width/2 - sprite_width/2 + mod_x
+	combo_x = temp_position_x
 }
 else
 {
-	combo_x = temp_position_x - owner.sprite_width/2 - sprite_width/2 + mod_x
+	combo_x = temp_position_x - owner.sprite_width
 }
-combo_y = temp_position_y + owner.sprite_height/2 - sprite_height/2 + mod_y
+combo_y = temp_position_y
 combo_rot = temp_rotation
 
 #endregion

@@ -108,6 +108,7 @@
     {"id":{"name":"sp_moving_grass2","path":"sprites/sp_moving_grass2/sp_moving_grass2.yy",},"order":7,},
     {"id":{"name":"sp_blade_r","path":"sprites/sp_blade_r/sp_blade_r.yy",},"order":4,},
     {"id":{"name":"o_ciment","path":"objects/o_ciment/o_ciment.yy",},"order":0,},
+    {"id":{"name":"blade_combo","path":"sequences/blade_combo/blade_combo.yy",},"order":0,},
     {"id":{"name":"create_afterimage","path":"scripts/create_afterimage/create_afterimage.yy",},"order":5,},
     {"id":{"name":"sp_moving_grass","path":"sprites/sp_moving_grass/sp_moving_grass.yy",},"order":5,},
     {"id":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"order":0,},
