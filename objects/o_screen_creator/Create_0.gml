@@ -1,0 +1,1 @@
+time_to_play = irandom_range(10,30)
