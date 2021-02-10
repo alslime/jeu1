@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"7bb3ae2a-a530-4e78-aa33-cfd101f11fa7","path":"sprites/sp_ciment_background/sp_ciment_background.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"7bb3ae2a-a530-4e78-aa33-cfd101f11fa7","path":"sprites/sp_ciment_background/sp_ciment_background.yy",},"LayerId":{"name":"d090d2a0-847c-4e9f-9a4d-6346bb01fc9e","path":"sprites/sp_ciment_background/sp_ciment_background.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7bb3ae2a-a530-4e78-aa33-cfd101f11fa7","path":"sprites/sp_ciment_background/sp_ciment_background.yy",},"LayerId":{"name":"5405d0c2-02d7-4cc1-8e38-8b5a5ec5cc35","path":"sprites/sp_ciment_background/sp_ciment_background.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_ciment_background","path":"sprites/sp_ciment_background/sp_ciment_background.yy",},"resourceVersion":"1.0","name":"7bb3ae2a-a530-4e78-aa33-cfd101f11fa7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -65,6 +66,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":75.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"5405d0c2-02d7-4cc1-8e38-8b5a5ec5cc35","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2) (2)","resourceVersion":"1.0","name":"d090d2a0-847c-4e9f-9a4d-6346bb01fc9e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_hero_r",
-    "path": "sprites/sp_hero_r/sp_hero_r.yy",
+    "name": "sp_for_heros_fixture",
+    "path": "sprites/sp_for_heros_fixture/sp_for_heros_fixture.yy",
   },
   "solid": true,
   "visible": true,
@@ -21,9 +21,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":28.0,"y":0.0,},
-    {"x":28.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+    {"x":24.0,"y":0.0,},
+    {"x":24.0,"y":110.0,},
+    {"x":0.0,"y":110.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
@@ -53,8 +53,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Character",
+    "path": "folders/Objects/Game/Character.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_hero",

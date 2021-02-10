@@ -40,7 +40,7 @@ if keyboard_check_pressed (vk_space) && (!jump)
 
 #endregion
 
-// Movments left/right
+// Movments left/right && Dash
 #region
 
 if keyboard_check_pressed(ord("A"))
@@ -58,11 +58,11 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") )
 		phy_speed_x = -4
 	    if (!jump)
 	    {
-	        sprite_index = sp_hero_walk_l
+	        //sprite_index = sp_hero_walk_l
 	    }
 	    else if jump
 	    {
-	        sprite_index = sp_hero_jump_l
+	        //sprite_index = sp_hero_jump_l
 	    }
 	}
 	else if dir == 0
@@ -70,11 +70,11 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") )
 	    phy_speed_x = 4
 	    if (!jump)
 	    {
-	        sprite_index = sp_hero_walk_r
+	        //sprite_index = sp_hero_walk_r
 	    }
 	    else if jump
 	    {
-	        sprite_index = sp_hero_jump_r
+	        //sprite_index = sp_hero_jump_r
 		}
 	}
 }
@@ -84,11 +84,11 @@ else if keyboard_check( ord("A") )
 	dir = 180
 	if (!jump)
 	{
-		sprite_index = sp_hero_walk_l
+		//sprite_index = sp_hero_walk_l
 	}
 	else if jump
 	{
-		sprite_index = sp_hero_jump_l
+		//sprite_index = sp_hero_jump_l
 	}
 }
 else if keyboard_check( ord("D") )
@@ -97,11 +97,11 @@ else if keyboard_check( ord("D") )
 	dir = 0
 	if (!jump)
 	{
-		sprite_index = sp_hero_walk_r
+		//sprite_index = sp_hero_walk_r
 	}
 	else if jump
 	{
-		sprite_index = sp_hero_jump_r
+		//sprite_index = sp_hero_jump_r
 	}
 }
 else
@@ -111,30 +111,39 @@ else
 	{
 		if (dir == 180)
 		{
-		    sprite_index = sp_hero_l
+			if last_sequence_type != se_stand_l
+			{
+				layer_sequence_destroy(last_sequence)
+				stand_l = layer_sequence_create("lay_front",x,y,se_stand_l)
+				last_sequence = stand_l
+				last_sequence_type = se_stand_l
+			}
 		}
 		else if (dir == 0)
 		{
-		    sprite_index = sp_hero_r
+			if last_sequence_type != se_stand_r
+			{
+				layer_sequence_destroy(last_sequence)
+				stand_r = layer_sequence_create("lay_front",x,y,se_stand_r)
+				last_sequence = stand_r
+				last_sequence_type = se_stand_r
+			}
 		}
 	}
 	else if jump
 	{
 		if (dir == 180)
 		{
-		    sprite_index = sp_hero_jump_l
+		    //sprite_index = sp_hero_jump_l
 		}
 		else if (dir == 0)
 		{
-		    sprite_index = sp_hero_jump_r
+		   // sprite_index = sp_hero_jump_r
 		}
 	}
 }
 
-#endregion
-
 // Dash
-#region
 
 if dash_time > 0
 {
@@ -154,12 +163,12 @@ if dash_time > 0
 	dash_time = dash_time - 1
 	if dash_dir == 0
 	{
-		sprite_index = sp_hero_dash_r
+		//sprite_index = sp_hero_dash_r
 		phy_speed_x = 8
 	}
 	else if dash_dir == 180
 	{
-		sprite_index = sp_hero_dash_l
+		//sprite_index = sp_hero_dash_l
 		phy_speed_x = -8
 	}
 }
