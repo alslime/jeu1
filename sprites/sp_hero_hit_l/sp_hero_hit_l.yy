@@ -70,8 +70,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"basic","resourceVersion":"1.0","name":"19b1001b-cff7-4b17-8e51-68da275d3450","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "hero",
-    "path": "folders/Sprites/hero.yy",
+    "name": "Previous",
+    "path": "folders/Sprites/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_hit_l",

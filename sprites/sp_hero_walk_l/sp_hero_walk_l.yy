@@ -85,8 +85,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"basic","resourceVersion":"1.0","name":"a598d7e1-0568-4552-923e-caccec56f5a2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "hero",
-    "path": "folders/Sprites/hero.yy",
+    "name": "Previous",
+    "path": "folders/Sprites/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_walk_l",

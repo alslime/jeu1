@@ -26,8 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_shoulder/sp_shoulder.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_shoulder/sp_shoulder.yy",},"LayerId":{"name":"8f44b710-be56-40aa-9f21-3430a179279b","path":"sprites/sp_shoulder/sp_shoulder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_shoulder/sp_shoulder.yy",},"LayerId":{"name":"fd2f1443-5654-4458-8748-6d4b91e30289","path":"sprites/sp_shoulder/sp_shoulder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_shoulder/sp_shoulder.yy",},"LayerId":{"name":"e5edcb0a-e5c3-412e-934a-88f124b741b4","path":"sprites/sp_shoulder/sp_shoulder.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_shoulder","path":"sprites/sp_shoulder/sp_shoulder.yy",},"resourceVersion":"1.0","name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

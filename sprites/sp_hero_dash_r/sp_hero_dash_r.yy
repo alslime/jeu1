@@ -70,8 +70,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"basic","resourceVersion":"1.0","name":"e0ac741c-e75d-424a-ae17-64c00d38ae6b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "hero",
-    "path": "folders/Sprites/hero.yy",
+    "name": "Previous",
+    "path": "folders/Sprites/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_dash_r",

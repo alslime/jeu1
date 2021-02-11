@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"basic","resourceVersion":"1.0","name":"f5e1bd98-49b6-4e3e-95ca-07076e87ade0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "hero",
-    "path": "folders/Sprites/hero.yy",
+    "name": "Previous",
+    "path": "folders/Sprites/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_r",
