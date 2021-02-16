@@ -58,7 +58,13 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") )
 		phy_speed_x = -4
 	    if (!jump)
 	    {
-	        //sprite_index = sp_hero_walk_l
+			if last_sequence_type != se_walk_l
+			{
+				walk_l = layer_sequence_create("lay_hero",x,y,se_walk_l)
+				layer_sequence_destroy(last_sequence)
+				last_sequence = walk_l
+				last_sequence_type = se_walk_l
+			}
 	    }
 	    else if jump
 	    {
@@ -70,7 +76,13 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") )
 	    phy_speed_x = 4
 	    if (!jump)
 	    {
-	        //sprite_index = sp_hero_walk_r
+	        if last_sequence_type != se_walk_r
+			{
+				walk_r = layer_sequence_create("lay_hero",x,y,se_walk_r)
+				layer_sequence_destroy(last_sequence)
+				last_sequence = walk_r
+				last_sequence_type = se_walk_r
+			}
 	    }
 	    else if jump
 	    {
@@ -84,7 +96,13 @@ else if keyboard_check( ord("A") )
 	dir = 180
 	if (!jump)
 	{
-		//sprite_index = sp_hero_walk_l
+			if last_sequence_type != se_walk_l
+			{
+				walk_l = layer_sequence_create("lay_hero",x,y,se_walk_l)
+				layer_sequence_destroy(last_sequence)
+				last_sequence = walk_l
+				last_sequence_type = se_walk_l
+			}
 	}
 	else if jump
 	{
@@ -97,7 +115,13 @@ else if keyboard_check( ord("D") )
 	dir = 0
 	if (!jump)
 	{
-		//sprite_index = sp_hero_walk_r
+			if last_sequence_type != se_walk_r
+			{
+				walk_r = layer_sequence_create("lay_hero",x,y,se_walk_r)
+				layer_sequence_destroy(last_sequence)
+				last_sequence = walk_r
+				last_sequence_type = se_walk_r
+			}
 	}
 	else if jump
 	{
@@ -113,8 +137,8 @@ else
 		{
 			if last_sequence_type != se_stand_l
 			{
+				stand_l = layer_sequence_create("lay_hero",x,y,se_stand_l)
 				layer_sequence_destroy(last_sequence)
-				stand_l = layer_sequence_create("lay_front",x,y,se_stand_l)
 				last_sequence = stand_l
 				last_sequence_type = se_stand_l
 			}
@@ -123,8 +147,8 @@ else
 		{
 			if last_sequence_type != se_stand_r
 			{
+				stand_r = layer_sequence_create("lay_hero",x,y,se_stand_r)
 				layer_sequence_destroy(last_sequence)
-				stand_r = layer_sequence_create("lay_front",x,y,se_stand_r)
 				last_sequence = stand_r
 				last_sequence_type = se_stand_r
 			}
@@ -225,11 +249,11 @@ if keyboard_check (ord("S")) && (hplost > 0) && (!jump) && (energylost < energym
     phy_speed_x = 0
     if dir == 0
     {
-        sprite_index = sp_hero_regen_r
+        //sprite_index = sp_hero_regen_r
     }
     else if dir == 180
     {
-        sprite_index = sp_hero_regen_l
+        //sprite_index = sp_hero_regen_l
     } 
 }
 else
@@ -272,13 +296,13 @@ if countdown > 0
     if dir_to_enemy > 90 && dir_to_enemy < 270
     {
 		phy_speed_x = 5
-		sprite_index = sp_hero_hit_l
+		//sprite_index = sp_hero_hit_l
 		dir = 180
     }
     if dir_to_enemy <= 90 || dir_to_enemy >= 270
     {
 		phy_speed_x = -5
-		sprite_index = sp_hero_hit_r
+		//sprite_index = sp_hero_hit_r
 		dir = 0
     }
 }

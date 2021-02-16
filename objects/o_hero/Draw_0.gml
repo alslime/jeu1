@@ -15,8 +15,8 @@ if instance_exists(o_front_surface)
 		gear_icon.strg_width = string_width(total_gears)
 
 		draw_set_font(fontsmall)
-		draw_healthbar(x1 + 32, y1 + 32, x1 + 32 + 70 + hpmax*0.3, y1 + 49, ((hpmax-hplost)/hpmax)*100,c_black,c_red,c_red,0,true,false)
-		draw_healthbar(x1 + 32, y1 + 56, x1 + 32 + 70 + energymax*0.3, y1 + 73, ((energymax-energylost)/energymax)*100,c_black,c_blue,c_blue,0,true,false)
+		draw_healthbar(x1 + 32, y1 + 32, x1 + 32 + 70 + hpmax*0.3, y1 + 49, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,false)
+		draw_healthbar(x1 + 32, y1 + 56, x1 + 32 + 70 + energymax*0.3, y1 + 73, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,false)
 	
 		//script_execute(text_outline,x1 +32 +hpmax/2 -string_width(string(hpmax-hplost) + "/" + string(hpmax))/2,y1 + 30,string(hpmax-hplost) + "/" + string(hpmax))
 		draw_text_transformed_color(x1 +32 + (70 + hpmax*0.3)/2 -string_width(string(hpmax-hplost) + "/" + string(hpmax))/2, y1 + 25,string(hpmax-hplost) + "/" + string(hpmax),1,1,0,c_white,c_white,c_white,c_white,1)

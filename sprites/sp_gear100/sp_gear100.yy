@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"0716573f-9a0a-42f4-aa87-71967283601a","path":"sprites/sp_gear100/sp_gear100.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"0716573f-9a0a-42f4-aa87-71967283601a","path":"sprites/sp_gear100/sp_gear100.yy",},"LayerId":{"name":"884ba90e-83d8-41fd-ba50-bc716bce3722","path":"sprites/sp_gear100/sp_gear100.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"0716573f-9a0a-42f4-aa87-71967283601a","path":"sprites/sp_gear100/sp_gear100.yy",},"LayerId":{"name":"9f8749a1-42a5-43a0-9996-98ece1a2162e","path":"sprites/sp_gear100/sp_gear100.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_gear100","path":"sprites/sp_gear100/sp_gear100.yy",},"resourceVersion":"1.0","name":"0716573f-9a0a-42f4-aa87-71967283601a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
