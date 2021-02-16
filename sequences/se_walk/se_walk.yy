@@ -549,7 +549,7 @@
     "path": "folders/Sequences.yy",
   },
   "resourceVersion": "1.3",
-  "name": "se_walk_r",
+  "name": "se_walk",
   "tags": [],
   "resourceType": "GMSequence",
 }

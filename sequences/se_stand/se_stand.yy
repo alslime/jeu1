@@ -347,7 +347,7 @@
     "path": "folders/Sequences.yy",
   },
   "resourceVersion": "1.3",
-  "name": "se_stand_r",
+  "name": "se_stand",
   "tags": [],
   "resourceType": "GMSequence",
 }

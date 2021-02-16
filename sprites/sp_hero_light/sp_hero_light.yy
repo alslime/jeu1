@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 199,
-  "bbox_top": 0,
-  "bbox_bottom": 199,
+  "bbox_left": 14,
+  "bbox_right": 235,
+  "bbox_top": 14,
+  "bbox_bottom": 235,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 200,
-  "height": 200,
+  "width": 250,
+  "height": 250,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"1df3bd46-fe9e-434e-9d50-7a0327636e66","path":"sprites/sp_hero_light/sp_hero_light.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1df3bd46-fe9e-434e-9d50-7a0327636e66","path":"sprites/sp_hero_light/sp_hero_light.yy",},"LayerId":{"name":"d2c3982a-33d2-47aa-ba56-c0f957223751","path":"sprites/sp_hero_light/sp_hero_light.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"1df3bd46-fe9e-434e-9d50-7a0327636e66","path":"sprites/sp_hero_light/sp_hero_light.yy",},"LayerId":{"name":"aa39cf27-4814-4a99-8910-b114b1402cce","path":"sprites/sp_hero_light/sp_hero_light.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_hero_light","path":"sprites/sp_hero_light/sp_hero_light.yy",},"resourceVersion":"1.0","name":"1df3bd46-fe9e-434e-9d50-7a0327636e66","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -54,8 +55,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 100,
-    "yorigin": 100,
+    "xorigin": 125,
+    "yorigin": 125,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sp_hero_light","path":"sprites/sp_hero_light/sp_hero_light.yy",},
@@ -65,6 +66,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"aa39cf27-4814-4a99-8910-b114b1402cce","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"d2c3982a-33d2-47aa-ba56-c0f957223751","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {

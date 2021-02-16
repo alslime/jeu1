@@ -43,5 +43,4 @@ if instance_exists(o_front_surface)
 	}
 }
 
-
 //draw_self()
