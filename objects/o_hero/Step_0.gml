@@ -19,6 +19,3 @@ if keyboard_check_pressed(ord("2"))
 // Disable rotation
 phy_fixed_rotation = true
 
-
-
-

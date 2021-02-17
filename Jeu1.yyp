@@ -15,6 +15,7 @@
     {"id":{"name":"sp_facility_acc1","path":"sprites/sp_facility_acc1/sp_facility_acc1.yy",},"order":9,},
     {"id":{"name":"o_facility_acc_12_notworking","path":"objects/o_facility_acc_12_notworking/o_facility_acc_12_notworking.yy",},"order":14,},
     {"id":{"name":"sp_spear1_l","path":"sprites/sp_spear1_l/sp_spear1_l.yy",},"order":7,},
+    {"id":{"name":"se_dash","path":"sequences/se_dash/se_dash.yy",},"order":7,},
     {"id":{"name":"sp_grass_corner_r","path":"sprites/sp_grass_corner_r/sp_grass_corner_r.yy",},"order":4,},
     {"id":{"name":"sp_arm","path":"sprites/sp_arm/sp_arm.yy",},"order":3,},
     {"id":{"name":"o_gear_icon","path":"objects/o_gear_icon/o_gear_icon.yy",},"order":5,},
