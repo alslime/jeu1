@@ -37,25 +37,11 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 		phy_speed_x = -4
 	    if (!jump)
 	    {
-			if last_sequence_type != se_walk
-			{
-				walk = layer_sequence_create("lay_hero",x,y,se_walk)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = walk
-				last_sequence_type = se_walk
-			}
-			layer_sequence_xscale(walk,-1)
+			hero_state = "walk_l"
 	    }
 	    else if jump
 	    {
-		    if last_sequence_type != se_jump
-			{
-				sejump = layer_sequence_create("lay_hero",x,y,se_jump)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = sejump
-				last_sequence_type = se_jump
-			}
-			layer_sequence_xscale(sejump,-1)
+			hero_state = "jump_l"
 	    }
 	}
 	else if dir == 0
@@ -63,25 +49,11 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 	    phy_speed_x = 4
 	    if (!jump)
 	    {
-			if last_sequence_type != se_walk
-			{
-				walk = layer_sequence_create("lay_hero",x,y,se_walk)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = walk
-				last_sequence_type = se_walk
-			}
-			layer_sequence_xscale(walk,1)
+			hero_state = "walk_r"
 	    }
 	    else if jump
 	    {
-		    if last_sequence_type != se_jump
-			{
-				sejump = layer_sequence_create("lay_hero",x,y,se_jump)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = sejump
-				last_sequence_type = se_jump
-			}
-			layer_sequence_xscale(sejump,1)
+			hero_state = "jump_r"
 		}
 	}
 }
@@ -91,25 +63,11 @@ else if keyboard_check( ord("A") ) && (dash_time == 0)
 	dir = 180
 	if (!jump)
 	{
-		if last_sequence_type != se_walk
-		{
-			walk = layer_sequence_create("lay_hero",x,y,se_walk)
-			layer_sequence_destroy(last_sequence)
-			last_sequence = walk
-			last_sequence_type = se_walk
-		}
-		layer_sequence_xscale(walk,-1)
+		hero_state = "walk_l"
 	}
 	else if jump
 	{
-		if last_sequence_type != se_jump
-		{
-			sejump = layer_sequence_create("lay_hero",x,y,se_jump)
-			layer_sequence_destroy(last_sequence)
-			last_sequence = sejump
-			last_sequence_type = se_jump
-		}
-		layer_sequence_xscale(sejump,-1)
+		hero_state = "jump_l"
 	}
 }
 else if keyboard_check( ord("D") ) && (dash_time == 0)
@@ -118,25 +76,11 @@ else if keyboard_check( ord("D") ) && (dash_time == 0)
 	dir = 0
 	if (!jump)
 	{
-		if last_sequence_type != se_walk
-		{
-			walk = layer_sequence_create("lay_hero",x,y,se_walk)
-			layer_sequence_destroy(last_sequence)
-			last_sequence = walk
-			last_sequence_type = se_walk
-		}
-		layer_sequence_xscale(walk,1)
+		hero_state = "walk_r"
 	}
 	else if jump
 	{
-		if last_sequence_type != se_jump
-		{
-			sejump = layer_sequence_create("lay_hero",x,y,se_jump)
-			layer_sequence_destroy(last_sequence)
-			last_sequence = sejump
-			last_sequence_type = se_jump
-		}
-		layer_sequence_xscale(sejump,1)
+		hero_state = "jump_r"
 	}
 }
 else
@@ -146,50 +90,22 @@ else
 	{
 		if (dir == 180)
 		{
-			if last_sequence_type != se_stand
-			{
-				stand = layer_sequence_create("lay_hero",x,y,se_stand)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = stand
-				last_sequence_type = se_stand
-			}
-			layer_sequence_xscale(stand,-1)
+			hero_state = "stand_l"
 		}
 		else if (dir == 0)
 		{
-			if last_sequence_type != se_stand
-			{
-				stand = layer_sequence_create("lay_hero",x,y,se_stand)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = stand
-				last_sequence_type = se_stand
-			}
-			layer_sequence_xscale(stand,1)
+			hero_state = "stand_r"
 		}
 	}
 	else if jump && (!regen) && (dash_time == 0)
 	{
 		if (dir == 180)
 		{
-		    if last_sequence_type != se_jump
-			{
-				sejump = layer_sequence_create("lay_hero",x,y,se_jump)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = sejump
-				last_sequence_type = se_jump
-			}
-			layer_sequence_xscale(sejump,-1)
+			hero_state = "jump_l"
 		}
 		else if (dir == 0)
 		{
-			if last_sequence_type != se_jump
-			{
-				sejump = layer_sequence_create("lay_hero",x,y,se_jump)
-				layer_sequence_destroy(last_sequence)
-				last_sequence = sejump
-				last_sequence_type = se_jump
-			}
-			layer_sequence_xscale(sejump,1)
+			hero_state = "jump_r"
 		}
 	}
 }
@@ -197,43 +113,16 @@ else
 // Dash
 if dash_time > 0
 {
-	//if dash_begin == true
-	//{
-	//	aftimg_interval = 2
-	//	dash_begin = false
-	//}
-	//afterimage
-	//aftimg_interval -= 1
-	//if aftimg_interval == 0
-	//{
-	//	aftimg_interval = 2
-	//	inst_aftimg = instance_create_layer(x,y,"lay_hero",o_afterimage)
-	//	script_execute (afterimage,inst_aftimg,id,10)
-	//}
 	dash_time = dash_time - 1
 	if dash_dir == 0
 	{
-		if last_sequence_type != se_dash
-		{
-			layer_sequence_destroy(last_sequence)
-			sedash = layer_sequence_create("lay_hero",x,y,se_dash)
-			last_sequence = sedash
-			last_sequence_type = se_dash
-		}
-		layer_sequence_xscale(sedash,1)
+		hero_state = "dash_r"
 		phy_speed_x = 10
 	}
 	else if dash_dir == 180
 	{
+		hero_state = "dash_l"
 		phy_speed_x = -10
-		if last_sequence_type != se_dash
-		{
-			layer_sequence_destroy(last_sequence)
-			sedash = layer_sequence_create("lay_hero",x,y,se_dash)
-			last_sequence = sedash
-			last_sequence_type = se_dash
-		}
-		layer_sequence_xscale(sedash,-1)
 	}
 }
 if dash_wait > 0
@@ -349,7 +238,102 @@ if countdown > 0
 
 #endregion
 
+//States
+#region
+if hero_state == "stand_r"
+{
+	if last_sequence_type != se_stand
+	{
+		stand = layer_sequence_create("lay_hero",x,y,se_stand)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = stand
+		last_sequence_type = se_stand
+	}
+	layer_sequence_xscale(stand,1)
+}
+else if hero_state == "stand_l"
+{
+	if last_sequence_type != se_stand
+	{
+		stand = layer_sequence_create("lay_hero",x,y,se_stand)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = stand
+		last_sequence_type = se_stand
+	}
+	layer_sequence_xscale(stand,-1)
+}
+else if hero_state == "walk_r"
+{
+	if last_sequence_type != se_walk
+	{
+		walk = layer_sequence_create("lay_hero",x,y,se_walk)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = walk
+		last_sequence_type = se_walk
+	}
+	layer_sequence_xscale(walk,1)
+}
+else if hero_state == "walk_l"
+{
+	if last_sequence_type != se_walk
+	{
+		walk = layer_sequence_create("lay_hero",x,y,se_walk)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = walk
+		last_sequence_type = se_walk
+	}
+	layer_sequence_xscale(walk,-1)
+}
+else if hero_state == "jump_r"
+{
+	if last_sequence_type != se_jump
+	{
+		sejump = layer_sequence_create("lay_hero",x,y,se_jump)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = sejump
+		last_sequence_type = se_jump
+	}
+	layer_sequence_xscale(sejump,1)
+}
+else if hero_state == "jump_l"
+{
+	if last_sequence_type != se_jump
+	{
+		sejump = layer_sequence_create("lay_hero",x,y,se_jump)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = sejump
+		last_sequence_type = se_jump
+	}
+	layer_sequence_xscale(sejump,-1)
+}
+else if hero_state == "dash_r"
+{
+	if last_sequence_type != se_dash
+	{
+		layer_sequence_destroy(last_sequence)
+		sedash = layer_sequence_create("lay_hero",x,y,se_dash)
+		last_sequence = sedash
+		last_sequence_type = se_dash
+	}
+	layer_sequence_xscale(sedash,1)
+}
+else if hero_state == "dash_l"
+{
+	if last_sequence_type != se_dash
+	{
+		layer_sequence_destroy(last_sequence)
+		sedash = layer_sequence_create("lay_hero",x,y,se_dash)
+		last_sequence = sedash
+		last_sequence_type = se_dash
+	}
+	layer_sequence_xscale(sedash,-1)
+}
+
+#endregion
+
 //Sequence follows player
+#region
+
 if dir == 0
 {
 	layer_sequence_x(last_sequence,x)
@@ -360,5 +344,5 @@ else
 }
 layer_sequence_y(last_sequence,y)
 
-
+#endregion
 

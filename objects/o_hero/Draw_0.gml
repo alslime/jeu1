@@ -11,7 +11,7 @@ if instance_exists(o_front_surface)
 		surface_set_target(inst_front_surface.front_surf)
 	
 		script_execute(text_outline,x1 + 62, y1 + 69,total_gears)
-		draw_text_transformed_color(x1 + 62, y1 + 69,total_gears,1,1,0,c_yellow,c_yellow,c_red,c_red,1)
+		draw_text_transformed_color(x1 + 62, y1 + 69,total_gears,1,1,0,c_white,c_white,c_aqua,c_aqua,1)
 		gear_icon.strg_width = string_width(total_gears)
 
 		draw_set_font(fontsmall)
