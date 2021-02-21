@@ -3,8 +3,6 @@ randomize()
 
 vweapon = instance_create_layer(0,0,"lay_weapon",o_fist)
 vweapon.owner = id
-sweapon = instance_create_layer(0,0,"lay_weapon",o_spear)
-sweapon.owner = id
 
 gear_icon = instance_create_layer(x,y,"lay_front",o_gear_icon)
 

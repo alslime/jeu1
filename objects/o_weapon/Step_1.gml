@@ -35,18 +35,18 @@ if combo_finish_3 > 0 && combo_finish_2 <= 0
 if combo_0 == 1
 {
 	current_combo_idx = 0
-	/*combo_1 = 0
+	combo_1 = 0
 	combo_finish_1 = 0
 	combo_2 = 0
 	combo_finish_2 = 0
 	combo_3 = 0
 	combo_finish_3 = 0
-	combo_x = 0
-	combo_y = 0
-	combo_rot = 0
-	temp_position_x = anim_x[0,0]
-	temp_position_y = anim_y[0,0]
-	temp_rotation = anim_rot[0,0]*/
+	//combo_x = 0
+	//combo_y = 0
+	//combo_rot = 0
+	//temp_position_x = anim_x[0,0]
+	//temp_position_y = anim_y[0,0]
+	//temp_rotation = anim_rot[0,0]
 }
 
 #endregion
@@ -71,7 +71,7 @@ if combo_1 == 1
 	temp_position_y = anim_y[1,i]
 	temp_rotation = anim_rot[1,i]*/
 }
-if combo_2 == 1 && combo_finish_1 <= 0 //layer_sequence
+if combo_2 == 1 && combo_finish_1 <= 0
 {
 	current_combo_idx = 2
 	/*if combo2_start == true

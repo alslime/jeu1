@@ -365,25 +365,25 @@ else if hero_state == "dash_l"
 }
 else if hero_state == "combo1r"
 {
-	if last_sequence_type != se_punch2
+	if last_sequence_type != se_punch1
 	{
 		layer_sequence_destroy(last_sequence)
-		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
-		last_sequence = punch2
-		last_sequence_type = se_punch2
+		punch1 = layer_sequence_create("lay_hero",x,y,se_punch1)
+		last_sequence = punch1
+		last_sequence_type = se_punch1
 	}
-	layer_sequence_xscale(punch2,1)
+	layer_sequence_xscale(punch1,1)
 }
 else if hero_state == "combo1l"
 {
-	if last_sequence_type != se_punch2
+	if last_sequence_type != se_punch1
 	{
 		layer_sequence_destroy(last_sequence)
-		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
-		last_sequence = punch2
-		last_sequence_type = se_punch2
+		punch1 = layer_sequence_create("lay_hero",x,y,se_punch1)
+		last_sequence = punch1
+		last_sequence_type = se_punch1
 	}
-	layer_sequence_xscale(punch2,-1)
+	layer_sequence_xscale(punch1,-1)
 }
 else if hero_state == "combo2r"
 {
