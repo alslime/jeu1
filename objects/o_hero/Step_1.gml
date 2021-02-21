@@ -19,7 +19,7 @@ if keyboard_check_pressed (vk_space) && (!jump)
 
 #endregion
 
-// Movments left/right && Dash
+// Movments left/right && Dash && check current combo
 #region
 
 if keyboard_check_pressed(ord("A"))
@@ -141,6 +141,41 @@ if keyboard_check_pressed(vk_shift) && dash_wait == 0
 	else if dir == 180
 	{
 		dash_dir = 180
+	}
+}
+
+//Check combo
+if vweapon.current_combo_idx == 1
+{
+	if dir == 0
+	{
+		hero_state = "combo1r"
+	}
+	else
+	{
+		hero_state = "combo1l"
+	}
+}
+else if vweapon.current_combo_idx == 2
+{
+	if dir == 0
+	{
+		hero_state = "combo2r"
+	}
+	else
+	{
+		hero_state = "combo2l"
+	}
+}
+else if vweapon.current_combo_idx == 3
+{
+	if dir == 0
+	{
+		hero_state = "combo3r"
+	}
+	else
+	{
+		hero_state = "combo3l"
 	}
 }
 
@@ -327,6 +362,72 @@ else if hero_state == "dash_l"
 		last_sequence_type = se_dash
 	}
 	layer_sequence_xscale(sedash,-1)
+}
+else if hero_state == "combo1r"
+{
+	if last_sequence_type != se_punch2
+	{
+		layer_sequence_destroy(last_sequence)
+		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
+		last_sequence = punch2
+		last_sequence_type = se_punch2
+	}
+	layer_sequence_xscale(punch2,1)
+}
+else if hero_state == "combo1l"
+{
+	if last_sequence_type != se_punch2
+	{
+		layer_sequence_destroy(last_sequence)
+		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
+		last_sequence = punch2
+		last_sequence_type = se_punch2
+	}
+	layer_sequence_xscale(punch2,-1)
+}
+else if hero_state == "combo2r"
+{
+	if last_sequence_type != se_punch2
+	{
+		layer_sequence_destroy(last_sequence)
+		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
+		last_sequence = punch2
+		last_sequence_type = se_punch2
+	}
+	layer_sequence_xscale(punch2,1)
+}
+else if hero_state == "combo2l"
+{
+	if last_sequence_type != se_punch2
+	{
+		layer_sequence_destroy(last_sequence)
+		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
+		last_sequence = punch2
+		last_sequence_type = se_punch2
+	}
+	layer_sequence_xscale(punch2,-1)
+}
+else if hero_state == "combo3r"
+{
+	if last_sequence_type != se_punch3
+	{
+		layer_sequence_destroy(last_sequence)
+		punch3 = layer_sequence_create("lay_hero",x,y,se_punch3)
+		last_sequence = punch3
+		last_sequence_type = se_punch3
+	}
+	layer_sequence_xscale(punch3,1)
+}
+else if hero_state == "combo3l"
+{
+	if last_sequence_type != se_punch3
+	{
+		layer_sequence_destroy(last_sequence)
+		punch3 = layer_sequence_create("lay_hero",x,y,se_punch3)
+		last_sequence = punch3
+		last_sequence_type = se_punch3
+	}
+	layer_sequence_xscale(punch3,-1)
 }
 
 #endregion

@@ -10,3 +10,5 @@ state_countdown = state_countdown_time
 
 stop_at_corner_l = false
 stop_at_corner_r = false
+
+prevhp_lost = hplost

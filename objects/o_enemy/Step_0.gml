@@ -2,43 +2,46 @@ if instance_exists(o_weapon)
 {
 	vweapon = instance_find(o_weapon,0)
 }
+if instance_exists(o_weapon_hitbox)
+{
+	vweapon_hitbox = instance_nearest(x,y,o_weapon_hitbox)
+}
 
 // Collision with weapon and set damage 
 #region
 
 // Are we collinding with a weapon ?
-col_with_weapon = physics_test_overlap(x, y, 0, o_weapon)
+col_with_weapon = place_meeting(x, y,o_weapon_hitbox)
 
 // Get the current weapon combo index
 current_weapon_combo = vweapon.current_combo_idx
-
-// Track if the weapon combo has changed since the last step
-if( current_weapon_combo != last_combo_idx )
-{
-	// It changed, let's consider the next contact as a 'hp-decrementing' contact
-	last_contact_combo_idx = 0
-}
-last_combo_idx = current_weapon_combo
 
 // Set damage
 dmg = vweapon.base_dmg[current_weapon_combo - 1]
 
 // Do we need to decrement our HP ?
-if	col_with_weapon && current_weapon_combo != last_contact_combo_idx && current_weapon_combo != 0
+if	col_with_weapon && current_weapon_combo != 0 && vweapon_hitbox.hitbox_active == true
 {
+	prevhp_lost = hplost
 	hplost += dmg
-	last_contact_combo_idx = current_weapon_combo
+	vweapon_hitbox.hitbox_active = false
 	in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
 	in_hit_text.dmg = dmg
 	in_hit_text.x = x + sprite_width/2
 	in_hit_text.y = y - 16
+	
+
+}
+if prevhp_lost != hplost
+{
 	// Blood
-	for (i = 0; i < amount_of_blood; i += 1)
+	for (i = 0; i < 10/*amount_of_blood*/; i += 1)
 	{
-		inst_blood = instance_create_layer(x,y,"lay_front",o_blood)
+		inst_blood = instance_create_layer(x,y,"lay_game_front",o_blood)
 		script_execute (create_blood,id,inst_blood)
 	}
 }
+prevhp_lost = hplost
 
 #endregion
 
@@ -206,7 +209,7 @@ else
 // Bounce when hit
 #region
 
-if place_meeting(x,y,o_weapon)
+if place_meeting(x,y,o_weapon_hitbox)
 {
 	if countdown == 0 && inst_hero.vweapon.combo_0 != 1
 	{

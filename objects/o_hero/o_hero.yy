@@ -34,7 +34,6 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_room_right","path":"objects/o_room_right/o_room_right.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_room_left","path":"objects/o_room_left/o_room_left.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [

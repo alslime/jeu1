@@ -1,1 +1,1 @@
-countdown = 20
+countdown = 120

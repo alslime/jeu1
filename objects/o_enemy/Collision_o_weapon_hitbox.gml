@@ -1,0 +1,1 @@
+col_with_weapon = true
