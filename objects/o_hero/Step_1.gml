@@ -37,11 +37,11 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 		phy_speed_x = -4
 	    if (!jump)
 	    {
-			hero_state = "walk_l"
+			hero_state = "walk"
 	    }
 	    else if jump
 	    {
-			hero_state = "jump_l"
+			hero_state = "jump"
 	    }
 	}
 	else if dir == 0
@@ -49,11 +49,11 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 	    phy_speed_x = 4
 	    if (!jump)
 	    {
-			hero_state = "walk_r"
+			hero_state = "walk"
 	    }
 	    else if jump
 	    {
-			hero_state = "jump_r"
+			hero_state = "jump"
 		}
 	}
 }
@@ -63,11 +63,11 @@ else if keyboard_check( ord("A") ) && (dash_time == 0)
 	dir = 180
 	if (!jump)
 	{
-		hero_state = "walk_l"
+		hero_state = "walk"
 	}
 	else if jump
 	{
-		hero_state = "jump_l"
+		hero_state = "jump"
 	}
 }
 else if keyboard_check( ord("D") ) && (dash_time == 0)
@@ -76,11 +76,11 @@ else if keyboard_check( ord("D") ) && (dash_time == 0)
 	dir = 0
 	if (!jump)
 	{
-		hero_state = "walk_r"
+		hero_state = "walk"
 	}
 	else if jump
 	{
-		hero_state = "jump_r"
+		hero_state = "jump"
 	}
 }
 else
@@ -88,40 +88,25 @@ else
 	phy_speed_x = 0
 	if (!jump) && (!regen) && (dash_time == 0)
 	{
-		if (dir == 180)
-		{
-			hero_state = "stand_l"
-		}
-		else if (dir == 0)
-		{
-			hero_state = "stand_r"
-		}
+		hero_state = "stand"
 	}
 	else if jump && (!regen) && (dash_time == 0)
 	{
-		if (dir == 180)
-		{
-			hero_state = "jump_l"
-		}
-		else if (dir == 0)
-		{
-			hero_state = "jump_r"
-		}
+		hero_state = "jump"
 	}
 }
 
 // Dash
 if dash_time > 0
 {
+	hero_state = "dash"
 	dash_time = dash_time - 1
 	if dash_dir == 0
 	{
-		hero_state = "dash_r"
 		phy_speed_x = 10
 	}
 	else if dash_dir == 180
 	{
-		hero_state = "dash_l"
 		phy_speed_x = -10
 	}
 }
@@ -147,36 +132,15 @@ if keyboard_check_pressed(vk_shift) && dash_wait == 0
 //Check combo
 if vweapon.current_combo_idx == 1
 {
-	if dir == 0
-	{
-		hero_state = "combo1r"
-	}
-	else
-	{
-		hero_state = "combo1l"
-	}
+	hero_state = "combo1"
 }
 else if vweapon.current_combo_idx == 2
 {
-	if dir == 0
-	{
-		hero_state = "combo2r"
-	}
-	else
-	{
-		hero_state = "combo2l"
-	}
+	hero_state = "combo2"
 }
 else if vweapon.current_combo_idx == 3
 {
-	if dir == 0
-	{
-		hero_state = "combo3r"
-	}
-	else
-	{
-		hero_state = "combo3l"
-	}
+	hero_state = "combo3"
 }
 
 #endregion
@@ -275,7 +239,7 @@ if countdown > 0
 
 //States
 #region
-if hero_state == "stand_r"
+if hero_state == "stand"
 {
 	if last_sequence_type != se_stand
 	{
@@ -284,20 +248,8 @@ if hero_state == "stand_r"
 		last_sequence = stand
 		last_sequence_type = se_stand
 	}
-	layer_sequence_xscale(stand,1)
 }
-else if hero_state == "stand_l"
-{
-	if last_sequence_type != se_stand
-	{
-		stand = layer_sequence_create("lay_hero",x,y,se_stand)
-		layer_sequence_destroy(last_sequence)
-		last_sequence = stand
-		last_sequence_type = se_stand
-	}
-	layer_sequence_xscale(stand,-1)
-}
-else if hero_state == "walk_r"
+else if hero_state == "walk"
 {
 	if last_sequence_type != se_walk
 	{
@@ -306,20 +258,8 @@ else if hero_state == "walk_r"
 		last_sequence = walk
 		last_sequence_type = se_walk
 	}
-	layer_sequence_xscale(walk,1)
 }
-else if hero_state == "walk_l"
-{
-	if last_sequence_type != se_walk
-	{
-		walk = layer_sequence_create("lay_hero",x,y,se_walk)
-		layer_sequence_destroy(last_sequence)
-		last_sequence = walk
-		last_sequence_type = se_walk
-	}
-	layer_sequence_xscale(walk,-1)
-}
-else if hero_state == "jump_r"
+else if hero_state == "jump"
 {
 	if last_sequence_type != se_jump
 	{
@@ -328,20 +268,8 @@ else if hero_state == "jump_r"
 		last_sequence = sejump
 		last_sequence_type = se_jump
 	}
-	layer_sequence_xscale(sejump,1)
 }
-else if hero_state == "jump_l"
-{
-	if last_sequence_type != se_jump
-	{
-		sejump = layer_sequence_create("lay_hero",x,y,se_jump)
-		layer_sequence_destroy(last_sequence)
-		last_sequence = sejump
-		last_sequence_type = se_jump
-	}
-	layer_sequence_xscale(sejump,-1)
-}
-else if hero_state == "dash_r"
+else if hero_state == "dash"
 {
 	if last_sequence_type != se_dash
 	{
@@ -350,20 +278,8 @@ else if hero_state == "dash_r"
 		last_sequence = sedash
 		last_sequence_type = se_dash
 	}
-	layer_sequence_xscale(sedash,1)
 }
-else if hero_state == "dash_l"
-{
-	if last_sequence_type != se_dash
-	{
-		layer_sequence_destroy(last_sequence)
-		sedash = layer_sequence_create("lay_hero",x,y,se_dash)
-		last_sequence = sedash
-		last_sequence_type = se_dash
-	}
-	layer_sequence_xscale(sedash,-1)
-}
-else if hero_state == "combo1r"
+else if hero_state == "combo1"
 {
 	if last_sequence_type != se_punch1
 	{
@@ -372,20 +288,8 @@ else if hero_state == "combo1r"
 		last_sequence = punch1
 		last_sequence_type = se_punch1
 	}
-	layer_sequence_xscale(punch1,1)
 }
-else if hero_state == "combo1l"
-{
-	if last_sequence_type != se_punch1
-	{
-		layer_sequence_destroy(last_sequence)
-		punch1 = layer_sequence_create("lay_hero",x,y,se_punch1)
-		last_sequence = punch1
-		last_sequence_type = se_punch1
-	}
-	layer_sequence_xscale(punch1,-1)
-}
-else if hero_state == "combo2r"
+else if hero_state == "combo2"
 {
 	if last_sequence_type != se_punch2
 	{
@@ -394,20 +298,8 @@ else if hero_state == "combo2r"
 		last_sequence = punch2
 		last_sequence_type = se_punch2
 	}
-	layer_sequence_xscale(punch2,1)
 }
-else if hero_state == "combo2l"
-{
-	if last_sequence_type != se_punch2
-	{
-		layer_sequence_destroy(last_sequence)
-		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
-		last_sequence = punch2
-		last_sequence_type = se_punch2
-	}
-	layer_sequence_xscale(punch2,-1)
-}
-else if hero_state == "combo3r"
+else if hero_state == "combo3"
 {
 	if last_sequence_type != se_punch3
 	{
@@ -416,18 +308,14 @@ else if hero_state == "combo3r"
 		last_sequence = punch3
 		last_sequence_type = se_punch3
 	}
-	layer_sequence_xscale(punch3,1)
 }
-else if hero_state == "combo3l"
+if dir == 0
 {
-	if last_sequence_type != se_punch3
-	{
-		layer_sequence_destroy(last_sequence)
-		punch3 = layer_sequence_create("lay_hero",x,y,se_punch3)
-		last_sequence = punch3
-		last_sequence_type = se_punch3
-	}
-	layer_sequence_xscale(punch3,-1)
+	layer_sequence_xscale(last_sequence,1)
+}
+else if dir == 180
+{
+	layer_sequence_xscale(last_sequence,-1)
 }
 
 #endregion
