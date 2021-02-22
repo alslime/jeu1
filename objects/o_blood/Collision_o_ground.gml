@@ -1,0 +1,1 @@
+blood_touch_ground = true

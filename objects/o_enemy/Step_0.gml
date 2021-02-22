@@ -35,7 +35,7 @@ if	col_with_weapon && current_weapon_combo != 0 && vweapon_hitbox.hitbox_active 
 if prevhp_lost != hplost
 {
 	// Blood
-	for (i = 0; i < 10/*amount_of_blood*/; i += 1)
+	for (i = 0; i < amount_of_blood; i += 1)
 	{
 		inst_blood = instance_create_layer(x,y,"lay_game_front",o_blood)
 		script_execute (create_blood,id,inst_blood)

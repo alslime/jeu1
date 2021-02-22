@@ -4,7 +4,7 @@
     "path": "sprites/sp_fist/sp_fist.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": {
