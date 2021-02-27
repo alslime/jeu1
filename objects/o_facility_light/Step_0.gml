@@ -5,18 +5,21 @@ if sub >= 50
 
 sub += ispeed
 
-if instance_exists(o_shadow)
+if irandom(100) < 99
 {
-	inst_shadow = instance_find (o_shadow,0)
-
-	if surface_exists(inst_shadow.surf)
+	if instance_exists(o_shadow)
 	{
-		surface_set_target(inst_shadow.surf)
-		
-		gpu_set_blendmode(bm_subtract)
-		draw_sprite(sp_facility_light_shadow,sub,x,y)
-		gpu_set_blendmode(bm_normal)
+		inst_shadow = instance_find (o_shadow,0)
 
-		surface_reset_target()
+		if surface_exists(inst_shadow.surf)
+		{
+			surface_set_target(inst_shadow.surf)
+		
+			gpu_set_blendmode(bm_subtract)
+			draw_sprite(sp_facility_light_shadow,sub,x,y)
+			gpu_set_blendmode(bm_normal)
+
+			surface_reset_target()
+		}
 	}
 }

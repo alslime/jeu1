@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_spider_r",
-    "path": "sprites/sp_spider_r/sp_spider_r.yy",
+    "name": "sp_spider",
+    "path": "sprites/sp_spider/sp_spider.yy",
   },
   "solid": true,
   "visible": true,
@@ -50,8 +50,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Spider",
+    "path": "folders/Objects/Enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_e_spider",

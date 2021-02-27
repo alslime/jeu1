@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b441b31a-1e32-438c-be9a-cd0c959ed6a4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Sprites/enemies.yy",
+    "name": "unused",
+    "path": "folders/Sprites/enemies/Spider/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spider_r",

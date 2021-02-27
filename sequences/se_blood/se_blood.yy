@@ -102,8 +102,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "blood",
+    "path": "folders/Sequences/blood.yy",
   },
   "resourceVersion": "1.3",
   "name": "se_blood",
