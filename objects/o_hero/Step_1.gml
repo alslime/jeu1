@@ -309,14 +309,6 @@ else if hero_state == "combo3"
 		last_sequence_type = se_punch3
 	}
 }
-if dir == 0
-{
-	layer_sequence_xscale(last_sequence,1)
-}
-else if dir == 180
-{
-	layer_sequence_xscale(last_sequence,-1)
-}
 
 #endregion
 
@@ -326,10 +318,12 @@ else if dir == 180
 if dir == 0
 {
 	layer_sequence_x(last_sequence,x)
+	layer_sequence_xscale(last_sequence,1)
 }
 else
 {
 	layer_sequence_x(last_sequence,x + sprite_width)
+	layer_sequence_xscale(last_sequence,-1)
 }
 layer_sequence_y(last_sequence,y)
 

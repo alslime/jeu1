@@ -10,7 +10,7 @@ inst_for_camera = instance_create_layer(x,y,"lay_shape_deco",o_for_camera)
 inst_for_camera.owner = id
 
 // Initial sequence
-hero_state = "stand_r"
+hero_state = "stand"
 stand = layer_sequence_create("lay_front",x,y,se_stand)
 last_sequence = stand
 last_sequence_type = se_stand

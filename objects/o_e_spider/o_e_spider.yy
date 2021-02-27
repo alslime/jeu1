@@ -4,7 +4,7 @@
     "path": "sprites/sp_spider/sp_spider.yy",
   },
   "solid": true,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -23,10 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [
-    {"x":8.0,"y":0.0,},
-    {"x":44.0,"y":0.0,},
-    {"x":44.0,"y":40.0,},
-    {"x":8.0,"y":40.0,},
+    {"x":0.0,"y":0.0,},
+    {"x":40.0,"y":0.0,},
+    {"x":40.0,"y":54.0,},
+    {"x":0.0,"y":54.0,},
   ],
   "eventList": [],
   "properties": [

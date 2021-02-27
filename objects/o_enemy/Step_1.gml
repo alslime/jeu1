@@ -48,6 +48,7 @@ prevhp_lost = hplost
 
 if hplost >= hpmax
 {
+	layer_sequence_destroy(last_sequence)
 	instance_destroy()
 	script_execute(create_gear,gear_drop_value,x,y)
 }
@@ -63,116 +64,84 @@ x1 = x
 x2 = x1 + sprite_width
 y1 = y + sprite_height + 1
 
-if collision_line (x1,y1,x2,y1,o_ground,false,true)
+if countdown == 0
 {
- 	jump = false
-}
-else
-{
-	jump = true
-}
-if jump
-{
-	state = last_state
-}
-
-if distance_to_object(inst_hero) > 200
-{
-	follow_hero = false
-	state_countdown -= 1
-	if state_countdown <= 0
+	if collision_line (x1,y1,x2,y1,o_ground,false,true)
 	{
-		state_countdown = state_countdown_time
-		if !jump
+	 	jump = false
+	}
+	else
+	{
+		jump = true
+	}
+	if jump
+	{
+		state = "jump"
+	}
+
+	if distance_to_object(inst_hero) > 200
+	{
+		follow_hero = false
+		state_countdown -= 1
+		if state_countdown <= 0
 		{
-			state = irandom(2)
+			state_countdown = state_countdown_time
+			if !jump
+			{
+				irdm = irandom(1)
+				if irdm == 0
+				{
+					state = "stand"
+				}
+				else
+				{
+					state = "walk"
+				}
+				dir = irandom(1)
+			}
 		}
 	}
-}
-else
-{
-	follow_hero = true
-	if dir_to_hero < 70 || dir_to_hero > 290
-	{
-		state = 2
-	}
-	else if dir_to_hero > 110 && dir_to_hero < 250
-	{
-		state = 1
-	}
-}
-// State 0 = do not move
-// State 1 = left	
-// State 2 = right
-if !collision_point(x2+1,y1,o_ground,false,false) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
-{
-	if follow_hero = true && (dir_to_hero < 70 || dir_to_hero > 290)
-	{
-		state = 0
-	}
-	else						
-	{
-		state = 1
-	}
-}
-if !collision_point(x1-1,y1,o_ground,false,false) || collision_line(x1-1,y,x1-1,y1-1,o_ground,false,true)
-{
-	if follow_hero = true && (110 && dir_to_hero < 250)
-	{
-		state = 0
-	}
 	else
 	{
-		state = 2
+		follow_hero = true
+		state = "run"
+		if dir_to_hero < 70 || dir_to_hero > 290
+		{
+			dir = 0
+		}
+		else if dir_to_hero > 110 && dir_to_hero < 250
+		{
+			dir = 1
+		}
 	}
-}
-if state = 0 
-{
-	if last_sequence_type != se_spider_stand
+	// State 0 = do not move
+	// State 1 = left	
+	// State 2 = right
+	if !collision_point(x2+1,y1,o_ground,false,false) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
 	{
-		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
-		layer_sequence_destroy(last_sequence)
-		last_sequence = stand
-		last_sequence_type = se_spider_stand
+		if follow_hero = true && (dir_to_hero < 70 || dir_to_hero > 290)
+		{
+			state = "stand"
+		}
+		else						
+		{
+			state = "walk"
+			dir = 1
+		}
 	}
-	if last_state == 1
+	if !collision_point(x1-1,y1,o_ground,false,false) || collision_line(x1-1,y,x1-1,y1-1,o_ground,false,true)
 	{
-		sprite_index = sp_e_l
+		//dir = 0
+		if follow_hero = true && (110 && dir_to_hero < 250)
+		{
+			state = "stand"
+		}
+		else
+		{
+			state = "walk"
+			dir = 0
+		}
 	}
-	else if last_state == 2
-	{
-		sprite_index = sp_e_r
-	}
-	phy_speed_x = 0
-	last_state = 0
-}
-else if state = 1 && countdown = 0
-{
-	if follow_hero = true
-	{
-		phy_speed_x = -follow_spd
-		sprite_index = sp_e_run_l
-	}
-	else
-	{
-		phy_speed_x = -spd
-		sprite_index = sp_e_walk_l
-	}
-	last_state = 1
-}
-else if state = 2 && countdown = 0
-{
-	if follow_hero = true
-	{
-		phy_speed_x = follow_spd
-		sprite_index = sp_e_run_r
-	}
-	else
-	{
-		phy_speed_x = spd
-		sprite_index = sp_e_walk_r
-	}
-	last_state = 2
 }
 
 #endregion
@@ -229,19 +198,96 @@ if instance_exists(o_hero)
 
 if countdown > 0
 {
+	state = "hit"
     countdown = countdown - 1
     if dir_to_hero > 90 && dir_to_hero < 270
     {
-		state = 1
-		phy_speed_x = 1
+		dir = 1
+		phy_speed_x = 0.5
 		//sprite_index = sp_hero_hit_l
     }
     if dir_to_hero <= 90 || dir_to_hero >= 270
     {
-		state = 2
-		phy_speed_x = -1
+		dir = 0
+		phy_speed_x = -0.5
 		//sprite_index = sp_hero_hit_r
     }
 }
+
+#endregion
+
+// States
+if state == "stand"
+{
+	if last_sequence_type != se_spider_stand
+	{
+		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = stand
+		last_sequence_type = se_spider_stand
+	}
+	phy_speed_x = 0
+}
+if state == "walk"
+{
+	if last_sequence_type != se_spider_stand
+	{
+		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = stand
+		last_sequence_type = se_spider_stand
+	}
+	if dir == 0
+	{
+		phy_speed_x = spd
+	}
+	else
+	{
+		phy_speed_x = -spd
+	}
+}
+if state == "run"
+{
+	if last_sequence_type != se_spider_stand
+	{
+		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = stand
+		last_sequence_type = se_spider_stand
+	}
+	if dir == 0
+	{
+		phy_speed_x = follow_spd
+	}
+	else
+	{
+		phy_speed_x = -follow_spd
+	}
+}
+if state == "jump"
+{
+	if last_sequence_type != se_spider_stand
+	{
+		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = stand
+		last_sequence_type = se_spider_stand
+	}
+}
+
+// Sequence follows player
+#region
+
+if dir == 0
+{
+	layer_sequence_x(last_sequence,x)
+	layer_sequence_xscale(last_sequence,1)
+}
+else
+{
+	layer_sequence_x(last_sequence,x + sprite_width)
+	layer_sequence_xscale(last_sequence,-1)
+}
+layer_sequence_y(last_sequence,y)
 
 #endregion
