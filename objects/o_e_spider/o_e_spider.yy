@@ -4,7 +4,7 @@
     "path": "sprites/sp_spider/sp_spider.yy",
   },
   "solid": true,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

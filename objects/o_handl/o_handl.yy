@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_parts",
+    "path": "objects/o_parts/o_parts.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -26,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Character",
-    "path": "folders/Objects/Game/Character.yy",
+    "name": "Parts",
+    "path": "folders/Objects/Game/Character/Parts.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_handl",

@@ -35,7 +35,7 @@ if prevhp_lost != hplost
 	// Blood
 	for (i = 0; i < amount_of_blood; i += 1)
 	{
-		inst_blood = instance_create_layer(x,y,"lay_game_front",o_blood)
+		inst_blood = instance_create_layer(x,y,"lay_game_front",o_blood_particules)
 		script_execute (create_blood,id,inst_blood)
 	}
 }
@@ -78,7 +78,6 @@ if countdown == 0
 	{
 		state = "jump"
 	}
-
 	if distance_to_object(inst_hero) > 200
 	{
 		follow_hero = false
@@ -114,16 +113,13 @@ if countdown == 0
 			dir = 1
 		}
 	}
-	// State 0 = do not move
-	// State 1 = left	
-	// State 2 = right
 	if !collision_point(x2+1,y1,o_ground,false,false) || collision_line(x2+1,y,x2+1,y1-1,o_ground,false,true)
 	{
-		if follow_hero = true && (dir_to_hero < 70 || dir_to_hero > 290)
+		if follow_hero == true && (dir_to_hero < 70 || dir_to_hero > 290)
 		{
 			state = "stand"
 		}
-		else						
+		else if follow_hero == false
 		{
 			state = "walk"
 			dir = 1
@@ -131,12 +127,11 @@ if countdown == 0
 	}
 	if !collision_point(x1-1,y1,o_ground,false,false) || collision_line(x1-1,y,x1-1,y1-1,o_ground,false,true)
 	{
-		//dir = 0
-		if follow_hero = true && (110 && dir_to_hero < 250)
+		if follow_hero == true && dir_to_hero < 250 && dir_to_hero > 110
 		{
 			state = "stand"
 		}
-		else
+		else if follow_hero == false
 		{
 			state = "walk"
 			dir = 0
@@ -275,7 +270,7 @@ if state == "jump"
 	}
 }
 
-// Sequence follows player
+// Sequence follows enemy
 #region
 
 if dir == 0

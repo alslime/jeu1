@@ -1,2 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+if n >= 30
+{
+	instance_destroy()
+}
+
+n += 1

@@ -15,6 +15,10 @@ else
 if keyboard_check_pressed (vk_space) && (!jump)
 {
 	phy_speed_y = -9
+	inst_dust1 = instance_create_layer(x,y + sprite_height,"lay_hero",o_walking_dust)
+	inst_dust1.image_xscale = 1
+	inst_dust2 = instance_create_layer(x + sprite_width,y + sprite_height,"lay_hero",o_walking_dust)
+	inst_dust2.image_xscale = -1
 }
 
 #endregion
@@ -155,13 +159,19 @@ if hplost >= hpmax
 
 #endregion
 
-// Max hp/energy up
+// Max hp/energy up/xp
 #region
 
 if keyboard_check_pressed (ord("W"))
 {
-	hpmax += 5
-	energymax += 5
+	xp += 25
+}
+if xp >= xpmax
+{
+	xp = xp - xpmax
+	xpmax += xpmax div (100/5)
+	hpmax += hpmax div (100/5)
+	energymax += 1
 }
 
 #endregion

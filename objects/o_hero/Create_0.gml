@@ -16,3 +16,7 @@ last_sequence = stand
 last_sequence_type = se_stand
 
 dash_time = 0
+
+xp = 65
+
+xpmax = 100

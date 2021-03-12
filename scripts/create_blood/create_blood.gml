@@ -25,10 +25,10 @@ function create_blood()
 	
 	if dir_to_weapon <= 90 || dir_to_weapon >= 270
 	{
-		argument1.phy_speed_x = random_range(-3,-6)
+		argument1.phy_speed_x = random_range(-1,-6)
 	}
 	else if dir_to_weapon >= 90 && dir_to_weapon <= 270
 	{
-		argument1.phy_speed_x = random_range(3,6)
+		argument1.phy_speed_x = random_range(1,6)
 	}
 }
