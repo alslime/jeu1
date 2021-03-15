@@ -32,9 +32,7 @@
     {"x":-1.0,"y":24.0,},
     {"x":-19.0,"y":18.0,},
   ],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_fist_hitbox","path":"objects/o_fist_hitbox/o_fist_hitbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

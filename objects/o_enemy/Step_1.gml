@@ -2,10 +2,6 @@ if instance_exists(o_weapon)
 {
 	vweapon = instance_find(o_weapon,0)
 }
-if instance_exists(o_weapon_hitbox)
-{
-	vweapon_hitbox = instance_nearest(x,y,o_weapon_hitbox)
-}
 
 // Collision with weapon and set damage 
 #region
@@ -19,16 +15,37 @@ current_weapon_combo = vweapon.current_combo_idx
 // Set damage
 dmg = vweapon.base_dmg[current_weapon_combo - 1]
 
-// Do we need to decrement our HP ?
-if	col_with_weapon && current_weapon_combo != 0 && vweapon_hitbox.hitbox_active == true
+if instance_exists(o_weapon_hitbox)
 {
-	prevhp_lost = hplost
-	hplost += dmg
-	vweapon_hitbox.hitbox_active = false
-	in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
-	in_hit_text.dmg = dmg
-	in_hit_text.x = x + sprite_width/2
-	in_hit_text.y = y - 16
+	vweapon_hitbox = instance_nearest(x,y,o_weapon_hitbox)
+	col_id = vweapon_hitbox.id
+
+	// Do we need to decrement our HP ?
+	if	col_with_weapon && current_weapon_combo != 0
+	{
+		can_be_hit = true
+		for (z = 0; z < array_length(id_array); z += 1)
+		{
+			if col_id == id_array[z]
+			{
+				can_be_hit = false
+				break
+			}
+		}
+		if can_be_hit == true
+		{
+			prevhp_lost = hplost
+			hplost += dmg
+			can_be_hit = false
+			in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
+			in_hit_text.dmg = dmg
+			in_hit_text.x = x + sprite_width/2
+			in_hit_text.y = y - 16
+			array_insert(id_array,0,col_id)
+			hit_state_begin = true
+			countdown = 45
+		}
+	}
 }
 if prevhp_lost != hplost
 {
@@ -178,13 +195,6 @@ else
 // Bounce when hit
 #region
 
-if place_meeting(x,y,o_weapon_hitbox)
-{
-	if countdown == 0 && inst_hero.vweapon.combo_0 != 1
-	{
-		countdown = 20
-	}
-}
 nearest_hero = instance_nearest(x + sprite_width/2,y + sprite_height/2,o_hero)
 if instance_exists(o_hero)
 {
@@ -198,20 +208,18 @@ if countdown > 0
     if dir_to_hero > 90 && dir_to_hero < 270
     {
 		dir = 1
-		phy_speed_x = 0.5
-		//sprite_index = sp_hero_hit_l
     }
     if dir_to_hero <= 90 || dir_to_hero >= 270
     {
 		dir = 0
-		phy_speed_x = -0.5
-		//sprite_index = sp_hero_hit_r
     }
 }
 
 #endregion
 
 // States
+#region
+
 if state == "stand"
 {
 	if last_sequence_type != se_spider_stand
@@ -269,6 +277,39 @@ if state == "jump"
 		last_sequence_type = se_spider_stand
 	}
 }
+if state == "hit"
+{
+	if last_sequence_type != se_spider_stand
+	{
+		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = stand
+		last_sequence_type = se_spider_stand
+	}
+	if hit_state_begin == true
+	{
+		if dir == 1
+		{
+			phy_speed_x = 2
+		}
+		else if dir == 0
+		{
+			phy_speed_x = -2
+		}
+		hit_state_begin = false
+	}
+
+	if phy_speed_x > 0
+	{
+		phy_speed_x -= 0.05
+	}
+	else if phy_speed_x < 0
+	{
+		phy_speed_x += 0.05
+	}
+}
+
+#endregion
 
 // Sequence follows enemy
 #region

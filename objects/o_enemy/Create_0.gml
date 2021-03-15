@@ -5,7 +5,7 @@ if instance_exists(o_hero)
 phy_fixed_rotation =  true
 
 countdown = 0
-
+can_be_hit = true
 dir = 0
 
 state_countdown = state_countdown_time
@@ -19,3 +19,5 @@ hero_state = "stand"
 stand = layer_sequence_create("lay_front",x,y,se_spider_stand)
 last_sequence = stand
 last_sequence_type = se_spider_stand
+
+id_array = [0]
