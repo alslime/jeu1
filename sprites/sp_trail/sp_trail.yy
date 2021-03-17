@@ -25,19 +25,9 @@
   "gridY": 2,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"4075895c-4ea3-422a-9e75-26f284273937","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4075895c-4ea3-422a-9e75-26f284273937","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"6a2f8cbf-774d-4aef-bca3-c27a831c533e","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"4075895c-4ea3-422a-9e75-26f284273937","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"7ea5be20-584e-4af9-af5b-24f14db67ad7","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"4075895c-4ea3-422a-9e75-26f284273937","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"4075895c-4ea3-422a-9e75-26f284273937","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"4075895c-4ea3-422a-9e75-26f284273937","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"abcc580f-a5a3-4adb-9438-d87c850a533e","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"4075895c-4ea3-422a-9e75-26f284273937","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"b79a42bf-b30b-415d-8fe6-746951e29546","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_trail","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"4075895c-4ea3-422a-9e75-26f284273937","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"6a2f8cbf-774d-4aef-bca3-c27a831c533e","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"7ea5be20-584e-4af9-af5b-24f14db67ad7","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"abcc580f-a5a3-4adb-9438-d87c850a533e","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","path":"sprites/sp_trail/sp_trail.yy",},"LayerId":{"name":"b79a42bf-b30b-415d-8fe6-746951e29546","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_trail","path":"sprites/sp_trail/sp_trail.yy",},"resourceVersion":"1.0","name":"b4d1f7e8-4762-4497-acc4-6800f69255a9","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -82,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)","resourceVersion":"1.0","name":"b79a42bf-b30b-415d-8fe6-746951e29546","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "hero",
+    "path": "folders/Sprites/hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_trail",

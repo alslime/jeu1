@@ -37,7 +37,7 @@ if instance_exists(o_weapon_hitbox)
 			prevhp_lost = hplost
 			hplost += dmg
 			can_be_hit = false
-			in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
+			in_hit_text = instance_create_layer(x,y,"lay_game_front",o_hit_text)
 			in_hit_text.dmg = dmg
 			in_hit_text.x = x + sprite_width/2
 			in_hit_text.y = y - 16
@@ -60,18 +60,6 @@ prevhp_lost = hplost
 
 #endregion
 
-// Die
-#region
-
-if hplost >= hpmax
-{
-	layer_sequence_destroy(last_sequence)
-	instance_destroy()
-	script_execute(create_gear,gear_drop_value,x,y)
-}
-
-#endregion
-
 // Moving algorithm
 #region
 
@@ -90,10 +78,6 @@ if countdown == 0
 	else
 	{
 		jump = true
-	}
-	if jump
-	{
-		state = "jump"
 	}
 	if distance_to_object(inst_hero) > 200
 	{
@@ -152,6 +136,10 @@ if countdown == 0
 		{
 			state = "walk"
 			dir = 0
+		}
+		if jump
+		{
+			state = "jump"
 		}
 	}
 }
@@ -233,12 +221,12 @@ if state == "stand"
 }
 if state == "walk"
 {
-	if last_sequence_type != se_spider_stand
+	if last_sequence_type != se_spider_walk
 	{
-		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		walk = layer_sequence_create("lay_enemies",x,y,se_spider_walk)
 		layer_sequence_destroy(last_sequence)
-		last_sequence = stand
-		last_sequence_type = se_spider_stand
+		last_sequence = walk
+		last_sequence_type = se_spider_walk
 	}
 	if dir == 0
 	{
@@ -251,12 +239,12 @@ if state == "walk"
 }
 if state == "run"
 {
-	if last_sequence_type != se_spider_stand
+	if last_sequence_type != se_spider_run
 	{
-		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		run = layer_sequence_create("lay_enemies",x,y,se_spider_run)
 		layer_sequence_destroy(last_sequence)
-		last_sequence = stand
-		last_sequence_type = se_spider_stand
+		last_sequence = run
+		last_sequence_type = se_spider_run
 	}
 	if dir == 0
 	{
@@ -269,25 +257,22 @@ if state == "run"
 }
 if state == "jump"
 {
-	if last_sequence_type != se_spider_stand
+	if last_sequence_type != se_spider_jump
 	{
-		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		sejump = layer_sequence_create("lay_enemies",x,y,se_spider_jump)
 		layer_sequence_destroy(last_sequence)
-		last_sequence = stand
-		last_sequence_type = se_spider_stand
+		last_sequence = sejump
+		last_sequence_type = se_spider_jump
 	}
 }
 if state == "hit"
 {
-	if last_sequence_type != se_spider_stand
-	{
-		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
-		layer_sequence_destroy(last_sequence)
-		last_sequence = stand
-		last_sequence_type = se_spider_stand
-	}
 	if hit_state_begin == true
 	{
+		hit = layer_sequence_create("lay_enemies",x,y,se_spider_hit)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = hit
+		last_sequence_type = se_spider_hit
 		if dir == 1
 		{
 			phy_speed_x = 2
@@ -298,7 +283,6 @@ if state == "hit"
 		}
 		hit_state_begin = false
 	}
-
 	if phy_speed_x > 0
 	{
 		phy_speed_x -= 0.05
@@ -307,6 +291,18 @@ if state == "hit"
 	{
 		phy_speed_x += 0.05
 	}
+}
+
+#endregion
+
+// Die
+#region
+
+if hplost >= hpmax
+{
+	layer_sequence_destroy(last_sequence)
+	instance_destroy()
+	script_execute(create_gear,gear_drop_value,x,y)
 }
 
 #endregion

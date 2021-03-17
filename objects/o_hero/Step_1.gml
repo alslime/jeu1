@@ -185,14 +185,7 @@ if keyboard_check (ord("S")) && (hplost > 0) && (!jump) && (energylost < energym
 	hplost = hplost - 1
     energylost += energyconsomption
     phy_speed_x = 0
-    if dir == 0
-    {
-        //sprite_index = sp_hero_regen_r
-    }
-    else if dir == 180
-    {
-        //sprite_index = sp_hero_regen_l
-    } 
+	hero_state = "heal"
 }
 else
 {
@@ -318,6 +311,24 @@ else if hero_state == "combo3"
 		last_sequence = punch3
 		last_sequence_type = se_punch3
 	}
+}
+else if hero_state == "heal"
+{
+	if last_sequence_type != se_heal1 && last_sequence_type != se_heal2
+	{
+		layer_sequence_destroy(last_sequence)
+		heal1 = layer_sequence_create("lay_hero",x,y,se_heal1)
+		last_sequence = heal1
+		last_sequence_type = se_heal1
+	}
+	if last_sequence_type != se_heal2 && layer_sequence_is_finished(heal1)
+	{
+		layer_sequence_destroy(last_sequence)
+		heal2 = layer_sequence_create("lay_hero",x,y,se_heal2)
+		last_sequence = heal2
+		last_sequence_type = se_heal2
+	}
+	
 }
 
 #endregion
