@@ -164,13 +164,14 @@ if hplost >= hpmax
 
 if keyboard_check_pressed (ord("W"))
 {
-	xp += 25
+	xp += 200
 }
 if xp >= xpmax
 {
 	xp = xp - xpmax
 	xpmax += xpmax div (100/5)
 	hpmax += hpmax div (100/5)
+	level += 1
 	energymax += 1
 }
 
@@ -179,11 +180,19 @@ if xp >= xpmax
 // Regen
 #region
 
-if keyboard_check (ord("S")) && (hplost > 0) && (!jump) && (energylost < energymax - energyconsomption)
+if mouse_check_button(mb_right) && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption)
 {
+	if last_sequence_type == se_heal2
+	{
+		heal_count -= 1
+		if heal_count == 0
+		{
+			heal_count = 3
+			hplost = hplost - 1
+			energylost += energyconsomption
+		}
+	}
     regen = true
-	hplost = hplost - 1
-    energylost += energyconsomption
     phy_speed_x = 0
 	hero_state = "heal"
 }
@@ -323,6 +332,7 @@ else if hero_state == "heal"
 	}
 	if last_sequence_type != se_heal2 && layer_sequence_is_finished(heal1)
 	{
+		heal_count = 3
 		layer_sequence_destroy(last_sequence)
 		heal2 = layer_sequence_create("lay_hero",x,y,se_heal2)
 		last_sequence = heal2

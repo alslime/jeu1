@@ -1,1 +1,2 @@
-draw_hplost_countdown = 60
+draw_hplost_countdown = 30
+

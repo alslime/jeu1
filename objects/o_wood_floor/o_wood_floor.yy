@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_brick",
-    "path": "sprites/sp_brick/sp_brick.yy",
+    "name": "sp_woodfloor",
+    "path": "sprites/sp_woodfloor/sp_woodfloor.yy",
   },
   "solid": true,
   "visible": true,
@@ -36,7 +36,7 @@
     "path": "folders/Objects/Deco.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_brick",
+  "name": "o_wood_floor",
   "tags": [],
   "resourceType": "GMObject",
 }

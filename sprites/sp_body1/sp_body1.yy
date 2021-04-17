@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 11,
-  "bbox_right": 34,
+  "bbox_left": 10,
+  "bbox_right": 36,
   "bbox_top": 6,
-  "bbox_bottom": 51,
+  "bbox_bottom": 50,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -25,8 +25,8 @@
   "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_body1/sp_body1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_body1/sp_body1.yy",},"LayerId":{"name":"2eea62a5-1df6-4e6d-a678-1cac47602700","path":"sprites/sp_body1/sp_body1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_body1/sp_body1.yy",},"LayerId":{"name":"fd2f1443-5654-4458-8748-6d4b91e30289","path":"sprites/sp_body1/sp_body1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_body1/sp_body1.yy",},"LayerId":{"name":"bbc3db92-38f8-4c43-87fa-893acd4fa877","path":"sprites/sp_body1/sp_body1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","path":"sprites/sp_body1/sp_body1.yy",},"LayerId":{"name":"a3a62615-0b61-4e7c-b1a1-db6ff2bd7fe1","path":"sprites/sp_body1/sp_body1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_body1","path":"sprites/sp_body1/sp_body1.yy",},"resourceVersion":"1.0","name":"2fd21e2b-8246-4cc4-91e6-bd3df108770e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -66,8 +66,8 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2) (2)","resourceVersion":"1.0","name":"2eea62a5-1df6-4e6d-a678-1cac47602700","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2)","resourceVersion":"1.0","name":"fd2f1443-5654-4458-8748-6d4b91e30289","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2) (2) (2) (2)","resourceVersion":"1.0","name":"bbc3db92-38f8-4c43-87fa-893acd4fa877","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2) (2) (2)","resourceVersion":"1.0","name":"a3a62615-0b61-4e7c-b1a1-db6ff2bd7fe1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Outfit1",
