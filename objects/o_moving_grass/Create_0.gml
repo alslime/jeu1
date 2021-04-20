@@ -7,7 +7,7 @@ if layer_has_instance("lay_shape_deco",id)
 	sprite_index = sp_moving_grass1
 }
 
-rdm_height = random_range(1,3)
+rdm_height = irandom_range(1,3)
 image_yscale = -rdm_height
 
 if instance_exists(o_hero)

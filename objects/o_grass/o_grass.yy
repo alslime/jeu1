@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_grass",
-    "path": "sprites/sp_grass/sp_grass.yy",
+    "name": "sp_dirt_new",
+    "path": "sprites/sp_dirt_new/sp_dirt_new.yy",
   },
   "solid": true,
   "visible": true,
@@ -24,9 +24,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":64.0,"y":0.0,},
-    {"x":64.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+    {"x":16.0,"y":0.0,},
+    {"x":16.0,"y":16.0,},
+    {"x":0.0,"y":16.0,},
   ],
   "eventList": [],
   "properties": [],

@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "facility",
-    "path": "folders/Sprites/Deco/facility.yy",
+    "path": "folders/Sprites/Old/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_long_ground_facility72",

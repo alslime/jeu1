@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Deco",
-    "path": "folders/Sprites/Deco.yy",
+    "path": "folders/Sprites/Old/Deco.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_sand",

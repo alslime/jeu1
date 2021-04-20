@@ -22,3 +22,7 @@ dash_time = 0
 xp = 65
 level = 1
 xpmax = 100
+
+jump_value = 7
+walk_speed = 2
+dash_speed = 4

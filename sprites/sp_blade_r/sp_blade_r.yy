@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "blade",
-    "path": "folders/Sprites/Weapons/blade.yy",
+    "path": "folders/Sprites/Old/Weapons/blade.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_blade_r",

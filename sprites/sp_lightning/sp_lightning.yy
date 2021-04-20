@@ -91,7 +91,7 @@
   ],
   "parent": {
     "name": "hero",
-    "path": "folders/Sprites/hero.yy",
+    "path": "folders/Sprites/Old/hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_lightning",

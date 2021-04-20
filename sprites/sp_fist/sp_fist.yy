@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "fist",
-    "path": "folders/Sprites/Weapons/fist.yy",
+    "path": "folders/Sprites/Old/Weapons/fist.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_fist",

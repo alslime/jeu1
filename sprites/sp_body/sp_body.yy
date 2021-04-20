@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "SequenceBased",
-    "path": "folders/Sprites/hero/SequenceBased.yy",
+    "path": "folders/Sprites/Old/hero/SequenceBased.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_body",

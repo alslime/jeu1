@@ -115,7 +115,7 @@
   ],
   "parent": {
     "name": "Previous",
-    "path": "folders/Sprites/hero/Previous.yy",
+    "path": "folders/Sprites/Old/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_regen_r",

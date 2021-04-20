@@ -14,7 +14,7 @@ else
 }
 if keyboard_check_pressed (vk_space) && (!jump)
 {
-	phy_speed_y = -9
+	phy_speed_y = -jump_value
 	inst_dust1 = instance_create_layer(x,y + sprite_height,"lay_hero",o_walking_dust)
 	inst_dust1.image_xscale = 1
 	inst_dust2 = instance_create_layer(x + sprite_width,y + sprite_height,"lay_hero",o_walking_dust)
@@ -38,7 +38,7 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 {
 	if dir == 180
 	{
-		phy_speed_x = -4
+		phy_speed_x = -walk_speed
 	    if (!jump)
 	    {
 			hero_state = "walk"
@@ -50,7 +50,7 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 	}
 	else if dir == 0
 	{
-	    phy_speed_x = 4
+	    phy_speed_x = walk_speed
 	    if (!jump)
 	    {
 			hero_state = "walk"
@@ -63,7 +63,7 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 }
 else if keyboard_check( ord("A") ) && (dash_time == 0)
 {
-	phy_speed_x = -4
+	phy_speed_x = -walk_speed
 	dir = 180
 	if (!jump)
 	{
@@ -76,7 +76,7 @@ else if keyboard_check( ord("A") ) && (dash_time == 0)
 }
 else if keyboard_check( ord("D") ) && (dash_time == 0)
 {
-	phy_speed_x = 4
+	phy_speed_x = walk_speed
 	dir = 0
 	if (!jump)
 	{
@@ -107,11 +107,11 @@ if dash_time > 0
 	dash_time = dash_time - 1
 	if dash_dir == 0
 	{
-		phy_speed_x = 10
+		phy_speed_x = dash_speed
 	}
 	else if dash_dir == 180
 	{
-		phy_speed_x = -10
+		phy_speed_x = -dash_speed
 	}
 }
 if dash_wait > 0

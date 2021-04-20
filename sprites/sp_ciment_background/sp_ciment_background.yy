@@ -71,7 +71,7 @@
   ],
   "parent": {
     "name": "Background",
-    "path": "folders/Sprites/Background.yy",
+    "path": "folders/Sprites/Old/Background.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_ciment_background",

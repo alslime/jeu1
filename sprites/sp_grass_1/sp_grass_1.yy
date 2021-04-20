@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Grass and dirt",
-    "path": "folders/Sprites/Deco/Grass and dirt.yy",
+    "path": "folders/Sprites/Old/Deco/Grass and dirt.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_grass_1",

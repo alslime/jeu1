@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_grass_corner_down_r",
-    "path": "sprites/sp_grass_corner_down_r/sp_grass_corner_down_r.yy",
+    "name": "sp_dirt_corner_down_new",
+    "path": "sprites/sp_dirt_corner_down_new/sp_dirt_corner_down_new.yy",
   },
   "solid": true,
   "visible": true,
@@ -24,9 +24,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":64.0,"y":0.0,},
-    {"x":64.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+    {"x":16.0,"y":0.0,},
+    {"x":16.0,"y":16.0,},
+    {"x":0.0,"y":16.0,},
   ],
   "eventList": [],
   "properties": [],

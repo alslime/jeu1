@@ -1,4 +1,4 @@
-for (i = 0; i < (sprite_width - 2); i += 2)
+for (i = 0; i < (sprite_width - 1); i += 1)
 {
 	rdm = irandom(100)
 	if rdm < 80

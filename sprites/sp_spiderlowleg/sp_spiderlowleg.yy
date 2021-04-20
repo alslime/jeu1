@@ -71,7 +71,7 @@
   ],
   "parent": {
     "name": "Spider",
-    "path": "folders/Sprites/enemies/Spider.yy",
+    "path": "folders/Sprites/Old/enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spiderlowleg",

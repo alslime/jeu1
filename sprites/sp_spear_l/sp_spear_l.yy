@@ -115,7 +115,7 @@
   ],
   "parent": {
     "name": "Spear",
-    "path": "folders/Sprites/Weapons/Spear.yy",
+    "path": "folders/Sprites/Old/Weapons/Spear.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spear_l",

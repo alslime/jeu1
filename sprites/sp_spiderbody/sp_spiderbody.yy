@@ -25,10 +25,8 @@
   "gridY": 2,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":{"name":"641ceb43-99c6-436c-8a3e-7136db97bad9","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":{"name":"95aa4049-3c4d-426b-86da-258cd3cb577b","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":{"name":"bdfeac32-3f06-4d6d-9b69-e3f9af60f420","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":{"name":"1126d5f5-da9d-497d-b938-56fe932d62de","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":{"name":"bdfeac32-3f06-4d6d-9b69-e3f9af60f420","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_spiderbody","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"resourceVersion":"1.0","name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"875b7bc8-e596-43b4-be31-b27b78de5dd1","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"875b7bc8-e596-43b4-be31-b27b78de5dd1","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"LayerId":{"name":"1126d5f5-da9d-497d-b938-56fe932d62de","path":"sprites/sp_spiderbody/sp_spiderbody.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -93,7 +91,7 @@
   ],
   "parent": {
     "name": "Spider",
-    "path": "folders/Sprites/enemies/Spider.yy",
+    "path": "folders/Sprites/Old/enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spiderbody",

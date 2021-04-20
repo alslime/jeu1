@@ -77,7 +77,7 @@
   ],
   "parent": {
     "name": "utility",
-    "path": "folders/Sprites/utility.yy",
+    "path": "folders/Sprites/Old/utility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_heal_icon",

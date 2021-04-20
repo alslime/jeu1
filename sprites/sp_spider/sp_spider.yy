@@ -25,8 +25,6 @@
   "gridY": 2,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spider/sp_spider.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spider/sp_spider.yy",},"LayerId":{"name":"641ceb43-99c6-436c-8a3e-7136db97bad9","path":"sprites/sp_spider/sp_spider.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spider/sp_spider.yy",},"LayerId":{"name":"95aa4049-3c4d-426b-86da-258cd3cb577b","path":"sprites/sp_spider/sp_spider.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","path":"sprites/sp_spider/sp_spider.yy",},"LayerId":{"name":"01da8b7b-eb62-42ea-8c55-0f8ed059468e","path":"sprites/sp_spider/sp_spider.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_spider","path":"sprites/sp_spider/sp_spider.yy",},"resourceVersion":"1.0","name":"ba33b637-706b-4a0f-af34-6a9c183a58ba","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -71,7 +69,7 @@
   ],
   "parent": {
     "name": "Spider",
-    "path": "folders/Sprites/enemies/Spider.yy",
+    "path": "folders/Sprites/Old/enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spider",

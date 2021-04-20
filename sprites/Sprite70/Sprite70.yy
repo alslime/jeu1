@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "unused",
-    "path": "folders/Sprites/unused.yy",
+    "path": "folders/Sprites/Old/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite70",

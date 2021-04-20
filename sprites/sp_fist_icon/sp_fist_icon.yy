@@ -27,10 +27,8 @@
     {"compositeImage":{"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":{"name":"b1a6491e-6add-4c23-b459-e2bae89cf45b","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":{"name":"d743a3b5-5667-47a5-9ba6-bb44b08d99d2","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":{"name":"7b7824b5-aded-47d4-8bd2-7c4f83af4659","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":{"name":"f396bc37-7ace-4549-884d-29ecc2179220","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":{"name":"cb3c48de-4527-4437-8d7a-37ea342a8258","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"LayerId":{"name":"7b7824b5-aded-47d4-8bd2-7c4f83af4659","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_fist_icon","path":"sprites/sp_fist_icon/sp_fist_icon.yy",},"resourceVersion":"1.0","name":"8c2864d6-083e-4e1c-be76-daf7cb831c06","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -77,7 +75,7 @@
   ],
   "parent": {
     "name": "fist",
-    "path": "folders/Sprites/Weapons/fist.yy",
+    "path": "folders/Sprites/Old/Weapons/fist.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_fist_icon",

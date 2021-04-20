@@ -85,7 +85,7 @@
   ],
   "parent": {
     "name": "facility",
-    "path": "folders/Sprites/Deco/facility.yy",
+    "path": "folders/Sprites/Old/Deco/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_facility_acc12_not_working",

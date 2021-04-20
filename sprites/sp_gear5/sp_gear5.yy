@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Gears",
-    "path": "folders/Sprites/Gears.yy",
+    "path": "folders/Sprites/Old/Gears.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_gear5",

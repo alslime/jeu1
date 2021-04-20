@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Clouds",
-    "path": "folders/Sprites/Deco/Clouds.yy",
+    "path": "folders/Sprites/Old/Deco/Clouds.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_cloud4",

@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "unused",
-    "path": "folders/Sprites/enemies/Spider/unused.yy",
+    "path": "folders/Sprites/Old/enemies/Spider/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spider_r",

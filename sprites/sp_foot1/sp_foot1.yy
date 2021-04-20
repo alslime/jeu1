@@ -73,7 +73,7 @@
   ],
   "parent": {
     "name": "Outfit1",
-    "path": "folders/Sprites/hero/Outfit1.yy",
+    "path": "folders/Sprites/Old/hero/Outfit1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_foot1",

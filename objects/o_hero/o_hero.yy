@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_for_heros_fixture",
-    "path": "sprites/sp_for_heros_fixture/sp_for_heros_fixture.yy",
+    "name": "sp_new_hero_stand",
+    "path": "sprites/sp_new_hero_stand/sp_new_hero_stand.yy",
   },
   "solid": true,
   "visible": true,
@@ -21,9 +21,9 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":24.0,"y":0.0,},
-    {"x":24.0,"y":110.0,},
-    {"x":0.0,"y":110.0,},
+    {"x":9.0,"y":0.0,},
+    {"x":9.0,"y":21.0,},
+    {"x":0.0,"y":21.0,},
   ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
