@@ -23,6 +23,6 @@ xp = 65
 level = 1
 xpmax = 100
 
-jump_value = 7
+jump_value = 6
 walk_speed = 2
 dash_speed = 4

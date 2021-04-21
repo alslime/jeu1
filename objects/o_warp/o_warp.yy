@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Important",
+    "path": "folders/Objects/Important.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_warp",

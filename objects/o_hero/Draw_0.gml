@@ -11,19 +11,19 @@ if instance_exists(o_front_surface)
 		surface_set_target(inst_front_surface.front_surf)
 	
 		script_execute(text_outline,x1 + 62, y1 + 69,total_gears)
-		draw_text_transformed_color(x1 + 62, y1 + 69,total_gears,1,1,0,c_white,c_white,c_aqua,c_aqua,1)
+		draw_text_transformed_color(x1 + 62, y1 + 69,total_gears,1,1,0,c_white,c_white,c_white,c_white,1)
 		gear_icon.strg_width = string_width(total_gears)
 
 		draw_set_font(fontsmall)
-		draw_healthbar(x1 + 42, y1 + 32, x1 + 42 + 110 + hpmax*0.05, y1 + 49, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,true)
-		draw_healthbar(x1 + 42, y1 + 56, x1 + 42 + 70 + energymax*0.3, y1 + 73, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,true)
-		draw_healthbar(x1 + 32, y1 + 32, x1 + 36, y1 + 73, ((xp)/xpmax)*100,hp_bar_col,c_white,c_white,3,true,true)
+		draw_healthbar(x1 + 11, y1 + 4, x1 + 60 + hpmax*0.05, y1 + 14, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,true)
+		draw_healthbar(x1 + 11, y1 + 17, x1 + 40 + energymax*0.3, y1 + 27, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,true)
+		draw_healthbar(x1 + 4, y1 + 4, x1 + 8, y1 + 27, ((xp)/xpmax)*100,hp_bar_col,c_white,c_white,3,true,true)
 		
-		script_execute(text_outline,x1 +46, y1 + 25,string(hpmax-hplost) + "/" + string(hpmax))
-		draw_text_transformed_color(x1 +46, y1+25,string(hpmax-hplost) + "/" + string(hpmax),1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 +13, y1 + 1,string(hpmax-hplost))
+		draw_text_transformed_color(x1 +13, y1 + 1,string(hpmax-hplost),1,1,0,c_white,c_white,c_white,c_white,1)
 	
-		script_execute(text_outline,x1 +46, y1 + 49,string(energymax-energylost) + "/" + string(energymax))
-		draw_text_transformed_color(x1 +46, y1 + 49,string(energymax-energylost) + "/" + string(energymax),1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 +13, y1 + 14,string(energymax-energylost))
+		draw_text_transformed_color(x1 +13, y1 + 14,string(energymax-energylost),1,1,0,c_white,c_white,c_white,c_white,1)
 	
 		surface_reset_target()
 	}
