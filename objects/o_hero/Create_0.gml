@@ -16,6 +16,7 @@ hero_state = "stand"
 stand = layer_sequence_create("lay_front",x,y,se_stand)
 last_sequence = stand
 last_sequence_type = se_stand
+walk_dust_count = 0
 
 dash_time = 0
 

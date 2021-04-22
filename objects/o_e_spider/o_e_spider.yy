@@ -51,7 +51,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Spider",
-    "path": "folders/Objects/Enemies/Spider.yy",
+    "path": "folders/Objects/Old/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_e_spider",

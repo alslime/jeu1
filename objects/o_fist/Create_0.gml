@@ -1,5 +1,5 @@
 punch1 = layer_sequence_create("lay_hero",x,y,se_punch1)	//Length in steps = Frames/FPS * 60 steps/s
-combo1_length = layer_sequence_get_length(punch1)*60 div 15
+combo1_length = layer_sequence_get_length(punch1)*60 div 60
 layer_sequence_destroy(punch1)
 
 punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)

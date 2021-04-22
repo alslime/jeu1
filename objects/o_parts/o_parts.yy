@@ -24,7 +24,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Parts",
-    "path": "folders/Objects/Game/Character/Parts.yy",
+    "path": "folders/Objects/Old/Parts.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_parts",

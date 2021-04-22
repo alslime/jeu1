@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_fist_icon",
-    "path": "sprites/sp_fist_icon/sp_fist_icon.yy",
+    "name": "sp_new_fist_icon",
+    "path": "sprites/sp_new_fist_icon/sp_new_fist_icon.yy",
   },
   "solid": false,
   "visible": true,

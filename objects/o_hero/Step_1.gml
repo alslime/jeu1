@@ -265,10 +265,17 @@ else if hero_state == "walk"
 {
 	if last_sequence_type != se_walk
 	{
+		walk_dust_count = 0
 		walk = layer_sequence_create("lay_hero",x,y,se_walk)
 		layer_sequence_destroy(last_sequence)
 		last_sequence = walk
 		last_sequence_type = se_walk
+	}
+	walk_dust_count += 1
+	if walk_dust_count > 12
+	{
+		inst_dust3 = instance_create_layer(x + sprite_width/2,y + sprite_height - 1,"lay_hero",o_walking_dust2)
+		walk_dust_count = 0
 	}
 }
 else if hero_state == "jump"

@@ -41,12 +41,6 @@ if combo_0 == 1
 	combo_finish_2 = 0
 	combo_3 = 0
 	combo_finish_3 = 0
-	//combo_x = 0
-	//combo_y = 0
-	//combo_rot = 0
-	//temp_position_x = anim_x[0,0]
-	//temp_position_y = anim_y[0,0]
-	//temp_rotation = anim_rot[0,0]
 }
 
 #endregion

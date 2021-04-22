@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Old",
+    "path": "folders/Objects/Old.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_afterimage",
