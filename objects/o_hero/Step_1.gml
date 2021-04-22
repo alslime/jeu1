@@ -274,7 +274,7 @@ else if hero_state == "walk"
 	walk_dust_count += 1
 	if walk_dust_count > 12
 	{
-		inst_dust3 = instance_create_layer(x + sprite_width/2,y + sprite_height - 1,"lay_hero",o_walking_dust2)
+		instance_create_layer(x + sprite_width/2,y + sprite_height - 1,"lay_hero",o_walking_dust2)
 		walk_dust_count = 0
 	}
 }

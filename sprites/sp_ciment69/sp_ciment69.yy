@@ -73,6 +73,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 3","resourceVersion":"1.0","name":"5845e07a-d417-4965-a443-00bd4266776e","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"6a71c57a-6642-4d9a-bdc1-57cf537ef9b6","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Ciment",
     "path": "folders/Sprites/Old/Deco/Ciment.yy",

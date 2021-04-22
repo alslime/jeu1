@@ -4,7 +4,8 @@ randomize()
 vweapon = instance_create_layer(0,0,"lay_weapon",o_fist)
 vweapon.owner = id
 
-gear_icon = instance_create_layer(x,y,"lay_front",o_gear_icon)
+option_icon = instance_create_layer(x,y,"lay_front",o_option)
+gem_icon = instance_create_layer(x,y,"lay_front",o_gem_icon)
 weapon_icon = instance_create_layer(x,y,"lay_front",o_weapon_icon)
 utility_icon = instance_create_layer(x,y,"lay_front",o_utility_icon)
 

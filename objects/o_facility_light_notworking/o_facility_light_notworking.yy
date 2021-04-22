@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "facility",
-    "path": "folders/Objects/Deco/facility.yy",
+    "path": "folders/Objects/Old/facility.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_facility_light_notworking",

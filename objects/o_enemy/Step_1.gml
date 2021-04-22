@@ -302,7 +302,7 @@ if hplost >= hpmax
 {
 	layer_sequence_destroy(last_sequence)
 	instance_destroy()
-	script_execute(create_gear,gear_drop_value,x,y)
+	script_execute(create_gems,gem_drop_value,x,y)
 }
 
 #endregion

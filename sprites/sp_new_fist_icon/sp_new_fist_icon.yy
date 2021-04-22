@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"LayerId":{"name":"6123e215-c7e3-48f0-9046-dc405fe2af19","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"LayerId":{"name":"46df7201-2caf-4acf-91ba-51b04323de09","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"LayerId":{"name":"9cc2444d-f136-4a72-bd81-aa0df612b6ee","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_new_fist_icon","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","name":"66b5f5bb-b330-47bc-99e4-864378c36fad","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -70,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6123e215-c7e3-48f0-9046-dc405fe2af19","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":75.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"9cc2444d-f136-4a72-bd81-aa0df612b6ee","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "New",
     "path": "folders/Sprites/New.yy",

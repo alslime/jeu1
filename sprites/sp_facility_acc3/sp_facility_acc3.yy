@@ -101,6 +101,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 4","resourceVersion":"1.0","name":"a722f83b-6d3f-4fb6-9a08-71c1a4683bc3","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 3","resourceVersion":"1.0","name":"1768eb7d-84c4-4f2d-9c23-6b1e081735a3","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "facility",
     "path": "folders/Sprites/Old/Deco/facility.yy",

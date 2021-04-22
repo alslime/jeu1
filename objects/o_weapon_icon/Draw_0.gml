@@ -13,7 +13,7 @@ if surface_exists(inst_front_surface.front_surf)
 	draw_self()
 	draw_set_font(fontsmall)
 	script_execute(text_outline,x + sprite_width/2 - (string_width(string(weapon_selected))/2),y+sprite_height,string(weapon_selected))
-	draw_text_transformed_color(x + sprite_width/2 - (string_width(string(weapon_selected))/2),y+sprite_height,string(weapon_selected),1,1,0,c_white,c_white,c_white,c_white,1)
+	draw_text_transformed_color(x + sprite_width/2 - (string_width(string(weapon_selected))/2),y+1+sprite_height,string(weapon_selected),1,1,0,c_white,c_white,c_white,c_white,1)
 	surface_reset_target()
 }
 
