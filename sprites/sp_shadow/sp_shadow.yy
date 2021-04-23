@@ -69,6 +69,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":98.0,"displayName":"Layer 3","resourceVersion":"1.0","name":"80ffbe30-2826-434b-a3dc-6d4d888769e0","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"Layer 3 (2)","resourceVersion":"1.0","name":"4938db8f-3bba-4d9f-b98b-86083408370e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",

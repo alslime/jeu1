@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "blood",
-    "path": "folders/Objects/Enemies/blood.yy",
+    "path": "folders/Objects/Game/blood.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_blood",
