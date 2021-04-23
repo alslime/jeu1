@@ -4,13 +4,13 @@
 if keyboard_check_pressed(ord("1"))
 {
 	instance_destroy (vweapon)
-	vweapon = instance_create_layer(x,y,"lay_weapon",o_spear)
+	vweapon = instance_create_layer(x,y,"lay_weapon",o_fist)
 	vweapon.owner = id
 }
 if keyboard_check_pressed(ord("2"))
 {
 	instance_destroy (vweapon)
-	vweapon = instance_create_layer(x,y,"lay_weapon",o_blade)
+	vweapon = instance_create_layer(x,y,"lay_weapon",o_fist)
 	vweapon.owner = id
 }
 

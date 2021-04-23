@@ -61,7 +61,6 @@
     {"id":{"name":"o_shadow","path":"objects/o_shadow/o_shadow.yy",},"order":12,},
     {"id":{"name":"o_weapon_hitbox","path":"objects/o_weapon_hitbox/o_weapon_hitbox.yy",},"order":5,},
     {"id":{"name":"se_boulder_demon_run","path":"sequences/se_boulder_demon_run/se_boulder_demon_run.yy",},"order":2,},
-    {"id":{"name":"o_enemy_hitbox","path":"objects/o_enemy_hitbox/o_enemy_hitbox.yy",},"order":4,},
     {"id":{"name":"o_grass","path":"objects/o_grass/o_grass.yy",},"order":1,},
     {"id":{"name":"o_boulder_demon","path":"objects/o_boulder_demon/o_boulder_demon.yy",},"order":5,},
     {"id":{"name":"o_facility_light_notworking","path":"objects/o_facility_light_notworking/o_facility_light_notworking.yy",},"order":3,},

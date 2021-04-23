@@ -44,6 +44,10 @@ if instance_exists(o_weapon_hitbox)
 			array_insert(id_array,0,col_id)
 			hit_state_begin = true
 			countdown = 45
+			if inst_hero.energylost > 0
+			{
+				inst_hero.energylost -= 1
+			}
 		}
 	}
 }
@@ -180,13 +184,19 @@ else
 
 #endregion
 
-// Bounce when hit
+// Bounce when hit or collision with hero
 #region
 
 nearest_hero = instance_nearest(x + sprite_width/2,y + sprite_height/2,o_hero)
 if instance_exists(o_hero)
 {
 	dir_to_hero = point_direction(x + sprite_width/2, y + sprite_height/2,nearest_hero.x + nearest_hero.sprite_width/2, nearest_hero.y + nearest_hero.sprite_height/2)
+}
+
+if place_meeting (x,y,o_hero)
+{
+	hit_state_begin = true
+	countdown = 30
 }
 
 if countdown > 0
@@ -275,11 +285,11 @@ if state == "hit"
 		last_sequence_type = se_boulder_demon_hit
 		if dir == 1
 		{
-			phy_speed_x = 2
+			phy_speed_x = 1
 		}
 		else if dir == 0
 		{
-			phy_speed_x = -2
+			phy_speed_x = -1
 		}
 		hit_state_begin = false
 	}
@@ -303,6 +313,7 @@ if hplost >= hpmax
 	layer_sequence_destroy(last_sequence)
 	instance_destroy()
 	script_execute(create_gems,gem_drop_value,x,y)
+	inst_hero.xp += xp_drop_value
 }
 
 #endregion

@@ -182,19 +182,8 @@ if xp >= xpmax
 
 if mouse_check_button(mb_right) && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption)
 {
-	if last_sequence_type == se_heal
-	{
-		heal_count -= 1
-		if heal_count == 0
-		{
-			heal_count = 3
-			hplost = hplost - 1
-			energylost += energyconsomption
-		}
-	}
-    regen = true
-    phy_speed_x = 0
 	hero_state = "heal"
+	regen = true
 }
 else
 {
@@ -231,18 +220,16 @@ if countdown > 0
     countdown = countdown - 1
 	if dir_to_enemy > 180
 	{
-		phy_speed_y = -lengthdir_y(2,dir_to_enemy)
+		phy_speed_y = -lengthdir_y(1,dir_to_enemy)
 	}
     if dir_to_enemy > 90 && dir_to_enemy < 270
     {
-		phy_speed_x = 5
-		//sprite_index = sp_hero_hit_l
+		phy_speed_x = 1
 		dir = 180
     }
     if dir_to_enemy <= 90 || dir_to_enemy >= 270
     {
-		phy_speed_x = -5
-		//sprite_index = sp_hero_hit_r
+		phy_speed_x = -1
 		dir = 0
     }
 }
@@ -251,6 +238,7 @@ if countdown > 0
 
 //States
 #region
+
 if hero_state == "stand"
 {
 	if last_sequence_type != se_stand
@@ -332,12 +320,24 @@ else if hero_state == "heal"
 {
 	if last_sequence_type != se_heal
 	{
-		heal_count = 3
 		layer_sequence_destroy(last_sequence)
 		heal = layer_sequence_create("lay_hero",x,y,se_heal)
 		last_sequence = heal
 		last_sequence_type = se_heal
+		
+		heal_interval = 2
 	}
+	if heal_interval > 0
+	{
+		heal_interval -= 1
+	}
+	if heal_interval == 0
+	{
+		hplost -= 1
+		energylost += energyconsomption
+		heal_interval = 2
+	}
+	phy_speed_x = 0
 }
 
 #endregion

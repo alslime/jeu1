@@ -21,7 +21,7 @@ walk_dust_count = 0
 
 dash_time = 0
 
-xp = 65
+xp = 0
 level = 1
 xpmax = 100
 
