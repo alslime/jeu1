@@ -79,7 +79,7 @@ if countdown == 0
 	{
 		jump = true
 	}
-	if distance_to_object(inst_hero) > 200
+	if distance_to_object(inst_hero) > 60
 	{
 		follow_hero = false
 		state_countdown -= 1
@@ -210,23 +210,23 @@ if countdown > 0
 
 if state == "stand"
 {
-	if last_sequence_type != se_spider_stand
+	if last_sequence_type != se_boulder_demon_stand
 	{
-		stand = layer_sequence_create("lay_enemies",x,y,se_spider_stand)
+		stand = layer_sequence_create("lay_enemies",x,y,se_boulder_demon_stand)
 		layer_sequence_destroy(last_sequence)
 		last_sequence = stand
-		last_sequence_type = se_spider_stand
+		last_sequence_type = se_boulder_demon_stand
 	}
 	phy_speed_x = 0
 }
 if state == "walk"
 {
-	if last_sequence_type != se_spider_walk
+	if last_sequence_type != se_boulder_demon_walk
 	{
-		walk = layer_sequence_create("lay_enemies",x,y,se_spider_walk)
+		walk = layer_sequence_create("lay_enemies",x,y,se_boulder_demon_walk)
 		layer_sequence_destroy(last_sequence)
 		last_sequence = walk
-		last_sequence_type = se_spider_walk
+		last_sequence_type = se_boulder_demon_walk
 	}
 	if dir == 0
 	{
@@ -239,12 +239,12 @@ if state == "walk"
 }
 if state == "run"
 {
-	if last_sequence_type != se_spider_run
+	if last_sequence_type != se_boulder_demon_run
 	{
-		run = layer_sequence_create("lay_enemies",x,y,se_spider_run)
+		run = layer_sequence_create("lay_enemies",x,y,se_boulder_demon_run)
 		layer_sequence_destroy(last_sequence)
 		last_sequence = run
-		last_sequence_type = se_spider_run
+		last_sequence_type = se_boulder_demon_run
 	}
 	if dir == 0
 	{
@@ -257,22 +257,22 @@ if state == "run"
 }
 if state == "jump"
 {
-	if last_sequence_type != se_spider_jump
+	if last_sequence_type != se_boulder_demon_jump
 	{
-		sejump = layer_sequence_create("lay_enemies",x,y,se_spider_jump)
+		sejump = layer_sequence_create("lay_enemies",x,y,se_boulder_demon_jump)
 		layer_sequence_destroy(last_sequence)
 		last_sequence = sejump
-		last_sequence_type = se_spider_jump
+		last_sequence_type = se_boulder_demon_jump
 	}
 }
 if state == "hit"
 {
 	if hit_state_begin == true
 	{
-		hit = layer_sequence_create("lay_enemies",x,y,se_spider_hit)
+		hit = layer_sequence_create("lay_enemies",x,y,se_boulder_demon_hit)
 		layer_sequence_destroy(last_sequence)
 		last_sequence = hit
-		last_sequence_type = se_spider_hit
+		last_sequence_type = se_boulder_demon_hit
 		if dir == 1
 		{
 			phy_speed_x = 2

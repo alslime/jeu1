@@ -16,8 +16,8 @@ stop_at_corner_r = false
 prevhp_lost = hplost
 
 hero_state = "stand"
-stand = layer_sequence_create("lay_front",x,y,se_spider_stand)
+stand = layer_sequence_create("lay_front",x,y,se_boulder_demon_stand)
 last_sequence = stand
-last_sequence_type = se_spider_stand
+last_sequence_type = se_boulder_demon_stand
 
 id_array = [0]

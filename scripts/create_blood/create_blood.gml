@@ -2,19 +2,7 @@
 // argument1 = inst_blood
 function create_blood()
 {
-	test_colour = irandom(2)
-	if test_colour == 0
-	{
-		argument1.blood_colour = argument0.blood_colour1
-	}
-	if test_colour == 1
-	{
-		argument1.blood_colour = argument0.blood_colour2
-	}
-	if test_colour == 2
-	{
-		argument1.blood_colour = argument0.blood_colour3
-	}
+	argument1.blood_colour = argument0.blood_colour
 	argument1.phy_speed_y = random_range(-6,6)
 
 	nearest_weapon = instance_nearest(argument0.x + argument0.sprite_width/2,argument0.y + argument0.sprite_height/2,o_weapon_hitbox)
@@ -25,10 +13,10 @@ function create_blood()
 	
 	if dir_to_weapon <= 90 || dir_to_weapon >= 270
 	{
-		argument1.phy_speed_x = random_range(-1,-6)
+		argument1.phy_speed_x = random_range(-1,-3)
 	}
 	else if dir_to_weapon >= 90 && dir_to_weapon <= 270
 	{
-		argument1.phy_speed_x = random_range(1,6)
+		argument1.phy_speed_x = random_range(1,3)
 	}
 }

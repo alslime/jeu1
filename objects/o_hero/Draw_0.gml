@@ -44,4 +44,5 @@ if instance_exists(o_front_surface)
 	}
 }
 
+//physics_draw_debug()
 //draw_self()

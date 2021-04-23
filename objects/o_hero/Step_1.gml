@@ -182,7 +182,7 @@ if xp >= xpmax
 
 if mouse_check_button(mb_right) && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption)
 {
-	if last_sequence_type == se_heal2
+	if last_sequence_type == se_heal
 	{
 		heal_count -= 1
 		if heal_count == 0
@@ -330,22 +330,14 @@ else if hero_state == "combo3"
 }
 else if hero_state == "heal"
 {
-	if last_sequence_type != se_heal1 && last_sequence_type != se_heal2
-	{
-		layer_sequence_destroy(last_sequence)
-		heal1 = layer_sequence_create("lay_hero",x,y,se_heal1)
-		last_sequence = heal1
-		last_sequence_type = se_heal1
-	}
-	if last_sequence_type != se_heal2 && layer_sequence_is_finished(heal1)
+	if last_sequence_type != se_heal
 	{
 		heal_count = 3
 		layer_sequence_destroy(last_sequence)
-		heal2 = layer_sequence_create("lay_hero",x,y,se_heal2)
-		last_sequence = heal2
-		last_sequence_type = se_heal2
+		heal = layer_sequence_create("lay_hero",x,y,se_heal)
+		last_sequence = heal
+		last_sequence_type = se_heal
 	}
-	
 }
 
 #endregion

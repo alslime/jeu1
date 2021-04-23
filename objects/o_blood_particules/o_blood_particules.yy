@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_invisible",
-    "path": "sprites/sp_invisible/sp_invisible.yy",
+    "name": "sp_1x1",
+    "path": "sprites/sp_1x1/sp_1x1.yy",
   },
   "solid": false,
   "visible": true,
@@ -13,7 +13,7 @@
   "physicsShape": 1,
   "physicsGroup": 0,
   "physicsDensity": 0.5,
-  "physicsRestitution": 0.1,
+  "physicsRestitution": 0.0,
   "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
   "physicsFriction": 0.2,
@@ -26,7 +26,6 @@
     {"x":0.0,"y":1.0,},
   ],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_ground","path":"objects/o_ground/o_ground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
