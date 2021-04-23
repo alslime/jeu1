@@ -69,9 +69,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"aa39cf27-4814-4a99-8910-b114b1402cce","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"d2c3982a-33d2-47aa-ba56-c0f957223751","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "hero",
-    "path": "folders/Sprites/Old/hero.yy",
+    "path": "folders/Sprites/hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_light",

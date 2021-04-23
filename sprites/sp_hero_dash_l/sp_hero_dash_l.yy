@@ -69,9 +69,10 @@
     {"visible":false,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"knight","resourceVersion":"1.0","name":"d14a87fa-0e1b-49be-befb-afcc54a33319","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"basic","resourceVersion":"1.0","name":"e0ac741c-e75d-424a-ae17-64c00d38ae6b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Previous",
-    "path": "folders/Sprites/Old/hero/Previous.yy",
+    "path": "folders/Sprites/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_dash_l",

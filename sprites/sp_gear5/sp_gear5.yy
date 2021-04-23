@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"884ba90e-83d8-41fd-ba50-bc716bce3722","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Gears",
-    "path": "folders/Sprites/Old/Gears.yy",
+    "path": "folders/Sprites/Gears.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_gear5",

@@ -69,9 +69,10 @@
     {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"knight","resourceVersion":"1.0","name":"d14a87fa-0e1b-49be-befb-afcc54a33319","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"basic","resourceVersion":"1.0","name":"79c5c074-8c05-4ebb-84ff-a5c11285f69f","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Previous",
-    "path": "folders/Sprites/Old/hero/Previous.yy",
+    "path": "folders/Sprites/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_jump_r",

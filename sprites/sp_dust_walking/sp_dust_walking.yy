@@ -107,9 +107,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"794ebab9-61f3-4ef2-a142-d5df5737ccf7","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "hero",
-    "path": "folders/Sprites/Old/hero.yy",
+    "path": "folders/Sprites/hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_dust_walking",

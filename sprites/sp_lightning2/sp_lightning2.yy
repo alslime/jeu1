@@ -84,9 +84,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"5bafb1a2-d794-45df-be32-b41a16d5b5ac","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":1,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d43d139b-82f5-40c7-8f06-bf54e12ec688","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "hero",
-    "path": "folders/Sprites/Old/hero.yy",
+    "path": "folders/Sprites/hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_lightning2",

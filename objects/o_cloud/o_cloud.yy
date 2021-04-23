@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sp_cloud1",
-    "path": "sprites/sp_cloud1/sp_cloud1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -32,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Sky",
-    "path": "folders/Objects/Old/Sky.yy",
+    "name": "Old",
+    "path": "folders/Objects/Old.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_cloud",

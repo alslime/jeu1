@@ -84,9 +84,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"f7c4d682-8005-4c11-b070-c3cf4d8c567c","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"488d6825-9262-4709-8d70-f89ae16e2db9","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "hero",
-    "path": "folders/Sprites/Old/hero.yy",
+    "path": "folders/Sprites/hero.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_heal_effect",

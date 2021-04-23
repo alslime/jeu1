@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sp_dirt",
-    "path": "sprites/sp_dirt/sp_dirt.yy",
-  },
+  "spriteId": null,
   "solid": true,
   "visible": true,
   "spriteMaskId": null,

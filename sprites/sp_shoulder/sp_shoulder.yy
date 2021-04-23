@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2) (2)","resourceVersion":"1.0","name":"8f44b710-be56-40aa-9f21-3430a179279b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "SequenceBased",
-    "path": "folders/Sprites/Old/hero/SequenceBased.yy",
+    "path": "folders/Sprites/hero/SequenceBased.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_shoulder",

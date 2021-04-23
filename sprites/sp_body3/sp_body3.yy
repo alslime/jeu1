@@ -69,9 +69,10 @@
     {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2) (2) (2) (2)","resourceVersion":"1.0","name":"bbc3db92-38f8-4c43-87fa-893acd4fa877","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2) (2) (2)","resourceVersion":"1.0","name":"a3a62615-0b61-4e7c-b1a1-db6ff2bd7fe1","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Outfit1",
-    "path": "folders/Sprites/Old/hero/Outfit1.yy",
+    "path": "folders/Sprites/hero/Outfit1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_body3",

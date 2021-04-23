@@ -69,9 +69,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"641ceb43-99c6-436c-8a3e-7136db97bad9","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"95aa4049-3c4d-426b-86da-258cd3cb577b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Spider",
-    "path": "folders/Sprites/Old/enemies/Spider.yy",
+    "path": "folders/Sprites/enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spiderupleg",

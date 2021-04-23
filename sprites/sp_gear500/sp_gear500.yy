@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e5b77fba-6578-4ef2-99e6-edd2b12b7ce4","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Gears",
-    "path": "folders/Sprites/Old/Gears.yy",
+    "path": "folders/Sprites/Gears.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_gear500",

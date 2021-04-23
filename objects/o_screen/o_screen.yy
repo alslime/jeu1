@@ -27,8 +27,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "facility",
-    "path": "folders/Objects/Old/facility.yy",
+    "name": "Old",
+    "path": "folders/Objects/Old.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_screen",

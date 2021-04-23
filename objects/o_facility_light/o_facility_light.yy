@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sp_facility_light",
-    "path": "sprites/sp_facility_light/sp_facility_light.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -32,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "facility",
-    "path": "folders/Objects/Old/facility.yy",
+    "name": "Old",
+    "path": "folders/Objects/Old.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_facility_light",

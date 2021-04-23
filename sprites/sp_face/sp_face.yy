@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2)","resourceVersion":"1.0","name":"fd2f1443-5654-4458-8748-6d4b91e30289","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "SequenceBased",
-    "path": "folders/Sprites/Old/hero/SequenceBased.yy",
+    "path": "folders/Sprites/hero/SequenceBased.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_face",

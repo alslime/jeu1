@@ -113,9 +113,10 @@
     {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"knight","resourceVersion":"1.0","name":"d14a87fa-0e1b-49be-befb-afcc54a33319","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"basic","resourceVersion":"1.0","name":"19b1001b-cff7-4b17-8e51-68da275d3450","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Previous",
-    "path": "folders/Sprites/Old/hero/Previous.yy",
+    "path": "folders/Sprites/hero/Previous.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_hero_regen_l",

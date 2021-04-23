@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sp_screen",
-    "path": "sprites/sp_screen/sp_screen.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -31,8 +28,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "facility",
-    "path": "folders/Objects/Old/facility.yy",
+    "name": "Old",
+    "path": "folders/Objects/Old.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_screen_creator",

@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)","resourceVersion":"1.0","name":"01da8b7b-eb62-42ea-8c55-0f8ed059468e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Spider",
-    "path": "folders/Sprites/Old/enemies/Spider.yy",
+    "path": "folders/Sprites/enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spider",

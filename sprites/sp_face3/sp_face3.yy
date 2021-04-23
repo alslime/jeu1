@@ -73,9 +73,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)","resourceVersion":"1.0","name":"4464924b-34a4-4dfc-8f45-b11fcd12ec77","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"a2909cec-2b12-4aa3-a446-8f483dca1ba7","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Outfit1",
-    "path": "folders/Sprites/Old/hero/Outfit1.yy",
+    "path": "folders/Sprites/hero/Outfit1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_face3",

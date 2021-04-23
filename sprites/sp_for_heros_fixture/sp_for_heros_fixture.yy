@@ -67,9 +67,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"default","resourceVersion":"1.0","name":"71f771fc-3171-46d7-94f9-104d28fd137b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "SequenceBased",
-    "path": "folders/Sprites/Old/hero/SequenceBased.yy",
+    "path": "folders/Sprites/hero/SequenceBased.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_for_heros_fixture",

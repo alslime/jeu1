@@ -89,9 +89,10 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"1126d5f5-da9d-497d-b938-56fe932d62de","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"bdfeac32-3f06-4d6d-9b69-e3f9af60f420","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Spider",
-    "path": "folders/Sprites/Old/enemies/Spider.yy",
+    "path": "folders/Sprites/enemies/Spider.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_spiderbody",
