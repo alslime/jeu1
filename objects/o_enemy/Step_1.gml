@@ -3,6 +3,7 @@ if instance_exists(o_weapon)
 	vweapon = instance_find(o_weapon,0)
 }
 
+
 // Collision with weapon and set damage 
 #region
 
@@ -73,16 +74,17 @@ x1 = x
 x2 = x1 + sprite_width
 y1 = y + sprite_height + 1
 
+if collision_line (x1,y1,x2,y1,o_ground,false,true)
+{
+ 	jump = false
+}
+else
+{
+	jump = true
+}
+
 if countdown == 0
 {
-	if collision_line (x1,y1,x2,y1,o_ground,false,true)
-	{
-	 	jump = false
-	}
-	else
-	{
-		jump = true
-	}
 	if distance_to_object(inst_hero) > 60
 	{
 		follow_hero = false
@@ -141,11 +143,11 @@ if countdown == 0
 			state = "walk"
 			dir = 0
 		}
-		if jump
-		{
-			state = "jump"
-		}
 	}
+}
+if jump
+{
+	state = "jump"
 }
 
 #endregion
@@ -269,10 +271,16 @@ if state == "jump"
 {
 	if last_sequence_type != se_boulder_demon_jump
 	{
+		was_jumping = true
 		sejump = layer_sequence_create("lay_enemies",x,y,se_boulder_demon_jump)
 		layer_sequence_destroy(last_sequence)
 		last_sequence = sejump
 		last_sequence_type = se_boulder_demon_jump
+	}
+	if was_jumping == true && jump == false
+	{
+		state = "stand"
+		was_jumping = false
 	}
 }
 if state == "hit"
