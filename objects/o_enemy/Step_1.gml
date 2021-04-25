@@ -3,7 +3,6 @@ if instance_exists(o_weapon)
 	vweapon = instance_find(o_weapon,0)
 }
 
-
 // Collision with weapon and set damage 
 #region
 
@@ -199,6 +198,11 @@ if place_meeting (x,y,o_hero)
 {
 	hit_state_begin = true
 	countdown = 30
+	touch_hero = true
+}
+else
+{
+	touch_hero = false
 }
 
 if countdown > 0
@@ -291,13 +295,27 @@ if state == "hit"
 		layer_sequence_destroy(last_sequence)
 		last_sequence = hit
 		last_sequence_type = se_boulder_demon_hit
-		if dir == 1
+		if vweapon.knock_back == true
 		{
-			phy_speed_x = 1
+			if dir == 1
+			{
+				phy_speed_x = vweapon.knock_back_value	
+			}
+			else if dir == 0
+			{
+				phy_speed_x = -vweapon.knock_back_value
+			}
 		}
-		else if dir == 0
+		if touch_hero
 		{
-			phy_speed_x = -1
+			if dir == 1
+			{
+				phy_speed_x = 1
+			}	
+			else if dir == 0
+			{
+				phy_speed_x = -1
+			}
 		}
 		hit_state_begin = false
 	}

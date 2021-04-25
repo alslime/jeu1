@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "enemies",
-    "path": "folders/Sprites/enemies.yy",
+    "name": "boulder_demon",
+    "path": "folders/Sprites/enemies/boulder_demon.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_boulder_demon",

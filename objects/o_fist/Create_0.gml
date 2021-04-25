@@ -3,11 +3,11 @@ combo1_length = layer_sequence_get_length(punch1)*60 div 60
 layer_sequence_destroy(punch1)
 
 punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
-combo2_length = layer_sequence_get_length(punch2)*60 div 25
+combo2_length = layer_sequence_get_length(punch2)*60 div 22
 layer_sequence_destroy(punch2)
 
 punch3 = layer_sequence_create("lay_hero",x,y,se_punch3)
-combo3_length = layer_sequence_get_length(punch3)*60 div 28
+combo3_length = layer_sequence_get_length(punch3)*60 div 18
 layer_sequence_destroy(punch3)
 
 base_dmg = [1,2,3]
