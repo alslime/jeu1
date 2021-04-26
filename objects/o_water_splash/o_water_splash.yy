@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_cursor",
-    "path": "sprites/sp_cursor/sp_cursor.yy",
+    "name": "sp_water_splash",
+    "path": "sprites/sp_water_splash/sp_water_splash.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,16 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Deco",
+    "path": "folders/Objects/Deco.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_mouse",
+  "name": "o_water_splash",
   "tags": [],
   "resourceType": "GMObject",
 }

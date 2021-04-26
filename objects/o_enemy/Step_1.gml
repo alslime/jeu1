@@ -11,9 +11,11 @@ if place_meeting(x,y,o_water)
 	physics_apply_local_force(0,0,0,-70)
 	spd = initial_spd/2
 	follow_spd = initial_follow_spd/2
+	in_water = true
 }
 else
 {
+	in_water = false
 	spd = initial_spd
 	follow_spd = initial_follow_spd
 }
@@ -361,6 +363,14 @@ if hplost >= hpmax
 }
 
 #endregion
+
+if in_water
+{
+	if phy_speed_y > 3
+	{
+		phy_speed_y = 3
+	}
+}
 
 // Sequence follows enemy
 #region

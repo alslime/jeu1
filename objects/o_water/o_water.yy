@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Deco",
+    "path": "folders/Objects/Deco.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_water",

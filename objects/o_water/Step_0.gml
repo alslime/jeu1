@@ -5,12 +5,16 @@ if collision_line(x,y,x+sprite_width,y,object,false,false)
 	if touch_water_last_step == false
 	{
 		touch_water_last_step = true
-		n = 0
-		while !collision_point(n,y,object,false,false)
+		n = abs(object.x + object.sprite_width/2 - x)
+		if n < 4
 		{
-			n += 1
+			n = 4
 		}
-		instance_create_layer(n+object.sprite_width/2,y,"lay_front",o_vase_piece1)
+		if n > sprite_width - 4
+		{
+			n = sprite_width - 4
+		}
+		instance_create_layer(x+n,y,"lay_front",o_water_splash)
 	}
 }
 else
