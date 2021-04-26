@@ -3,6 +3,24 @@ if instance_exists(o_weapon)
 	vweapon = instance_find(o_weapon,0)
 }
 
+//In water
+#region
+
+if place_meeting(x,y,o_water)
+{
+	physics_apply_local_force(0,0,0,-70)
+	spd = initial_spd/2
+	follow_spd = initial_follow_spd/2
+}
+else
+{
+	spd = initial_spd
+	follow_spd = initial_follow_spd
+}
+
+#endregion
+	
+
 // Collision with weapon and set damage 
 #region
 

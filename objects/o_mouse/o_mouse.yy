@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "sp_moving_grass",
-    "path": "sprites/sp_moving_grass/sp_moving_grass.yy",
+    "name": "sp_cursor",
+    "path": "sprites/sp_cursor/sp_cursor.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -21,16 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Old",
-    "path": "folders/Objects/Old.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_moving_grass_creator",
+  "name": "o_mouse",
   "tags": [],
   "resourceType": "GMObject",
 }

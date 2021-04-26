@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Destructible",
-    "path": "folders/Objects/Deco/Destructible.yy",
+    "name": "Vase",
+    "path": "folders/Objects/Deco/Vase.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_vase_piece3",
