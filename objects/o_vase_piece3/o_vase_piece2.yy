@@ -1,21 +1,21 @@
 {
   "spriteId": {
-    "name": "sp_vase",
-    "path": "sprites/sp_vase/sp_vase.yy",
+    "name": "sp_vase_piece1",
+    "path": "sprites/sp_vase_piece1/sp_vase_piece1.yy",
   },
   "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_destructible",
-    "path": "objects/o_destructible/o_destructible.yy",
+    "name": "o_destructible_pieces",
+    "path": "objects/o_destructible_pieces/o_destructible_pieces.yy",
   },
   "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 0,
-  "physicsDensity": 0.0,
+  "physicsDensity": 0.5,
   "physicsRestitution": 0.0,
   "physicsLinearDamping": 0.1,
   "physicsAngularDamping": 0.1,
@@ -24,13 +24,11 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":7.0,"y":0.0,},
-    {"x":7.0,"y":8.0,},
-    {"x":0.0,"y":8.0,},
+    {"x":2.0,"y":0.0,},
+    {"x":2.0,"y":2.0,},
+    {"x":0.0,"y":2.0,},
   ],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -38,7 +36,7 @@
     "path": "folders/Objects/Deco/Destructible.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_vase",
+  "name": "o_vase_piece2",
   "tags": [],
   "resourceType": "GMObject",
 }
