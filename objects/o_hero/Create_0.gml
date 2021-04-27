@@ -28,3 +28,5 @@ xpmax = 100
 jump_value = 6
 walk_speed = 2
 dash_speed = 4
+
+need_to_destroy_splash = false

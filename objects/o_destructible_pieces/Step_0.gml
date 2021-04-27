@@ -6,3 +6,5 @@ if timer <= 0
 }
 
 image_alpha = timer/180
+
+splash_water(id)

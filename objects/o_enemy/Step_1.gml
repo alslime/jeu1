@@ -21,6 +21,8 @@ else
 }
 
 #endregion
+
+splash_water(id)
 	
 
 // Collision with weapon and set damage 

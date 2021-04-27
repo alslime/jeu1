@@ -22,3 +22,5 @@ if begin_follow == true
 	phy_speed_y = test_y
 	spd += 0.1
 }
+
+splash_water(id)
