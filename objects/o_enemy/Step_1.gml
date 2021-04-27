@@ -20,10 +20,43 @@ else
 	follow_spd = initial_follow_spd
 }
 
-#endregion
+water = instance_nearest(x,y,o_water)
 
-splash_water(id)
-	
+if collision_line(water.x,water.y,water.x+water.sprite_width,water.y,id,false,false) && phy_speed_x != 0
+{
+	i = abs(x + sprite_width/2 - water.x)
+	if i < 4
+	{
+		i = 4
+	}
+	if i > water.sprite_width - 4
+	{
+		i = water.sprite_width - 4
+	}
+	if need_to_destroy_splash == false
+	{
+		splash_inst = instance_create_layer(water.x+i,water.y,"lay_front",o_water_splash_long)
+		need_to_destroy_splash = true
+		
+	}
+	splash_inst.x = water.x + i
+	splash_inst.y = water.y
+}
+else
+{
+	if need_to_destroy_splash == true
+	{
+		instance_destroy(splash_inst)
+	}
+	need_to_destroy_splash = false
+}
+
+if need_to_destroy_splash == false
+{
+	splash_water(id)
+}
+
+#endregion
 
 // Collision with weapon and set damage 
 #region

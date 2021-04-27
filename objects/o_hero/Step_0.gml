@@ -71,11 +71,10 @@ else
 	need_to_destroy_splash = false
 }
 
-
-#endregion
-
 if need_to_destroy_splash == false
 {
 	splash_water(id)
 }
+
+#endregion
 
