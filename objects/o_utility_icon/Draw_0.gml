@@ -7,11 +7,11 @@ if instance_exists(o_front_surface)
 {
 	inst_front_surface = instance_find (o_front_surface,0)
 }
-if surface_exists(inst_front_surface.front_surf)
+if surface_exists(inst_front_surface.front_surf) && inst_hero.equip_menu == false
 {
 	surface_set_target(inst_front_surface.front_surf)
 	draw_self()
-	draw_set_font(fontxsmall)
+	draw_set_font(fontsmall)
 	script_execute(text_outline,x + sprite_width/2 - (string_width(string(utility_selected))/2),y+sprite_height,string(utility_selected))
 	draw_text_transformed_color(x + sprite_width/2 - (string_width(string(utility_selected))/2),y+1+sprite_height,string(utility_selected),1,1,0,c_white,c_white,c_white,c_white,1)
 	surface_reset_target()

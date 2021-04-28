@@ -23,10 +23,11 @@ dash_time = 0
 
 xp = 0
 level = 1
-xpmax = 100
+xpmax = 50
 
 jump_value = 6
 walk_speed = 2
 dash_speed = 4
 
 need_to_destroy_splash = false
+equip_menu = false

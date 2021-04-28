@@ -16,6 +16,19 @@ if keyboard_check_pressed(ord("2"))
 
 #endregion
 
+if keyboard_check_pressed(ord("I"))
+{
+	if equip_menu == false
+	{
+		equip_menu = true
+	}
+	else
+	{
+		equip_menu = false
+	}
+}
+		
+
 // Disable rotation
 phy_fixed_rotation = true
 

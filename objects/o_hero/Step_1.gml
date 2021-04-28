@@ -159,18 +159,19 @@ if hplost >= hpmax
 
 #endregion
 
-// Max hp/energy up/xp
+// Level up
 #region
 
 if keyboard_check_pressed (ord("W"))
 {
-	xp += 200
+	xp += 1000
 }
 if xp >= xpmax
 {
 	xp = xp - xpmax
-	xpmax += xpmax div (100/5)
-	hpmax += hpmax div (100/5)
+	xpmax += 5*((level div 5) + 1)
+	hpmax += 5*((level div 10) + 1)
+	hplost = 0
 	level += 1
 	energymax += 1
 }

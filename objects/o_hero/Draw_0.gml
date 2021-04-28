@@ -1,7 +1,7 @@
 x1 = camera_get_view_x(view_camera[0])
 y1 = camera_get_view_y(view_camera[0])
 
-if instance_exists(o_front_surface)
+if instance_exists(o_front_surface) && equip_menu == false
 {
 	inst_front_surface = instance_find (o_front_surface,0)
 
@@ -11,8 +11,8 @@ if instance_exists(o_front_surface)
 		surface_set_target(inst_front_surface.front_surf)	
 
 		draw_set_font(fontsmall)
-		draw_healthbar(x1 + 13, y1 + 5, x1 + 60 + hpmax*0.05, y1 + 15, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,true)
-		draw_healthbar(x1 + 13, y1 + 19, x1 + 40 + energymax*0.3, y1 + 29, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,true)
+		draw_healthbar(x1 + 13, y1 + 5, x1 + 50 + level div 2, y1 + 15, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,true)
+		draw_healthbar(x1 + 13, y1 + 19, x1 + 40 + level div 3, y1 + 29, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,true)
 		draw_healthbar(x1 + 5, y1 + 5, x1 + 9, y1 + 29, ((xp)/xpmax)*100,hp_bar_col,c_white,c_white,3,true,true)
 		
 		script_execute(text_outline,x1 + 17, y1 + 28,total_gems)
@@ -28,7 +28,10 @@ if instance_exists(o_front_surface)
 		surface_reset_target()
 	}
 }
- if instance_exists(o_shadow)
+
+
+// Shadow
+if instance_exists(o_shadow)
 {
 	inst_shadow = instance_find (o_shadow,0)
 
@@ -43,6 +46,77 @@ if instance_exists(o_front_surface)
 		surface_reset_target()
 	}
 }
+
+// Equipment menu
+#region
+
+if equip_menu == true
+{
+	if surface_exists(inst_front_surface.front_surf)
+	{	
+		surface_set_target(inst_front_surface.front_surf)
+		
+		draw_rectangle_color(x1+8,y1+8,x1 + camera_get_view_width(view_camera[0])-9,y1 + camera_get_view_height(view_camera[0])-8,c_black,c_black,c_black,c_black,false)
+		draw_rectangle_color(x1+9,y1+9,x1 + camera_get_view_width(view_camera[0])-10,y1 + camera_get_view_height(view_camera[0])-9,c_white,c_white,c_white,c_white,false)
+		
+		gpu_set_blendmode(bm_subtract)
+		draw_rectangle_color(x1+10,y1+10,x1 + camera_get_view_width(view_camera[0])-11,y1 + camera_get_view_height(view_camera[0])-10,c_black,c_black,c_black,c_black,false)
+		gpu_set_blendmode(bm_normal)
+		
+		draw_set_alpha(0.75)
+		draw_rectangle_color(x1+10,y1+10,x1 + camera_get_view_width(view_camera[0])-11,y1 + camera_get_view_height(view_camera[0])-10,c_black,c_black,c_black,c_black,false)
+		draw_set_alpha(1)
+		
+		draw_rectangle_color(x1+18,y1+27,x1 + 154,y1 + 84,c_white,c_white,c_white,c_white,false)
+		
+		gpu_set_blendmode(bm_subtract)
+		draw_rectangle_color(x1+19,y1+28,x1 + 153,y1 + 83,c_black,c_black,c_black,c_black,false)
+		gpu_set_blendmode(bm_normal)
+		
+		draw_set_alpha(0.75)
+		draw_rectangle_color(x1+19,y1+28,x1 + 153,y1 + 83,c_black,c_black,c_black,c_black,false)
+		draw_set_alpha(1)
+		
+		script_execute(text_outline,x1 + 19, y1 + 10,"Stats")
+		draw_text_transformed_color(x1 + 19, y1 + 11,"Stats",1,1,0,c_white,c_white,c_white,c_white,1)
+		
+		script_execute(text_outline,x1 + 24, y1 + 28,"Level")
+		draw_text_transformed_color(x1 + 24, y1 + 29,"Level",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + 150 - string_width(string(level)), y1 + 28,level)
+		draw_text_transformed_color(x1 + 150 - string_width(string(level)), y1 + 29,level,1,1,0,c_white,c_white,c_white,c_white,1)
+	
+		script_execute(text_outline,x1 + 24, y1 + 41,"Max Health")
+		draw_text_transformed_color(x1 + 24, y1 + 42,"Max Health",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + 150 - string_width(string(hpmax)), y1 + 41,hpmax)
+		draw_text_transformed_color(x1 + 150 - string_width(string(hpmax)), y1 + 42,hpmax,1,1,0,c_white,c_white,c_white,c_white,1)
+		
+		script_execute(text_outline,x1 + 24, y1 + 54,"Max Energy")
+		draw_text_transformed_color(x1 + 24, y1 + 55,"Max Energy",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + 150 - string_width(string(energymax)), y1 + 54,energymax)
+		draw_text_transformed_color(x1 + 150 - string_width(string(energymax)), y1 + 55,energymax,1,1,0,c_white,c_white,c_white,c_white,1)
+		
+		script_execute(text_outline,x1 + 24, y1 + 67,"Experience")
+		draw_text_transformed_color(x1 + 24, y1 + 68,"Experience",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + 150 - string_width(string(xp) + "/" + string(xpmax)), y1 + 67,string(xp) + "/" + string(xpmax))
+		draw_text_transformed_color(x1 + 150 - string_width(string(xp) + "/" + string(xpmax)), y1 + 68,string(xp) + "/" + string(xpmax),1,1,0,c_white,c_white,c_white,c_white,1)
+		
+		
+		draw_rectangle_color(x1+163,y1+27,x1 + 317,y1 + camera_get_view_height(view_camera[0]) - 18,c_white,c_white,c_white,c_white,false)
+		
+		gpu_set_blendmode(bm_subtract)
+		draw_rectangle_color(x1+164,y1+28,x1 + 316,y1 + camera_get_view_height(view_camera[0]) - 19,c_black,c_black,c_black,c_black,false)
+		gpu_set_blendmode(bm_normal)
+		
+		draw_set_alpha(0.75)
+		draw_rectangle_color(x1+164,y1+28,x1 + 316,y1 + camera_get_view_height(view_camera[0]) - 19,c_black,c_black,c_black,c_black,false)
+		draw_set_alpha(1)
+		
+		surface_reset_target()
+	}
+}
+
+
+#endregion
 
 //physics_draw_debug()
 //draw_self()

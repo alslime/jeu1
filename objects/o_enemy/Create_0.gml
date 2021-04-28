@@ -21,3 +21,5 @@ last_sequence = stand
 last_sequence_type = se_boulder_demon_stand
 
 id_array = [0]
+
+need_to_destroy_splash = false
