@@ -1,9 +1,10 @@
-jump_key = keyboard_check_pressed (vk_space) 
-left_key_pressed = keyboard_check_pressed(ord("A"))
-right_key_pressed = keyboard_check_pressed( ord("D"))
-left_key = keyboard_check(ord("A"))
-right_key = keyboard_check( ord("D"))
-dash_key = keyboard_check_pressed(vk_shift)
+jump_key = keyboard_check_pressed (vk_space) || gamepad_button_check_pressed(0,gp_face1)
+left_key_pressed = keyboard_check_pressed(ord("A")) || gamepad_axis_value(0,gp_axislh) < -0.5
+right_key_pressed = keyboard_check_pressed( ord("D")) || gamepad_axis_value(0,gp_axislh) > 0.5
+left_key = keyboard_check(ord("A")) || gamepad_axis_value(0,gp_axislh) < -0.5
+right_key = keyboard_check( ord("D")) || gamepad_axis_value(0,gp_axislh) > 0.5
+dash_key = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0,gp_face2)
+support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
 
 // Jump
 #region
@@ -188,7 +189,7 @@ if xp >= xpmax
 // Regen
 #region
 
-if mouse_check_button(mb_right) && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption)
+if support_key && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption)
 {
 	hero_state = "heal"
 	regen = true

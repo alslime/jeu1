@@ -1,3 +1,5 @@
+attack_key = mouse_check_button_pressed (mb_left) || gamepad_button_check_pressed(0,gp_face3)
+
 // Combo
 #region
 
@@ -71,7 +73,7 @@ if combo_1 == 0 && combo_finish_1 <= 0 && combo_2 == 0 && combo_finish_2 <= 0 &&
 // Attack
 #region
 
-if mouse_check_button_pressed (mb_left)
+if attack_key
 {
 	if combo_2 == 1
 	{

@@ -1,3 +1,5 @@
+equip_menu_key = keyboard_check_pressed(ord("I")) || gamepad_button_check_pressed(0,gp_select)
+
 //Choose weapon
 #region
 
@@ -16,7 +18,7 @@ if keyboard_check_pressed(ord("2"))
 
 #endregion
 
-if keyboard_check_pressed(ord("I"))
+if equip_menu_key
 {
 	if equip_menu == false
 	{
