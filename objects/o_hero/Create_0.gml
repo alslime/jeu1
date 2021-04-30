@@ -31,3 +31,5 @@ dash_speed = 4
 
 need_to_destroy_splash = false
 equip_menu = false
+
+wpn_abi_pow_chosen = 0

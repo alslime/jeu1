@@ -56,15 +56,15 @@ if equip_menu == true
 	{	
 		surface_set_target(inst_front_surface.front_surf)
 		
-		draw_rectangle_color(x1+8,y1+8,x1 + camera_get_view_width(view_camera[0])-9,y1 + camera_get_view_height(view_camera[0])-8,c_black,c_black,c_black,c_black,false)
-		draw_rectangle_color(x1+9,y1+9,x1 + camera_get_view_width(view_camera[0])-10,y1 + camera_get_view_height(view_camera[0])-9,c_white,c_white,c_white,c_white,false)
+		draw_rectangle_color(x1+8,y1+8,x1 + camera_get_view_width(view_camera[0])-9,y1 + camera_get_view_height(view_camera[0])-9,c_black,c_black,c_black,c_black,false)
+		draw_rectangle_color(x1+9,y1+9,x1 + camera_get_view_width(view_camera[0])-10,y1 + camera_get_view_height(view_camera[0])-10,c_white,c_white,c_white,c_white,false)
 		
 		gpu_set_blendmode(bm_subtract)
-		draw_rectangle_color(x1+10,y1+10,x1 + camera_get_view_width(view_camera[0])-11,y1 + camera_get_view_height(view_camera[0])-10,c_black,c_black,c_black,c_black,false)
+		draw_rectangle_color(x1+10,y1+10,x1 + camera_get_view_width(view_camera[0])-11,y1 + camera_get_view_height(view_camera[0])-11,c_black,c_black,c_black,c_black,false)
 		gpu_set_blendmode(bm_normal)
 		
 		draw_set_alpha(0.75)
-		draw_rectangle_color(x1+10,y1+10,x1 + camera_get_view_width(view_camera[0])-11,y1 + camera_get_view_height(view_camera[0])-10,c_black,c_black,c_black,c_black,false)
+		draw_rectangle_color(x1+10,y1+10,x1 + camera_get_view_width(view_camera[0])-11,y1 + camera_get_view_height(view_camera[0])-11,c_black,c_black,c_black,c_black,false)
 		draw_set_alpha(1)
 		
 		draw_rectangle_color(x1+18,y1+27,x1 + 154,y1 + 84,c_white,c_white,c_white,c_white,false)
@@ -100,7 +100,6 @@ if equip_menu == true
 		script_execute(text_outline,x1 + 150 - string_width(string(xp) + "/" + string(xpmax)), y1 + 67,string(xp) + "/" + string(xpmax))
 		draw_text_transformed_color(x1 + 150 - string_width(string(xp) + "/" + string(xpmax)), y1 + 68,string(xp) + "/" + string(xpmax),1,1,0,c_white,c_white,c_white,c_white,1)
 		
-		
 		draw_rectangle_color(x1+163,y1+27,x1 + 317,y1 + camera_get_view_height(view_camera[0]) - 18,c_white,c_white,c_white,c_white,false)
 		
 		gpu_set_blendmode(bm_subtract)
@@ -110,6 +109,33 @@ if equip_menu == true
 		draw_set_alpha(0.75)
 		draw_rectangle_color(x1+164,y1+28,x1 + 316,y1 + camera_get_view_height(view_camera[0]) - 19,c_black,c_black,c_black,c_black,false)
 		draw_set_alpha(1)
+		
+		if wpn_abi_pow_chosen == 0
+		{
+			script_execute(text_outline,x1 + 164, y1 + 10,"Inventory")
+			draw_text_transformed_color(x1 + 164, y1 + 11,"Inventory",1,1,0,c_white,c_white,c_white,c_white,1)
+		}
+		
+		if !instance_exists(o_equip_weapon)
+		{
+			w_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_weapon)
+			w_equip_icon.x_correct = 23
+			w_equip_icon.y_correct = 92
+		}
+		
+		if !instance_exists(o_equip_support)
+		{
+			s_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_support)
+			s_equip_icon.x_correct = 23
+			s_equip_icon.y_correct = 120
+		}
+		
+		if !instance_exists(o_equip_ability)
+		{
+			a_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_ability)
+			a_equip_icon.x_correct = 23
+			a_equip_icon.y_correct = 148
+		}	
 		
 		surface_reset_target()
 	}
