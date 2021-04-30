@@ -68,7 +68,7 @@ col_with_weapon = place_meeting(x, y,o_weapon_hitbox)
 current_weapon_combo = vweapon.current_combo_idx
 
 // Set damage
-dmg = vweapon.base_dmg[current_weapon_combo - 1]
+dmg = vweapon.base_dmg[current_weapon_combo]
 
 if instance_exists(o_weapon_hitbox)
 {
@@ -205,6 +205,7 @@ if jump
 }
 
 #endregion
+
 
 // To not fall
 #region

@@ -10,4 +10,4 @@ punch3 = layer_sequence_create("lay_hero",x,y,se_punch3)
 combo3_length = layer_sequence_get_length(punch3)*60 div 18
 layer_sequence_destroy(punch3)
 
-base_dmg = [1,2,3]
+base_dmg = [0,1,2,3]

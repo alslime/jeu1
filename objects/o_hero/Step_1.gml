@@ -1,3 +1,10 @@
+jump_key = keyboard_check_pressed (vk_space) 
+left_key_pressed = keyboard_check_pressed(ord("A"))
+right_key_pressed = keyboard_check_pressed( ord("D"))
+left_key = keyboard_check(ord("A"))
+right_key = keyboard_check( ord("D"))
+dash_key = keyboard_check_pressed(vk_shift)
+
 // Jump
 #region
 
@@ -12,7 +19,7 @@ else
 {
 	jump = true
 }
-if keyboard_check_pressed (vk_space) && (!jump)
+if jump_key && (!jump)
 {
 	phy_speed_y = -jump_value
 	inst_dust1 = instance_create_layer(x,y + sprite_height,"lay_hero",o_walking_dust)
@@ -26,15 +33,15 @@ if keyboard_check_pressed (vk_space) && (!jump)
 // Movments left/right && Dash && check current combo
 #region
 
-if keyboard_check_pressed(ord("A"))
+if left_key_pressed == true
 {
 	dir = 180
 }
-if keyboard_check_pressed( ord("D") )
+if right_key_pressed == true
 {
 	dir = 0
 }
-if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
+if left_key == true && right_key == true && (dash_time == 0)
 {
 	if dir == 180
 	{
@@ -61,7 +68,7 @@ if keyboard_check( ord("A") ) && keyboard_check( ord("D") ) && (dash_time == 0)
 		}
 	}
 }
-else if keyboard_check( ord("A") ) && (dash_time == 0)
+else if left_key && (dash_time == 0)
 {
 	phy_speed_x = -walk_speed
 	dir = 180
@@ -74,7 +81,7 @@ else if keyboard_check( ord("A") ) && (dash_time == 0)
 		hero_state = "jump"
 	}
 }
-else if keyboard_check( ord("D") ) && (dash_time == 0)
+else if right_key && (dash_time == 0)
 {
 	phy_speed_x = walk_speed
 	dir = 0
@@ -118,7 +125,7 @@ if dash_wait > 0
 {
 	dash_wait = dash_wait - 1
 }
-if keyboard_check_pressed(vk_shift) && dash_wait == 0
+if dash_key && dash_wait == 0
 {
 	//dash_begin = true
 	dash_time = 20

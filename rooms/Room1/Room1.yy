@@ -23,7 +23,11 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"o_water","path":"objects/o_water/o_water.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":144.0,"resourceVersion":"1.0","name":"inst_225E86E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"o_water","path":"objects/o_water/o_water.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.25,"scaleY":0.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":528.0,"y":192.0,"resourceVersion":"1.0","name":"inst_4504FFBF","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_front","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_enemies","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_boulder_demon","path":"objects/o_boulder_demon/o_boulder_demon.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":248.0,"y":104.0,"resourceVersion":"1.0","name":"inst_54EA6163","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_boulder_demon","path":"objects/o_boulder_demon/o_boulder_demon.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":412.0,"y":152.0,"resourceVersion":"1.0","name":"inst_2680D47F","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_boulder_demon","path":"objects/o_boulder_demon/o_boulder_demon.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":696.0,"y":88.0,"resourceVersion":"1.0","name":"inst_3C23A912","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"lay_weapon","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"o_hero","path":"objects/o_hero/o_hero.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":96.0,"resourceVersion":"1.0","name":"inst_15950C8C","tags":[],"resourceType":"GMRInstance",},
@@ -380,6 +384,9 @@
     {"name":"inst_4504FFBF","path":"rooms/room1/room1.yy",},
     {"name":"inst_47805803","path":"rooms/room1/room1.yy",},
     {"name":"inst_D7049EF","path":"rooms/room1/room1.yy",},
+    {"name":"inst_54EA6163","path":"rooms/room1/room1.yy",},
+    {"name":"inst_2680D47F","path":"rooms/room1/room1.yy",},
+    {"name":"inst_3C23A912","path":"rooms/room1/room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
