@@ -13,3 +13,9 @@ if current_weapon_combo != last_combo_idx
 }
 
 last_combo_idx = current_weapon_combo
+
+if place_meeting(x,y,o_enemy)
+{
+	inst_enemy = instance_place(x,y,o_enemy)
+	inst_enemy.col_id = id
+}

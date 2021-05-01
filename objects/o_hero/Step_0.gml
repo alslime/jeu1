@@ -6,14 +6,11 @@ equip_menu_key = keyboard_check_pressed(ord("I")) || gamepad_button_check_presse
 if keyboard_check_pressed(ord("1"))
 {
 	instance_destroy (vweapon)
-	vweapon = instance_create_layer(x,y,"lay_weapon",o_fist)
+	vweapon = instance_create_layer(x,y,"lay_weapon",o_light_sword)
 	vweapon.owner = id
-}
-if keyboard_check_pressed(ord("2"))
-{
-	instance_destroy (vweapon)
-	vweapon = instance_create_layer(x,y,"lay_weapon",o_fist)
-	vweapon.owner = id
+	se_1 = se_light_sword1
+	se_2 = se_light_sword2
+	se_3 = se_light_sword3
 }
 
 #endregion

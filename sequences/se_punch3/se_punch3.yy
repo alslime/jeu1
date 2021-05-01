@@ -72,8 +72,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Hero",
-    "path": "folders/Sequences/Hero.yy",
+    "name": "Punch",
+    "path": "folders/Sequences/Hero/Punch.yy",
   },
   "resourceVersion": "1.3",
   "name": "se_punch3",

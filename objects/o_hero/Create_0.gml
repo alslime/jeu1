@@ -33,3 +33,7 @@ need_to_destroy_splash = false
 equip_menu = false
 
 wpn_abi_pow_chosen = 0
+
+se_1 = se_punch1
+se_2 = se_punch2
+se_3 = se_punch3

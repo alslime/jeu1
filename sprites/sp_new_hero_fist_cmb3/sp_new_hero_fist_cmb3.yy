@@ -116,8 +116,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "hero",
-    "path": "folders/Sprites/hero.yy",
+    "name": "Fist",
+    "path": "folders/Sprites/hero/Fist.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_new_hero_fist_cmb3",

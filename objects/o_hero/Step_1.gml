@@ -297,32 +297,32 @@ else if hero_state == "dash"
 }
 else if hero_state == "combo1"
 {
-	if last_sequence_type != se_punch1
+	if last_sequence_type != se_1
 	{
 		layer_sequence_destroy(last_sequence)
-		punch1 = layer_sequence_create("lay_hero",x,y,se_punch1)
+		punch1 = layer_sequence_create("lay_hero",x,y,se_1)
 		last_sequence = punch1
-		last_sequence_type = se_punch1
+		last_sequence_type = se_1
 	}
 }
 else if hero_state == "combo2"
 {
-	if last_sequence_type != se_punch2
+	if last_sequence_type != se_2
 	{
 		layer_sequence_destroy(last_sequence)
-		punch2 = layer_sequence_create("lay_hero",x,y,se_punch2)
+		punch2 = layer_sequence_create("lay_hero",x,y,se_2)
 		last_sequence = punch2
-		last_sequence_type = se_punch2
+		last_sequence_type = se_2
 	}
 }
 else if hero_state == "combo3"
 {
-	if last_sequence_type != se_punch3
+	if last_sequence_type != se_3
 	{
 		layer_sequence_destroy(last_sequence)
-		punch3 = layer_sequence_create("lay_hero",x,y,se_punch3)
+		punch3 = layer_sequence_create("lay_hero",x,y,se_3)
 		last_sequence = punch3
-		last_sequence_type = se_punch3
+		last_sequence_type = se_3
 	}
 }
 else if hero_state == "heal"

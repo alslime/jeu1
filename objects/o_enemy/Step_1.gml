@@ -72,9 +72,6 @@ dmg = vweapon.base_dmg[current_weapon_combo]
 
 if instance_exists(o_weapon_hitbox)
 {
-	vweapon_hitbox = instance_nearest(x,y,o_weapon_hitbox)
-	col_id = vweapon_hitbox.id
-
 	// Do we need to decrement our HP ?
 	if	col_with_weapon && current_weapon_combo != 0
 	{
