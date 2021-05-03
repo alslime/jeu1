@@ -6,8 +6,11 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
-  "parentObjectId": null,
+  "persistent": true,
+  "parentObjectId": {
+    "name": "o_virtual_keys",
+    "path": "objects/o_virtual_keys/o_virtual_keys.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,7 +24,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Object54",
+  "name": "o_virtual_space",
   "tags": [],
   "resourceType": "GMObject",
 }
