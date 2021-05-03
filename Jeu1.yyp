@@ -58,6 +58,7 @@
     {"id":{"name":"se_heal","path":"sequences/se_heal/se_heal.yy",},"order":9,},
     {"id":{"name":"sp_new_hero_lightsword2","path":"sprites/sp_new_hero_lightsword2/sp_new_hero_lightsword2.yy",},"order":1,},
     {"id":{"name":"sp_cursor","path":"sprites/sp_cursor/sp_cursor.yy",},"order":41,},
+    {"id":{"name":"Object54","path":"objects/Object54/Object54.yy",},"order":7,},
     {"id":{"name":"o_capture_target","path":"objects/o_capture_target/o_capture_target.yy",},"order":7,},
     {"id":{"name":"sp_gem_500","path":"sprites/sp_gem_500/sp_gem_500.yy",},"order":7,},
     {"id":{"name":"sp_shadow","path":"sprites/sp_shadow/sp_shadow.yy",},"order":2,},

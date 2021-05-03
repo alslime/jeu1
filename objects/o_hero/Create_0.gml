@@ -37,3 +37,12 @@ wpn_abi_pow_chosen = 0
 se_1 = se_punch1
 se_2 = se_punch2
 se_3 = se_punch3
+
+if os_type == os_ios || os_type == os_android
+{
+	window_set_size(672,378)
+	virtual_key_add(view_get_wport(0)-128,view_get_hport(0)-128,128,128,vk_space)
+	virtual_key_add(view_get_wport(0)-128,view_get_hport(0)-256,128,128,vk_lshift)
+	virtual_key_add(view_get_wport(0)-256,view_get_hport(0)-128,128,128,ord("H"))
+	virtual_key_add(view_get_wport(0)-128,0,128,128,ord("I"))
+}

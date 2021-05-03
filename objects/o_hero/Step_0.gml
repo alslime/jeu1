@@ -25,8 +25,7 @@ if equip_menu_key
 	{
 		equip_menu = false
 	}
-}
-		
+}	
 
 // Disable rotation
 phy_fixed_rotation = true
