@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Virtual_keys",
+    "path": "folders/Objects/Virtual_keys.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_virtual_left",

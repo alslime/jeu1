@@ -2,11 +2,11 @@
   "spriteId": null,
   "timeUnits": 1,
   "playback": 0,
-  "playbackSpeed": 6.0,
+  "playbackSpeed": 15.0,
   "playbackSpeedType": 0,
   "autoRecord": true,
   "volume": 1.0,
-  "length": 3.0,
+  "length": 5.0,
   "events": {
     "Keyframes": [],
     "resourceVersion": "1.0",

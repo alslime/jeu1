@@ -20,6 +20,7 @@ stand = layer_sequence_create("lay_front",x,y,se_boulder_demon_stand)
 last_sequence = stand
 last_sequence_type = se_boulder_demon_stand
 
-id_array = [0]
+id_array = array_create(1,[0])
+col_id = -1
 
 need_to_destroy_splash = false

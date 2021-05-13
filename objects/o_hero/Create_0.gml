@@ -1,6 +1,8 @@
 // Change random seed each game
 randomize()
 
+audio_play_sound(sound_music_1,0,true)
+
 vweapon = instance_create_layer(0,0,"lay_weapon",o_fist)
 vweapon.owner = id
 

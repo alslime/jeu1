@@ -78,7 +78,7 @@ if instance_exists(o_weapon_hitbox)
 		can_be_hit = true
 		for (z = 0; z < array_length(id_array); z += 1)
 		{
-			if col_id == id_array[z]
+			if id_array[z] == col_id
 			{
 				can_be_hit = false
 				break
@@ -88,12 +88,11 @@ if instance_exists(o_weapon_hitbox)
 		{
 			prevhp_lost = hplost
 			hplost += dmg
-			can_be_hit = false
 			in_hit_text = instance_create_layer(x,y,"lay_game_front",o_hit_text)
 			in_hit_text.dmg = dmg
 			in_hit_text.x = x + sprite_width/2
 			in_hit_text.y = y - 16
-			array_insert(id_array,0,col_id)
+			array_insert(id_array,-1,col_id)
 			hit_state_begin = true
 			countdown = 45
 			if inst_hero.energylost > 0
@@ -203,37 +202,38 @@ if jump
 
 #endregion
 
-
 // To not fall
 #region
-
-if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_l == true
+if state != "hit"
 {
-	n = 0
-	while collision_point(x1 + n,y1,o_ground,false,false) && n > 10*phy_speed_x
+	if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_l == true
 	{
-		n -= 1
+		n = 0
+		while collision_point(x1 + n,y1,o_ground,false,false) && n > 10*phy_speed_x
+		{
+			n -= 1
+		}
+		phy_speed_x = 0.1*n
+		stop_at_corner_l = false
 	}
-	phy_speed_x = 0.1*n
-	stop_at_corner_l = false
-}
-else
-{
-	stop_at_corner_l = true
-}
-if !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_r == true
-{
-	n = 0
-	while collision_point(x2 + n,y1,o_ground,false,false) && n < 10*phy_speed_x
+	else
 	{
-		n += 1
+		stop_at_corner_l = true
 	}
-	phy_speed_x = 0.1*n
-	stop_at_corner_r = false
-}
-else
-{
-	stop_at_corner_r = true
+	if !collision_point(x2 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_r == true
+	{
+		n = 0
+		while collision_point(x2 + n,y1,o_ground,false,false) && n < 10*phy_speed_x
+		{
+			n += 1
+		}
+		phy_speed_x = 0.1*n
+		stop_at_corner_r = false
+	}
+	else
+	{
+		stop_at_corner_r = true
+	}
 }
 
 #endregion

@@ -1,8 +1,17 @@
-equip_menu_key = keyboard_check_pressed(ord("I")) || gamepad_button_check_pressed(0,gp_select)
+equip_menu_key = keyboard_check_pressed(vk_tab) || gamepad_button_check_pressed(0,gp_select)
 
 //Choose weapon
 #region
 
+if keyboard_check_pressed(ord("0"))
+{
+	instance_destroy (vweapon)
+	vweapon = instance_create_layer(x,y,"lay_weapon",o_fist)
+	vweapon.owner = id
+	se_1 = se_punch1
+	se_2 = se_punch2
+	se_3 = se_punch3
+}
 if keyboard_check_pressed(ord("1"))
 {
 	instance_destroy (vweapon)
@@ -11,6 +20,15 @@ if keyboard_check_pressed(ord("1"))
 	se_1 = se_light_sword1
 	se_2 = se_light_sword2
 	se_3 = se_light_sword3
+}
+if keyboard_check_pressed(ord("2"))
+{
+	instance_destroy (vweapon)
+	vweapon = instance_create_layer(x,y,"lay_weapon",o_great_sword)
+	vweapon.owner = id
+	se_1 = se_great_sword1
+	se_2 = se_great_sword2
+	se_3 = se_great_sword3
 }
 
 #endregion
