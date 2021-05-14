@@ -31,6 +31,8 @@ jump_value = 6
 walk_speed = 2
 dash_speed = 4
 
+double_jump = false
+
 need_to_destroy_splash = false
 equip_menu = false
 

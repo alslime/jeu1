@@ -15,18 +15,25 @@ y1 = y + sprite_height + 1
 if collision_line (x1,y1,x2,y1,o_ground,false,true)
 {
  	jump = false
+	can_double_jump = true
 }
 else
 {
 	jump = true
 }
-if jump_key && (!jump)
+if jump_key && (!jump || double_jump)
 {
 	phy_speed_y = -jump_value
 	inst_dust1 = instance_create_layer(x,y + sprite_height,"lay_hero",o_walking_dust)
 	inst_dust1.image_xscale = 1
 	inst_dust2 = instance_create_layer(x + sprite_width,y + sprite_height,"lay_hero",o_walking_dust)
 	inst_dust2.image_xscale = -1
+	double_jump = false
+	if jump_key && can_double_jump == true
+	{
+		double_jump = true
+		can_double_jump = false
+	}
 }
 
 #endregion
