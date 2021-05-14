@@ -92,7 +92,7 @@ if instance_exists(o_weapon_hitbox)
 			in_hit_text.dmg = dmg
 			in_hit_text.x = x + sprite_width/2
 			in_hit_text.y = y - 16
-			array_insert(id_array,-1,col_id)
+			array_insert(id_array,0,col_id)
 			hit_state_begin = true
 			countdown = 45
 			if inst_hero.energylost > 0
