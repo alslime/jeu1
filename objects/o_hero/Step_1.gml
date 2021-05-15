@@ -6,6 +6,8 @@ right_key = keyboard_check( ord("D")) || gamepad_axis_value(0,gp_axislh) > 0.5
 dash_key = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0,gp_face2)
 support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
 
+// ability to double jump and to dash without falling are activited
+
 // Jump
 #region
 
@@ -21,7 +23,7 @@ else
 {
 	jump = true
 }
-if jump_key && (!jump || double_jump)
+if (jump_key && (!jump)) || (double_jump)
 {
 	phy_speed_y = -jump_value
 	inst_dust1 = instance_create_layer(x,y + sprite_height,"lay_hero",o_walking_dust)
@@ -29,11 +31,12 @@ if jump_key && (!jump || double_jump)
 	inst_dust2 = instance_create_layer(x + sprite_width,y + sprite_height,"lay_hero",o_walking_dust)
 	inst_dust2.image_xscale = -1
 	double_jump = false
-	if jump_key && can_double_jump == true
-	{
-		double_jump = true
-		can_double_jump = false
-	}
+}
+if jump_key && can_double_jump && jump
+{
+	double_jump = true
+	can_double_jump = false
+	
 }
 
 #endregion
@@ -136,7 +139,7 @@ if dash_wait > 0
 if dash_key && dash_wait == 0
 {
 	//dash_begin = true
-	dash_time = 20
+	dash_time = 15
 	dash_wait = 50
 	if dir == 0
 	{
@@ -301,6 +304,7 @@ else if hero_state == "dash"
 		last_sequence = sedash
 		last_sequence_type = se_dash
 	}
+	phy_speed_y = 0
 }
 else if hero_state == "combo1"
 {

@@ -56,7 +56,7 @@ if place_meeting(x,y,o_water)
 	physics_apply_local_force(0,0,0,-70)
 	jump_value = 3
 	walk_speed = 1
-	dash_speed = 2
+	dash_speed = 3
 	if phy_speed_y > 3
 	{
 		phy_speed_y = 3

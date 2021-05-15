@@ -29,7 +29,7 @@ xpmax = 50
 
 jump_value = 6
 walk_speed = 2
-dash_speed = 4
+dash_speed = 6
 
 double_jump = false
 
