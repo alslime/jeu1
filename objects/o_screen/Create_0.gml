@@ -1,1 +1,0 @@
-height = irandom_range(1,2)*2
