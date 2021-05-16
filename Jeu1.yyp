@@ -74,7 +74,7 @@
     {"id":{"name":"sp_gem_10","path":"sprites/sp_gem_10/sp_gem_10.yy",},"order":8,},
     {"id":{"name":"sp_vase_piece2","path":"sprites/sp_vase_piece2/sp_vase_piece2.yy",},"order":35,},
     {"id":{"name":"o_ground","path":"objects/o_ground/o_ground.yy",},"order":2,},
-    {"id":{"name":"Sprite64","path":"sprites/Sprite64/Sprite64.yy",},"order":49,},
+    {"id":{"name":"sp_plains","path":"sprites/sp_plains/sp_plains.yy",},"order":49,},
     {"id":{"name":"sp_new_hero_dash","path":"sprites/sp_new_hero_dash/sp_new_hero_dash.yy",},"order":0,},
     {"id":{"name":"sp_new_hero_heal","path":"sprites/sp_new_hero_heal/sp_new_hero_heal.yy",},"order":4,},
     {"id":{"name":"sp_vase","path":"sprites/sp_vase/sp_vase.yy",},"order":33,},
