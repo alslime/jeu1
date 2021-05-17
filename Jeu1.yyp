@@ -31,6 +31,7 @@
     {"id":{"name":"sound_light_sword_swing2","path":"sounds/sound_light_sword_swing2/sound_light_sword_swing2.yy",},"order":1,},
     {"id":{"name":"sound_light_sword_swing","path":"sounds/sound_light_sword_swing/sound_light_sword_swing.yy",},"order":0,},
     {"id":{"name":"sp_1x1","path":"sprites/sp_1x1/sp_1x1.yy",},"order":3,},
+    {"id":{"name":"sp_plainsback","path":"sprites/sp_plainsback/sp_plainsback.yy",},"order":50,},
     {"id":{"name":"sp_water","path":"sprites/sp_water/sp_water.yy",},"order":43,},
     {"id":{"name":"o_virtual_shift","path":"objects/o_virtual_shift/o_virtual_shift.yy",},"order":3,},
     {"id":{"name":"o_virtual_right","path":"objects/o_virtual_right/o_virtual_right.yy",},"order":4,},

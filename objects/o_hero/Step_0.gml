@@ -45,6 +45,20 @@ if equip_menu_key
 	}
 }	
 
+//Parralax Background
+#region
+
+if layer_exists("bg_1")
+{
+	layer_x("bg_1",camera_get_view_x(view_camera[0])/6)
+}
+if layer_exists("bg_2")
+{
+	layer_x("bg_2",camera_get_view_x(view_camera[0])/10)
+}
+
+#endregion
+
 // Disable rotation
 phy_fixed_rotation = true
 
