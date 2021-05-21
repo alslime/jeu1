@@ -293,6 +293,41 @@ if hero_state == "crouch"
 		layer_sequence_destroy(last_sequence)
 		last_sequence = secrouch
 		last_sequence_type = se_crouch
+		
+		physics_remove_fixture(id,fix_binded)
+		physics_fixture_delete(fix)
+		
+		crouch_fix = physics_fixture_create()
+		physics_fixture_set_polygon_shape(crouch_fix)
+		physics_fixture_add_point(crouch_fix, 0,6)
+		physics_fixture_add_point(crouch_fix, 9, 6)
+		physics_fixture_add_point(crouch_fix, 9, 21)
+		physics_fixture_add_point(crouch_fix, 0, 21)
+		physics_fixture_set_density(crouch_fix,0.5)
+		physics_fixture_set_collision_group(crouch_fix,0)
+		crouch_fix_binded = physics_fixture_bind(crouch_fix,id)
+		
+		before_was_crouch = true
+	}
+}
+else
+{
+	if before_was_crouch == true
+	{
+		physics_remove_fixture(id,crouch_fix_binded)
+		physics_fixture_delete(fix)
+	
+		fix = physics_fixture_create()
+		physics_fixture_set_polygon_shape(fix)
+		physics_fixture_add_point(fix, 0,0)
+		physics_fixture_add_point(fix, 9, 0)
+		physics_fixture_add_point(fix, 9, 21)
+		physics_fixture_add_point(fix, 0, 21)
+		physics_fixture_set_density(fix,0.5)
+		physics_fixture_set_collision_group(fix,0)
+		fix_binded = physics_fixture_bind(fix,id)
+		
+		before_was_crouch = false
 	}
 }
 

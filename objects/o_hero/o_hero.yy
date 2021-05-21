@@ -8,7 +8,7 @@
   "spriteMaskId": null,
   "persistent": true,
   "parentObjectId": null,
-  "physicsObject": true,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 0,
