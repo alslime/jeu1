@@ -1,6 +1,7 @@
 jump_key = keyboard_check_pressed (vk_space) || gamepad_button_check_pressed(0,gp_face1)
 left_key_pressed = keyboard_check_pressed(ord("A")) || gamepad_axis_value(0,gp_axislh) < -0.5
-right_key_pressed = keyboard_check_pressed( ord("D")) || gamepad_axis_value(0,gp_axislh) > 0.5
+right_key_pressed = keyboard_check_pressed(ord("D")) || gamepad_axis_value(0,gp_axislh) > 0.5
+down_key_pressed = keyboard_check(ord("S")) || gamepad_axis_value(0,gp_axislv) > 0.5
 left_key = keyboard_check(ord("A")) || gamepad_axis_value(0,gp_axislh) < -0.5
 right_key = keyboard_check( ord("D")) || gamepad_axis_value(0,gp_axislh) > 0.5
 dash_key = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0,gp_face2)
@@ -44,14 +45,18 @@ if jump_key && can_double_jump && jump
 // Movments left/right && Dash && check current combo
 #region
 
-if left_key_pressed == true
+if (hero_state == "stand") || (hero_state == "walk") || (hero_state == "jump") || (hero_state == "crouch")
 {
-	dir = 180
+	if left_key_pressed == true
+	{
+		dir = 180
+	}
+	if right_key_pressed == true
+	{
+		dir = 0
+	}
 }
-if right_key_pressed == true
-{
-	dir = 0
-}
+
 if left_key == true && right_key == true && (dash_time == 0)
 {
 	if dir == 180
@@ -167,6 +172,18 @@ else if vweapon.current_combo_idx == 3
 
 #endregion
 
+// Crouch
+#region
+
+crouch = false
+if !jump && down_key_pressed && phy_speed_x == 0
+{
+	hero_state = "crouch"
+	crouch = true
+}
+
+#endregion
+
 // Die
 #region
 
@@ -268,7 +285,18 @@ if hero_state == "stand"
 		last_sequence_type = se_stand
 	}
 }
-else if hero_state == "walk"
+if hero_state == "crouch"
+{
+	if last_sequence_type != se_crouch
+	{
+		secrouch = layer_sequence_create("lay_hero",x,y,se_crouch)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = secrouch
+		last_sequence_type = se_crouch
+	}
+}
+
+if hero_state == "walk"
 {
 	if last_sequence_type != se_walk
 	{
@@ -285,7 +313,7 @@ else if hero_state == "walk"
 		walk_dust_count = 0
 	}
 }
-else if hero_state == "jump"
+if hero_state == "jump"
 {
 	if last_sequence_type != se_jump
 	{
@@ -295,7 +323,7 @@ else if hero_state == "jump"
 		last_sequence_type = se_jump
 	}
 }
-else if hero_state == "dash"
+if hero_state == "dash"
 {
 	if last_sequence_type != se_dash
 	{
@@ -306,7 +334,7 @@ else if hero_state == "dash"
 	}
 	phy_speed_y = 0
 }
-else if hero_state == "combo1"
+if hero_state == "combo1"
 {
 	if last_sequence_type != se_1
 	{
@@ -316,7 +344,7 @@ else if hero_state == "combo1"
 		last_sequence_type = se_1
 	}
 }
-else if hero_state == "combo2"
+if hero_state == "combo2"
 {
 	if last_sequence_type != se_2
 	{
@@ -326,7 +354,7 @@ else if hero_state == "combo2"
 		last_sequence_type = se_2
 	}
 }
-else if hero_state == "combo3"
+if hero_state == "combo3"
 {
 	if last_sequence_type != se_3
 	{
@@ -336,7 +364,7 @@ else if hero_state == "combo3"
 		last_sequence_type = se_3
 	}
 }
-else if hero_state == "heal"
+if hero_state == "heal"
 {
 	if last_sequence_type != se_heal
 	{
@@ -364,7 +392,7 @@ else if hero_state == "heal"
 
 //Sequence follows player
 #region
-
+	
 if dir == 0
 {
 	layer_sequence_x(last_sequence,x)
@@ -378,4 +406,3 @@ else
 layer_sequence_y(last_sequence,y)
 
 #endregion
-
