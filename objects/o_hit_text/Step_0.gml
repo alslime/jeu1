@@ -1,2 +1,2 @@
 // Text goes up for style
-y -= 0.2
+y -= 0.4

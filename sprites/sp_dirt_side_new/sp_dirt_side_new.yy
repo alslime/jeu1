@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Grass_dirt",
+    "path": "folders/Sprites/Grass_dirt.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_dirt_side_new",

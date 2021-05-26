@@ -126,7 +126,12 @@ else
 // Dash
 if dash_time > 0
 {
+	vweapon.combo_0 = 1
 	hero_state = "dash"
+	if crouch_dash
+	{
+		hero_state = "crouch_dash"
+	}
 	dash_time = dash_time - 1
 	if dash_dir == 0
 	{
@@ -143,7 +148,12 @@ if dash_wait > 0
 }
 if dash_key && dash_wait == 0
 {
-	//dash_begin = true
+	crouch_dash = false
+	if down_key_pressed && !jump
+	{
+		crouch_dash = true
+	}
+	
 	dash_time = 15
 	dash_wait = 50
 	if dir == 0
@@ -180,6 +190,7 @@ if !jump && down_key_pressed && phy_speed_x == 0
 {
 	hero_state = "crouch"
 	crouch = true
+	vweapon.combo_0 = 1
 }
 
 #endregion
@@ -285,6 +296,7 @@ if hero_state == "stand"
 		last_sequence_type = se_stand
 	}
 }
+
 if hero_state == "crouch"
 {
 	if last_sequence_type != se_crouch
@@ -303,14 +315,18 @@ if hero_state == "crouch"
 		physics_fixture_add_point(crouch_fix, 9, 6)
 		physics_fixture_add_point(crouch_fix, 9, 21)
 		physics_fixture_add_point(crouch_fix, 0, 21)
-		physics_fixture_set_density(crouch_fix,0.5)
+		physics_fixture_set_density(crouch_fix,1)
+		physics_fixture_set_restitution(crouch_fix,0)
 		physics_fixture_set_collision_group(crouch_fix,0)
+		physics_fixture_set_linear_damping(crouch_fix,0)
+		physics_fixture_set_angular_damping(crouch_fix,0)
+		physics_fixture_set_friction(crouch_fix,0)
 		crouch_fix_binded = physics_fixture_bind(crouch_fix,id)
 		
 		before_was_crouch = true
 	}
 }
-else
+else if hero_state != "crouch_dash"
 {
 	if before_was_crouch == true
 	{
@@ -324,10 +340,47 @@ else
 		physics_fixture_add_point(fix, 9, 21)
 		physics_fixture_add_point(fix, 0, 21)
 		physics_fixture_set_density(fix,0.5)
+		physics_fixture_set_restitution(fix,0)
 		physics_fixture_set_collision_group(fix,0)
+		physics_fixture_set_linear_damping(fix,0)
+		physics_fixture_set_angular_damping(fix,0)
+		physics_fixture_set_friction(fix,0)
 		fix_binded = physics_fixture_bind(fix,id)
 		
 		before_was_crouch = false
+	}
+}
+
+if hero_state == "crouch_dash"
+{
+	if last_sequence_type != se_crouch_dash
+	{
+		secrouch_dash = layer_sequence_create("lay_hero",x,y,se_crouch_dash)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = secrouch_dash
+		last_sequence_type = se_crouch_dash
+		
+		if last_sequence_type != se_crouch
+		{
+			physics_remove_fixture(id,fix_binded)
+			physics_fixture_delete(fix)
+		
+			crouch_fix = physics_fixture_create()
+			physics_fixture_set_polygon_shape(crouch_fix)
+			physics_fixture_add_point(crouch_fix, 0,6)
+			physics_fixture_add_point(crouch_fix, 9,6)
+			physics_fixture_add_point(crouch_fix, 9, 21)
+			physics_fixture_add_point(crouch_fix, 0, 21)
+			physics_fixture_set_density(crouch_fix,1)
+			physics_fixture_set_restitution(crouch_fix,0)
+			physics_fixture_set_collision_group(crouch_fix,0)
+			physics_fixture_set_linear_damping(crouch_fix,0)
+			physics_fixture_set_angular_damping(crouch_fix,0)
+			physics_fixture_set_friction(crouch_fix,0)
+			crouch_fix_binded = physics_fixture_bind(crouch_fix,id)
+		
+			before_was_crouch = true
+		}
 	}
 }
 
@@ -348,6 +401,7 @@ if hero_state == "walk"
 		walk_dust_count = 0
 	}
 }
+
 if hero_state == "jump"
 {
 	if last_sequence_type != se_jump
@@ -358,6 +412,7 @@ if hero_state == "jump"
 		last_sequence_type = se_jump
 	}
 }
+
 if hero_state == "dash"
 {
 	if last_sequence_type != se_dash
@@ -369,6 +424,7 @@ if hero_state == "dash"
 	}
 	phy_speed_y = 0
 }
+
 if hero_state == "combo1"
 {
 	if last_sequence_type != se_1
@@ -379,6 +435,7 @@ if hero_state == "combo1"
 		last_sequence_type = se_1
 	}
 }
+
 if hero_state == "combo2"
 {
 	if last_sequence_type != se_2
@@ -389,6 +446,7 @@ if hero_state == "combo2"
 		last_sequence_type = se_2
 	}
 }
+
 if hero_state == "combo3"
 {
 	if last_sequence_type != se_3
@@ -399,6 +457,7 @@ if hero_state == "combo3"
 		last_sequence_type = se_3
 	}
 }
+
 if hero_state == "heal"
 {
 	if last_sequence_type != se_heal
