@@ -22,14 +22,16 @@ last_sequence_type = se_stand
 walk_dust_count = 0
 
 dash_time = 0
+before_was_crouch_dashing = false
+toggle_crouch = false
 
 xp = 0
 level = 1
 xpmax = 50
 
-jump_value = 6
-walk_speed = 2
-dash_speed = 6
+jump_init_value = 16
+walk_init_speed = 6
+dash_init_speed = 12
 
 double_jump = false
 

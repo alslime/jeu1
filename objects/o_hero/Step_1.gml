@@ -45,7 +45,7 @@ if jump_key && can_double_jump && jump
 // Movments left/right && Dash && check current combo
 #region
 
-if (hero_state == "stand") || (hero_state == "walk") || (hero_state == "jump") || (hero_state == "crouch")
+if (hero_state != "dash") || (hero_state != "crouch_dash") || (hero_state != "heal")
 {
 	if left_key_pressed == true
 	{
@@ -149,11 +149,10 @@ if dash_wait > 0
 if dash_key && dash_wait == 0
 {
 	crouch_dash = false
-	if down_key_pressed && !jump
+	if (down_key_pressed && !jump) || toggle_crouch
 	{
 		crouch_dash = true
 	}
-	
 	dash_time = 15
 	dash_wait = 50
 	if dir == 0
@@ -185,12 +184,36 @@ else if vweapon.current_combo_idx == 3
 // Crouch
 #region
 
+if before_was_crouch_dashing == true
+{
+	if place_meeting(x,y-24,o_ground)
+	{
+		toggle_crouch = true
+	}
+	else
+	{
+		toggle_crouch = false
+	}
+}
+
 crouch = false
-if !jump && down_key_pressed && phy_speed_x == 0
+if (!jump && down_key_pressed && phy_speed_x == 0) || (hero_state == "stand" && toggle_crouch == true)
 {
 	hero_state = "crouch"
 	crouch = true
-	vweapon.combo_0 = 1
+}
+
+if hero_state = "walk" && toggle_crouch == true
+{
+	hero_state = "crouch_walk"
+	if dir == 180
+	{
+		phy_speed_x = -walk_init_speed div 3
+	}
+	else
+	{
+		phy_speed_x = walk_init_speed div 3
+	}
 }
 
 #endregion
@@ -306,48 +329,10 @@ if hero_state == "crouch"
 		last_sequence = secrouch
 		last_sequence_type = se_crouch
 		
-		physics_remove_fixture(id,fix_binded)
-		physics_fixture_delete(fix)
-		
-		crouch_fix = physics_fixture_create()
-		physics_fixture_set_polygon_shape(crouch_fix)
-		physics_fixture_add_point(crouch_fix, 0,6)
-		physics_fixture_add_point(crouch_fix, 9, 6)
-		physics_fixture_add_point(crouch_fix, 9, 21)
-		physics_fixture_add_point(crouch_fix, 0, 21)
-		physics_fixture_set_density(crouch_fix,1)
-		physics_fixture_set_restitution(crouch_fix,0)
-		physics_fixture_set_collision_group(crouch_fix,0)
-		physics_fixture_set_linear_damping(crouch_fix,0)
-		physics_fixture_set_angular_damping(crouch_fix,0)
-		physics_fixture_set_friction(crouch_fix,0)
-		crouch_fix_binded = physics_fixture_bind(crouch_fix,id)
-		
-		before_was_crouch = true
-	}
-}
-else if hero_state != "crouch_dash"
-{
-	if before_was_crouch == true
-	{
-		physics_remove_fixture(id,crouch_fix_binded)
-		physics_fixture_delete(fix)
-	
-		fix = physics_fixture_create()
-		physics_fixture_set_polygon_shape(fix)
-		physics_fixture_add_point(fix, 0,0)
-		physics_fixture_add_point(fix, 9, 0)
-		physics_fixture_add_point(fix, 9, 21)
-		physics_fixture_add_point(fix, 0, 21)
-		physics_fixture_set_density(fix,0.5)
-		physics_fixture_set_restitution(fix,0)
-		physics_fixture_set_collision_group(fix,0)
-		physics_fixture_set_linear_damping(fix,0)
-		physics_fixture_set_angular_damping(fix,0)
-		physics_fixture_set_friction(fix,0)
-		fix_binded = physics_fixture_bind(fix,id)
-		
-		before_was_crouch = false
+		if current_fix != "crouch_fix"
+		{
+			change_fixture_for_crouching = true
+		}
 	}
 }
 
@@ -360,26 +345,11 @@ if hero_state == "crouch_dash"
 		last_sequence = secrouch_dash
 		last_sequence_type = se_crouch_dash
 		
-		if last_sequence_type != se_crouch
+		before_was_crouch_dashing = true
+		
+		if current_fix != "crouch_fix"
 		{
-			physics_remove_fixture(id,fix_binded)
-			physics_fixture_delete(fix)
-		
-			crouch_fix = physics_fixture_create()
-			physics_fixture_set_polygon_shape(crouch_fix)
-			physics_fixture_add_point(crouch_fix, 0,6)
-			physics_fixture_add_point(crouch_fix, 9,6)
-			physics_fixture_add_point(crouch_fix, 9, 21)
-			physics_fixture_add_point(crouch_fix, 0, 21)
-			physics_fixture_set_density(crouch_fix,1)
-			physics_fixture_set_restitution(crouch_fix,0)
-			physics_fixture_set_collision_group(crouch_fix,0)
-			physics_fixture_set_linear_damping(crouch_fix,0)
-			physics_fixture_set_angular_damping(crouch_fix,0)
-			physics_fixture_set_friction(crouch_fix,0)
-			crouch_fix_binded = physics_fixture_bind(crouch_fix,id)
-		
-			before_was_crouch = true
+			change_fixture_for_crouching = true
 		}
 	}
 }
@@ -399,6 +369,22 @@ if hero_state == "walk"
 	{
 		instance_create_layer(x + sprite_width/2,y + sprite_height - 1,"lay_hero",o_walking_dust2)
 		walk_dust_count = 0
+	}
+}
+
+if hero_state == "crouch_walk"
+{
+	if last_sequence_type != se_crouch_walk
+	{
+		crouch_walk = layer_sequence_create("lay_hero",x,y,se_crouch_walk)
+		layer_sequence_destroy(last_sequence)
+		last_sequence = crouch_walk
+		last_sequence_type = se_crouch_walk
+		
+		if current_fix != "crouch_fix"
+		{
+			change_fixture_for_crouching = true
+		}
 	}
 }
 
@@ -483,6 +469,57 @@ if hero_state == "heal"
 }
 
 #endregion
+
+if change_fixture_for_crouching == true
+{
+	physics_remove_fixture(id,fix_binded)
+	physics_fixture_delete(fix)
+
+	crouch_fix = physics_fixture_create()
+	physics_fixture_set_polygon_shape(crouch_fix)
+	physics_fixture_add_point(crouch_fix, 0,24)
+	physics_fixture_add_point(crouch_fix, 36,24)
+	physics_fixture_add_point(crouch_fix, 36, 84)
+	physics_fixture_add_point(crouch_fix, 0, 84)
+	physics_fixture_set_density(crouch_fix,1)
+	physics_fixture_set_restitution(crouch_fix,0)
+	physics_fixture_set_collision_group(crouch_fix,0)
+	physics_fixture_set_linear_damping(crouch_fix,0)
+	physics_fixture_set_angular_damping(crouch_fix,0)
+	physics_fixture_set_friction(crouch_fix,0)
+	crouch_fix_binded = physics_fixture_bind(crouch_fix,id)
+	
+	current_fix = "crouch_fix"
+	change_fixture_for_crouching = false
+}
+
+if (hero_state != "crouch") && (hero_state != "crouch_dash") && (hero_state != "crouch_walk") && (current_fix == "crouch_fix")
+{
+	change_fixture_for_standing = true
+}
+
+if change_fixture_for_standing == true
+{
+	physics_remove_fixture(id,crouch_fix_binded)
+	physics_fixture_delete(fix)
+
+	fix = physics_fixture_create()
+	physics_fixture_set_polygon_shape(fix)
+	physics_fixture_add_point(fix, 0,0)
+	physics_fixture_add_point(fix, 36, 0)
+	physics_fixture_add_point(fix, 36, 84)
+	physics_fixture_add_point(fix, 0, 84)
+	physics_fixture_set_density(fix,0.5)
+	physics_fixture_set_restitution(fix,0)
+	physics_fixture_set_collision_group(fix,0)
+	physics_fixture_set_linear_damping(fix,0)
+	physics_fixture_set_angular_damping(fix,0)
+	physics_fixture_set_friction(fix,0)
+	fix_binded = physics_fixture_bind(fix,id)
+	
+	current_fix = "fix"
+	change_fixture_for_standing = false
+}
 
 //Sequence follows player
 #region
