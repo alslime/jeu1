@@ -156,9 +156,12 @@ if dash_wait > 0
 if dash_key && dash_wait == 0
 {
 	crouch_dash = false
-	if (down_key_pressed && !jump) || toggle_crouch
+	if !jump
 	{
-		crouch_dash = true
+		if down_key_pressed || toggle_crouch
+		{
+			crouch_dash = true
+		}
 	}
 	dash_time = 15
 	dash_wait = 50

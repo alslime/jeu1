@@ -16,14 +16,14 @@ if instance_exists(o_front_surface) && equip_menu == false
 		draw_healthbar(x1 + 16, y1 + 88, x1 + 150, y1 + 100, ((xp)/xpmax)*100,hp_bar_col,c_white,c_white,0,true,true)
 		
 		script_execute(text_outline,x1+58+4, y1+108-9,total_gems)
-		script_execute(text_outline,x1+16+4, y1+16-9,string(hpmax-hplost))
-		script_execute(text_outline,x1+16+4, y1+52-9,string(energymax-energylost))
+		script_execute(text_outline,x1+18+4, y1+16-9,string(hpmax-hplost))
+		script_execute(text_outline,x1+18+4, y1+52-9,string(energymax-energylost))
 		
 		draw_text_transformed_color(x1+58+4, y1+108-8,total_gems,1,1,0,c_white,c_white,c_white,c_white,1)
 		gem_icon.strg_width = string_width(total_gems)
 
-		draw_text_transformed_color(x1+16+4, y1+16-8,string(hpmax-hplost),1,1,0,c_white,c_white,c_white,c_white,1)
-		draw_text_transformed_color(x1+16+4, y1+52-8,string(energymax-energylost),1,1,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(x1+18+4, y1+16-8,string(hpmax-hplost),1,1,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(x1+18+4, y1+52-8,string(energymax-energylost),1,1,0,c_white,c_white,c_white,c_white,1)
 		
 		surface_reset_target()
 	}
