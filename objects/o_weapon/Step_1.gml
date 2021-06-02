@@ -10,10 +10,6 @@ else
 // Combo
 #region
 
-//if owner.dash_time != 0
-//{
-//	combo_0 = 1
-//}
 if combo_finish_1 > 0
 {
 	combo_finish_1 -= 1
@@ -80,7 +76,7 @@ if combo_1 == 0 && combo_finish_1 <= 0 && combo_2 == 0 && combo_finish_2 <= 0 &&
 // Attack
 #region
 
-if attack_key
+if attack_key && owner.can_attack == true
 {
 	if combo_2 == 1
 	{

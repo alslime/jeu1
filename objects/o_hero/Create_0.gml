@@ -1,7 +1,7 @@
 // Change random seed each game
 randomize()
 
-audio_play_sound(sound_music_1,0,true)
+//audio_play_sound(sound_music_1,0,true)
 
 vweapon = instance_create_layer(0,0,"lay_weapon",o_fist)
 vweapon.owner = id
@@ -35,6 +35,10 @@ dash_init_speed = 12
 
 double_jump = false
 
+can_attack = true
+can_abilities = true
+can_jump = true
+
 need_to_destroy_splash = false
 equip_menu = false
 
@@ -46,9 +50,9 @@ se_3 = se_punch3
 
 if os_type == os_ios || os_type == os_android
 {
-	window_set_size(672,378)
-	virtual_key_add(view_get_wport(0)-128,view_get_hport(0)-128,128,128,vk_space)
-	virtual_key_add(view_get_wport(0)-128,view_get_hport(0)-256,128,128,vk_lshift)
-	virtual_key_add(view_get_wport(0)-256,view_get_hport(0)-128,128,128,ord("H"))
-	virtual_key_add(view_get_wport(0)-128,0,128,128,ord("I"))
+	window_set_size(448,252)
+	//virtual_key_add(view_get_wport(0)-512,view_get_hport(0)-512,512,512,vk_space)
+	//virtual_key_add(view_get_wport(0)-512,view_get_hport(0)-1024,512,512,vk_lshift)
+	//virtual_key_add(view_get_wport(0)-1024,view_get_hport(0)-512,512,512,ord("H"))
+	//virtual_key_add(view_get_wport(0)-512,0,512,512,ord("I"))
 }

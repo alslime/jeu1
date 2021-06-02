@@ -41,7 +41,7 @@
     {"varType":1,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"amount_of_blood","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"120","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"state_countdown_time","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":0,"value":"2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"initial_spd","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":1,"value":"12","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"initial_follow_spd","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":1,"value":"7","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"initial_follow_spd","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":7,"value":"$FF0000FF","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"blood_colour","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":1,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"xp_drop_value","tags":[],"resourceType":"GMObjectProperty",},
   ],

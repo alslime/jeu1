@@ -8,9 +8,9 @@ if instance_exists(o_weapon)
 
 if place_meeting(x,y,o_water)
 {
-	physics_apply_local_force(0,0,0,-70)
-	spd = initial_spd/2
-	follow_spd = initial_follow_spd/2
+	physics_apply_local_force(0,0,0,-3100)
+	spd = initial_spd div 2
+	follow_spd = initial_follow_spd div 2
 	in_water = true
 }
 else
@@ -91,7 +91,7 @@ if instance_exists(o_weapon_hitbox)
 			in_hit_text = instance_create_layer(x,y,"lay_game_front",o_hit_text)
 			in_hit_text.dmg = dmg
 			in_hit_text.x = x + sprite_width/2
-			in_hit_text.y = y - 16
+			in_hit_text.y = y - 32
 			array_insert(id_array,0,col_id)
 			hit_state_begin = true
 			countdown = 45
@@ -135,7 +135,7 @@ else
 
 if countdown == 0
 {
-	if distance_to_object(inst_hero) > 60
+	if distance_to_object(inst_hero) > 240
 	{
 		follow_hero = false
 		state_countdown -= 1
@@ -204,6 +204,7 @@ if jump
 
 // To not fall
 #region
+
 if state != "hit"
 {
 	if !collision_point(x1 + 10*phy_speed_x,y1,o_ground,false,false) && stop_at_corner_l == true
@@ -363,22 +364,22 @@ if state == "hit"
 		{
 			if dir == 1
 			{
-				phy_speed_x = 1
+				phy_speed_x = 2
 			}	
 			else if dir == 0
 			{
-				phy_speed_x = -1
+				phy_speed_x = -2
 			}
 		}
 		hit_state_begin = false
 	}
 	if phy_speed_x > 0
 	{
-		phy_speed_x -= 0.05
+		phy_speed_x -= 0.1
 	}
 	else if phy_speed_x < 0
 	{
-		phy_speed_x += 0.05
+		phy_speed_x += 0.1
 	}
 }
 
@@ -399,9 +400,9 @@ if hplost >= hpmax
 
 if in_water
 {
-	if phy_speed_y > 3
+	if phy_speed_y > 8
 	{
-		phy_speed_y = 3
+		phy_speed_y = 8
 	}
 }
 

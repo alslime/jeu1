@@ -48,6 +48,7 @@
     {"id":{"name":"o_spawn_walking_dust","path":"objects/o_spawn_walking_dust/o_spawn_walking_dust.yy",},"order":8,},
     {"id":{"name":"se_crouch_dash","path":"sequences/se_crouch_dash/se_crouch_dash.yy",},"order":14,},
     {"id":{"name":"sp_great_sword3","path":"sprites/sp_great_sword3/sp_great_sword3.yy",},"order":2,},
+    {"id":{"name":"sp_water_outline","path":"sprites/sp_water_outline/sp_water_outline.yy",},"order":58,},
     {"id":{"name":"o_walking_dust2","path":"objects/o_walking_dust2/o_walking_dust2.yy",},"order":10,},
     {"id":{"name":"o_room_left","path":"objects/o_room_left/o_room_left.yy",},"order":3,},
     {"id":{"name":"o_option","path":"objects/o_option/o_option.yy",},"order":14,},

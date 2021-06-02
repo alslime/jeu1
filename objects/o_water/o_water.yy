@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_water",
-    "path": "sprites/sp_water/sp_water.yy",
+    "name": "sp_water_outline",
+    "path": "sprites/sp_water_outline/sp_water_outline.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

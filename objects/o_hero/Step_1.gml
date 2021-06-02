@@ -9,6 +9,10 @@ support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
 
 // ability to double jump and to dash without falling are activited
 
+can_attack = true
+can_abilities = true
+can_jump = true
+
 // Jump
 #region
 
@@ -26,12 +30,15 @@ else
 }
 if (jump_key && (!jump)) || (double_jump)
 {
-	phy_speed_y = -jump_value
-	inst_dust1 = instance_create_layer(x,y + sprite_height,"lay_hero",o_walking_dust)
-	inst_dust1.image_xscale = 1
-	inst_dust2 = instance_create_layer(x + sprite_width,y + sprite_height,"lay_hero",o_walking_dust)
-	inst_dust2.image_xscale = -1
-	double_jump = false
+	if can_jump
+	{
+		phy_speed_y = -jump_value
+		inst_dust1 = instance_create_layer(x,y + sprite_height,"lay_hero",o_walking_dust)
+		inst_dust1.image_xscale = 1
+		inst_dust2 = instance_create_layer(x + sprite_width,y + sprite_height,"lay_hero",o_walking_dust)
+		inst_dust2.image_xscale = -1
+		double_jump = false
+	}
 }
 if jump_key && can_double_jump && jump
 {
@@ -250,7 +257,7 @@ if xp >= xpmax
 // Regen
 #region
 
-if support_key && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption)
+if support_key && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption) && can_abilities == true
 {
 	hero_state = "heal"
 	regen = true
@@ -333,6 +340,8 @@ if hero_state == "crouch"
 		{
 			change_fixture_for_crouching = true
 		}
+		
+		vweapon.combo_0 = 1
 	}
 }
 
@@ -351,6 +360,8 @@ if hero_state == "crouch_dash"
 		{
 			change_fixture_for_crouching = true
 		}
+		
+		vweapon.combo_0 = 1
 	}
 }
 
@@ -364,10 +375,11 @@ if hero_state == "walk"
 		last_sequence = walk
 		last_sequence_type = se_walk
 	}
+	
 	walk_dust_count += 1
 	if walk_dust_count > 12
 	{
-		instance_create_layer(x + sprite_width/2,y + sprite_height - 1,"lay_hero",o_walking_dust2)
+		instance_create_layer(x + sprite_width/2,y + sprite_height - 4,"lay_hero",o_walking_dust2)
 		walk_dust_count = 0
 	}
 }
@@ -380,6 +392,8 @@ if hero_state == "crouch_walk"
 		layer_sequence_destroy(last_sequence)
 		last_sequence = crouch_walk
 		last_sequence_type = se_crouch_walk
+		
+		vweapon.combo_0 = 1
 		
 		if current_fix != "crouch_fix"
 		{
@@ -396,6 +410,8 @@ if hero_state == "jump"
 		layer_sequence_destroy(last_sequence)
 		last_sequence = sejump
 		last_sequence_type = se_jump
+		
+		vweapon.combo_0 = 1
 	}
 }
 
@@ -407,6 +423,8 @@ if hero_state == "dash"
 		sedash = layer_sequence_create("lay_hero",x,y,se_dash)
 		last_sequence = sedash
 		last_sequence_type = se_dash
+		
+		vweapon.combo_0 = 1
 	}
 	phy_speed_y = 0
 }
@@ -453,6 +471,8 @@ if hero_state == "heal"
 		last_sequence = heal
 		last_sequence_type = se_heal
 		
+		vweapon.combo_0 = 1
+		
 		heal_interval = 2
 	}
 	if heal_interval > 0
@@ -469,6 +489,9 @@ if hero_state == "heal"
 }
 
 #endregion
+
+// Fixtures
+#region
 
 if change_fixture_for_crouching == true
 {
@@ -521,6 +544,8 @@ if change_fixture_for_standing == true
 	change_fixture_for_standing = false
 }
 
+#endregion
+
 //Sequence follows player
 #region
 	
@@ -537,3 +562,10 @@ else
 layer_sequence_y(last_sequence,y)
 
 #endregion
+
+if equip_menu || toggle_crouch || hero_state == "dash"
+{
+	can_attack = false
+	can_abilities = false
+	can_jump = false
+}

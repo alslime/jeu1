@@ -11,19 +11,19 @@ if instance_exists(o_front_surface) && equip_menu == false
 		surface_set_target(inst_front_surface.front_surf)	
 
 		draw_set_font(fontsmall)
-		draw_healthbar(x1 + 12, y1 + 4, x1 + 50 + level div 2, y1 + 16, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,true)
-		draw_healthbar(x1 + 12, y1 + 19, x1 + 40 + level div 3, y1 + 31, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,true)
-		draw_healthbar(x1 + 4, y1 + 4, x1 + 9, y1 + 31, ((xp)/xpmax)*100,hp_bar_col,c_white,c_white,3,true,true)
+		draw_healthbar(x1 + 16, y1 + 16, x1 + 250 + (level), y1 + 44, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,true)
+		draw_healthbar(x1 + 16, y1 + 52, x1 + 200 + (level div 2), y1 + 80, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,true)
+		draw_healthbar(x1 + 16, y1 + 88, x1 + 150, y1 + 100, ((xp)/xpmax)*100,hp_bar_col,c_white,c_white,0,true,true)
 		
-		script_execute(text_outline,x1 + 17, y1 + 30,total_gems)
-		script_execute(text_outline,x1 +15, y1 + 2,string(hpmax-hplost))
-		script_execute(text_outline,x1 +15, y1 + 17,string(energymax-energylost))
+		script_execute(text_outline,x1+58+4, y1+108-9,total_gems)
+		script_execute(text_outline,x1+16+4, y1+16-9,string(hpmax-hplost))
+		script_execute(text_outline,x1+16+4, y1+52-9,string(energymax-energylost))
 		
-		draw_text_transformed_color(x1 + 17, y1 + 31,total_gems,1,1,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(x1+58+4, y1+108-8,total_gems,1,1,0,c_white,c_white,c_white,c_white,1)
 		gem_icon.strg_width = string_width(total_gems)
 
-		draw_text_transformed_color(x1 +15, y1 + 3,string(hpmax-hplost),1,1,0,c_white,c_white,c_white,c_white,1)
-		draw_text_transformed_color(x1 +15, y1 + 18,string(energymax-energylost),1,1,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(x1+16+4, y1+16-8,string(hpmax-hplost),1,1,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(x1+16+4, y1+52-8,string(energymax-energylost),1,1,0,c_white,c_white,c_white,c_white,1)
 		
 		surface_reset_target()
 	}
@@ -144,5 +144,5 @@ if equip_menu == true
 
 #endregion
 
-physics_draw_debug()
+//physics_draw_debug()
 //draw_self()

@@ -1,5 +1,5 @@
-x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) - sprite_width - 8
-y = camera_get_view_y(view_camera[0]) + 8
+x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) - sprite_width - 16
+y = camera_get_view_y(view_camera[0]) + 16
 
 if instance_exists(o_front_surface)
 {
