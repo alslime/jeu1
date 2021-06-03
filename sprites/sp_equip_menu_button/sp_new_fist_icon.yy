@@ -21,16 +21,16 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 2,
-  "gridY": 2,
+  "gridX": 1,
+  "gridY": 1,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},"LayerId":{"name":"6123e215-c7e3-48f0-9046-dc405fe2af19","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},"LayerId":{"name":"9cc2444d-f136-4a72-bd81-aa0df612b6ee","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_equip__support_heal","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},"resourceVersion":"1.0","name":"66b5f5bb-b330-47bc-99e4-864378c36fad","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"LayerId":{"name":"6123e215-c7e3-48f0-9046-dc405fe2af19","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"LayerId":{"name":"9cc2444d-f136-4a72-bd81-aa0df612b6ee","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sp_new_fist_icon","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","name":"66b5f5bb-b330-47bc-99e4-864378c36fad","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sp_equip__support_heal","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},
+    "spriteId": {"name":"sp_new_fist_icon","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -42,7 +42,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e9bc1c59-fc98-490b-b400-79a97e6659d5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9e2292bd-497c-4f8e-9e76-9754eebb1fa3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -59,9 +59,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sp_equip__support_heal","path":"sprites/sp_equip__support_heal/sp_equip__support_heal.yy",},
+    "parent": {"name":"sp_new_fist_icon","path":"sprites/sp_new_fist_icon/sp_new_fist_icon.yy",},
     "resourceVersion": "1.3",
-    "name": "sp_equip__support_heal",
+    "name": "sp_new_fist_icon",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -75,7 +75,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sp_equip__support_heal",
+  "name": "sp_new_fist_icon",
   "tags": [],
   "resourceType": "GMSprite",
 }

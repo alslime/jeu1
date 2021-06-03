@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Equip_menu",
+    "path": "folders/Objects/Equip_menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_utility_icon",

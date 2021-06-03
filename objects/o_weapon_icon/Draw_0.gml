@@ -11,9 +11,9 @@ if surface_exists(inst_front_surface.front_surf) && inst_hero.equip_menu == fals
 {
 	surface_set_target(inst_front_surface.front_surf)
 	draw_self()
-	draw_set_font(fontsmall)
-	script_execute(text_outline,x+sprite_width+8+4, y+4+sprite_height/2-string_height(string(weapon_selected))/2-9,string(weapon_selected))
-	draw_text_transformed_color(x+sprite_width+8+4, y+4+sprite_height/2-string_height(string(weapon_selected))/2-8,string(weapon_selected),1,1,0,c_white,c_white,c_white,c_white,1)
+	draw_set_font(fontbig)
+	script_execute(text_outline,x+sprite_width+8+4, y+4+sprite_height/2-string_height(string(weapon_selected))/2-6,string(weapon_selected))
+	draw_text_transformed_color(x+sprite_width+8+4, y+4+sprite_height/2-string_height(string(weapon_selected))/2-5,string(weapon_selected),1,1,0,c_white,c_white,c_white,c_white,1)
 	surface_reset_target()
 }
 

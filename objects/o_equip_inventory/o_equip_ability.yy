@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "sp_new_fist_icon",
-    "path": "sprites/sp_new_fist_icon/sp_new_fist_icon.yy",
+    "name": "sp_equip_powers",
+    "path": "sprites/sp_equip_powers/sp_equip_powers.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "o_equip_icons",
+    "path": "objects/o_equip_icons/o_equip_icons.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -31,7 +34,7 @@
     "path": "folders/Objects/Equip_menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_weapon_icon",
+  "name": "o_equip_ability",
   "tags": [],
   "resourceType": "GMObject",
 }

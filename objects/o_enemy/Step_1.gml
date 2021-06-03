@@ -88,7 +88,7 @@ if instance_exists(o_weapon_hitbox)
 		{
 			prevhp_lost = hplost
 			hplost += dmg
-			in_hit_text = instance_create_layer(x,y,"lay_game_front",o_hit_text)
+			in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
 			in_hit_text.dmg = dmg
 			in_hit_text.x = x + sprite_width/2
 			in_hit_text.y = y - 32
@@ -107,7 +107,7 @@ if prevhp_lost != hplost
 	// Blood
 	for (i = 0; i < amount_of_blood; i += 1)
 	{
-		inst_blood = instance_create_layer(x,y,"lay_game_front",o_blood_particules)
+		inst_blood = instance_create_layer(x,y,"lay_front",o_blood_particules)
 		script_execute (create_blood,id,inst_blood)
 	}
 }

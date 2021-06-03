@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "sp_new_fist_icon",
-    "path": "sprites/sp_new_fist_icon/sp_new_fist_icon.yy",
+    "name": "sp_equip_menu_button",
+    "path": "sprites/sp_equip_menu_button/sp_equip_menu_button.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "o_equip_icons",
+    "path": "objects/o_equip_icons/o_equip_icons.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,7 +24,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -31,7 +33,7 @@
     "path": "folders/Objects/Equip_menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_weapon_icon",
+  "name": "o_equip_inventory",
   "tags": [],
   "resourceType": "GMObject",
 }

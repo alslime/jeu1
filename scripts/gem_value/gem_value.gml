@@ -2,8 +2,8 @@
 // argument1 = evalue
 function gem_value()
 {
-	argument0.phy_speed_x = random_range(-2,2)
-	argument0.phy_speed_y = random_range(-2,2)
+	argument0.phy_speed_x = irandom_range(-6,6)
+	argument0.phy_speed_y = irandom_range(-6,6)
 	argument0.countdown = 120
 	argument0.gemValue = argument1
 

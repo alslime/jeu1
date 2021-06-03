@@ -1,5 +1,5 @@
 x = camera_get_view_x(view_camera[0]) + 16
-y = camera_get_view_y(view_camera[0]) + 108
+y = camera_get_view_y(view_camera[0]) + 127
 
 if instance_exists(o_front_surface)
 {

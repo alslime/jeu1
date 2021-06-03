@@ -12,6 +12,12 @@ support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
 can_attack = true
 can_abilities = true
 can_jump = true
+if equip_menu || toggle_crouch || hero_state == "dash"
+{
+	can_attack = false
+	can_abilities = false
+	can_jump = false
+}
 
 // Jump
 #region
@@ -343,9 +349,8 @@ if hero_state == "crouch"
 		{
 			change_fixture_for_crouching = true
 		}
-		
-		vweapon.combo_0 = 1
 	}
+	vweapon.combo_0 = 1
 }
 
 if hero_state == "crouch_dash"
@@ -566,9 +571,3 @@ layer_sequence_y(last_sequence,y)
 
 #endregion
 
-if equip_menu || toggle_crouch || hero_state == "dash"
-{
-	can_attack = false
-	can_abilities = false
-	can_jump = false
-}
