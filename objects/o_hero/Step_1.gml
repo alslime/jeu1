@@ -48,7 +48,10 @@ if (jump_key && (!jump)) || (double_jump)
 }
 if jump_key && can_double_jump && jump
 {
-	double_jump = true
+	if double_jump_aquired
+	{
+		double_jump = true
+	}
 	can_double_jump = false
 	
 }
@@ -434,7 +437,10 @@ if hero_state == "dash"
 		
 		vweapon.combo_0 = 1
 	}
-	phy_speed_y = 0
+	if gravity_defy_dash_aquired
+	{
+		phy_speed_y = 0
+	}
 }
 
 if hero_state == "combo1"

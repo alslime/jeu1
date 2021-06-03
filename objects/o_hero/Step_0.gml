@@ -1,6 +1,6 @@
 equip_menu_key = keyboard_check_pressed(vk_tab) || gamepad_button_check_pressed(0,gp_select)
 
-//Choose weapon
+//Weapon Chosen
 #region
 
 if keyboard_check_pressed(ord("0"))
@@ -50,7 +50,7 @@ if equip_menu_key
 
 if layer_exists("bg_1")
 {
-	layer_x("bg_1",camera_get_view_x(view_camera[0])/6)
+	layer_x("bg_1",camera_get_view_x(view_camera[0])/8)
 }
 if layer_exists("bg_2")
 {
