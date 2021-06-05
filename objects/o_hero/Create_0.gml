@@ -37,6 +37,8 @@ can_jump = true
 need_to_destroy_splash = false
 equip_menu = false
 wpn_abi_pow_chosen = 0
+create_buttons = false
+equip_button_chosen = 0
 se_1 = se_punch1
 se_2 = se_punch2
 se_3 = se_punch3
@@ -47,6 +49,16 @@ dash_init_speed = 12
 jump_init_value = 16
 walk_init_speed = 6
 pickup_range = 100
+
+//Create weapons
+inst_fist = instance_create_layer(x,y,"lay_weapon",o_fist)
+inst_fist.owner = id
+
+inst_light_sword = instance_create_layer(x,y,"lay_weapon",o_light_sword)
+inst_light_sword.owner = id
+
+inst_great_sword = instance_create_layer(x,y,"lay_weapon",o_great_sword)
+inst_great_sword.owner = id
 
 //Items in possesion
 #region

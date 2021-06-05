@@ -115,6 +115,10 @@ if equip_menu == true
 		draw_rectangle_color(x1 + camera_get_view_width(view_camera[0])/2+13,y1+77, x1 + camera_get_view_width(view_camera[0]) - 41,y1 + camera_get_view_height(view_camera[0]) - 41,c_black,c_black,c_black,c_black,false)
 		draw_set_alpha(1)
 		
+		if !instance_exists(o_menu_scroll)
+		{
+			instance_create_layer(x1+camera_get_view_width(view_camera[0])/2+13+16,y1+387-19-16,"lay_game_front",o_menu_scroll)
+		}
 		if !instance_exists(o_equip_inventory)
 		{
 			i_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_inventory)

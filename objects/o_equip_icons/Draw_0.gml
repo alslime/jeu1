@@ -28,3 +28,4 @@ script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - 
 draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(name)), y + 22,name,1,1,0,wpn_abi_pow_col,wpn_abi_pow_col,wpn_abi_pow_col,wpn_abi_pow_col,1)
 
 draw_sprite(sprite,0,x+4,y+4)
+

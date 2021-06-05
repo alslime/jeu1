@@ -12,11 +12,16 @@ support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
 can_attack = true
 can_abilities = true
 can_jump = true
-if equip_menu || toggle_crouch || hero_state == "dash"
+if toggle_crouch || hero_state == "dash"
 {
 	can_attack = false
 	can_abilities = false
 	can_jump = false
+}
+if equip_menu
+{
+	can_attack = false
+	can_abilities = false
 }
 
 // Jump

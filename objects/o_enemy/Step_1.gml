@@ -1,7 +1,4 @@
-if instance_exists(o_weapon)
-{
-	vweapon = instance_find(o_weapon,0)
-}
+vweapon = inst_hero.vweapon
 
 //In water
 #region

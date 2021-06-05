@@ -2,10 +2,57 @@ event_inherited()
 name = "Weapons"
 sprite = sp_new_fist_icon
 
-total_weapons = 6
+total_weapons = 0
 weapons_array = array_create(total_weapons)
 
-if inst_hero.fist_aquired
+if instance_exists(o_fist)
 {
+	weapons_array[0] = o_fist_button
+	total_weapons ++
+}
+if instance_exists(o_light_sword)
+{
+	weapons_array[1] = o_light_sword_button
+	total_weapons ++
+}
 
+if instance_exists(o_fist)
+{
+	weapons_array[2] = o_fist_button
+	total_weapons ++
+}
+if instance_exists(o_light_sword)
+{
+	weapons_array[3] = o_light_sword_button
+	total_weapons ++
+}
+if instance_exists(o_fist)
+{
+	weapons_array[4] = o_fist_button
+	total_weapons ++
+}
+if instance_exists(o_light_sword)
+{
+	weapons_array[5] = o_light_sword_button
+	total_weapons ++
+}
+if instance_exists(o_fist)
+{
+	weapons_array[6] = o_fist_button
+	total_weapons ++
+}
+if instance_exists(o_light_sword)
+{
+	weapons_array[7] = o_light_sword_button
+	total_weapons ++
+}
+if instance_exists(o_fist)
+{
+	weapons_array[8] = o_fist_button
+	total_weapons ++
+}
+if instance_exists(o_light_sword)
+{
+	weapons_array[9] = o_light_sword_button
+	total_weapons ++
 }
