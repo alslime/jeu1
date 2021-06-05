@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_new_light_sword_icon",
-    "path": "sprites/sp_new_light_sword_icon/sp_new_light_sword_icon.yy",
+    "name": "sp_new_great_sword_icon",
+    "path": "sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Equip_menu/Buttons/Weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_light_sword_button",
+  "name": "o_great_sword_button",
   "tags": [],
   "resourceType": "GMObject",
 }

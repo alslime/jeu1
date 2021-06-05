@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_new_light_sword_icon",
-    "path": "sprites/sp_new_light_sword_icon/sp_new_light_sword_icon.yy",
+    "name": "sp_new_heal_icon",
+    "path": "sprites/sp_new_heal_icon/sp_new_heal_icon.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Objects/Equip_menu/Buttons/Weapons.yy",
+    "name": "Support",
+    "path": "folders/Objects/Equip_menu/Buttons/Support.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_light_sword_button",
+  "name": "o_heal_button",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Objects/Equip_menu/Buttons/Weapons.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/Equip_menu/Buttons.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_light_sword_button",

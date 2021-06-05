@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Buttons",
-    "path": "folders/Objects/Equip_menu/Buttons.yy",
+    "name": "Equip_menu",
+    "path": "folders/Objects/Equip_menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_menu_scroll",

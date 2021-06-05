@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_new_light_sword_icon",
-    "path": "sprites/sp_new_light_sword_icon/sp_new_light_sword_icon.yy",
+    "name": "sp_new_fist_icon",
+    "path": "sprites/sp_new_fist_icon/sp_new_fist_icon.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Objects/Equip_menu/Buttons/Weapons.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/Equip_menu/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_light_sword_button",
+  "name": "o_fist_button",
   "tags": [],
   "resourceType": "GMObject",
 }
