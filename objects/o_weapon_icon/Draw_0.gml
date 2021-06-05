@@ -1,8 +1,6 @@
 x = camera_get_view_x(view_camera[0]) + 16
 y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) -(2*(16+sprite_height))
 
-weapon_selected = "Fists"
-
 if instance_exists(o_front_surface)
 {
 	inst_front_surface = instance_find (o_front_surface,0)

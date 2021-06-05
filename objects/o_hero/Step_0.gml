@@ -3,23 +3,28 @@ equip_menu_key = keyboard_check_pressed(vk_tab) || gamepad_button_check_pressed(
 //Weapon Chosen
 #region
 
-
-if keyboard_check_pressed(ord("0"))
+if chosen_weapon == "fists"
 {	
+	weapon_icon.weapon_selected = "Fists"
+	weapon_icon.sprite_index = sp_new_fist_icon
 	vweapon = inst_fist
 	se_1 = se_punch1
 	se_2 = se_punch2
 	se_3 = se_punch3
 }
-if keyboard_check_pressed(ord("1"))
+else if chosen_weapon == "light_sword"
 {
+	weapon_icon.weapon_selected = "Light Sword"
+	weapon_icon.sprite_index = sp_new_light_sword_icon
 	vweapon = inst_light_sword
 	se_1 = se_light_sword1
 	se_2 = se_light_sword2
 	se_3 = se_light_sword3
 }
-if keyboard_check_pressed(ord("2"))
+else if chosen_weapon == "great_sword"
 {
+	weapon_icon.weapon_selected = "Great Sword"
+	weapon_icon.sprite_index = sp_new_great_sword_icon
 	vweapon = inst_great_sword
 	se_1 = se_great_sword1
 	se_2 = se_great_sword2
@@ -27,6 +32,20 @@ if keyboard_check_pressed(ord("2"))
 }
 
 #endregion
+
+//Support Chosen
+#region
+
+if chosen_support == "heal"
+{
+	utility_icon.utility_selected = "Heal"
+	utility_icon.sprite_index = sp_new_heal_icon
+}
+
+#endregion
+
+//Equip menu on/off
+#region
 
 if equip_menu_key
 {
@@ -38,7 +57,9 @@ if equip_menu_key
 	{
 		equip_menu = false
 	}
-}	
+}
+
+#endregion
 
 //Parralax Background
 #region

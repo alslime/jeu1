@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sp_new_heal_icon",
-    "path": "sprites/sp_new_heal_icon/sp_new_heal_icon.yy",
+    "name": "sp_Ground",
+    "path": "sprites/sp_Ground/sp_Ground.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
-    "name": "o_support_button",
-    "path": "objects/o_support_button/o_support_button.yy",
+    "name": "o_virtual_keys",
+    "path": "objects/o_virtual_keys/o_virtual_keys.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Support",
-    "path": "folders/Objects/Equip_menu/Buttons/Support.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_heal_button",
+  "name": "o_virtual_lshift",
   "tags": [],
   "resourceType": "GMObject",
 }

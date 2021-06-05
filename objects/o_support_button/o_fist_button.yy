@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sp_new_heal_icon",
-    "path": "sprites/sp_new_heal_icon/sp_new_heal_icon.yy",
+    "name": "sp_new_fist_icon",
+    "path": "sprites/sp_new_fist_icon/sp_new_fist_icon.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_support_button",
-    "path": "objects/o_support_button/o_support_button.yy",
+    "name": "o_equip_button",
+    "path": "objects/o_equip_button/o_equip_button.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,17 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Support",
-    "path": "folders/Objects/Equip_menu/Buttons/Support.yy",
+    "name": "Weapons",
+    "path": "folders/Objects/Equip_menu/Buttons/Weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_heal_button",
+  "name": "o_fist_button",
   "tags": [],
   "resourceType": "GMObject",
 }

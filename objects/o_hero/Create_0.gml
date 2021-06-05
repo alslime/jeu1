@@ -39,9 +39,13 @@ equip_menu = false
 wpn_abi_pow_chosen = 0
 create_buttons = false
 equip_button_chosen = 0
+support = false
 se_1 = se_punch1
 se_2 = se_punch2
 se_3 = se_punch3
+
+chosen_weapon = "fists"
+chosen_support = "heal"
 
 #endregion
 
@@ -80,9 +84,5 @@ gravity_defy_dash_aquired = true
 
 if os_type == os_ios || os_type == os_android
 {
-	window_set_size(672,378)
-	//virtual_key_add(view_get_wport(0)-512,view_get_hport(0)-512,512,512,vk_space)
-	//virtual_key_add(view_get_wport(0)-512,view_get_hport(0)-1024,512,512,vk_lshift)
-	//virtual_key_add(view_get_wport(0)-1024,view_get_hport(0)-512,512,512,ord("H"))
-	//virtual_key_add(view_get_wport(0)-512,0,512,512,ord("I"))
+	window_set_size(448,252)
 }

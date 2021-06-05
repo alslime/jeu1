@@ -5,7 +5,14 @@ down_key_pressed = keyboard_check(ord("S")) || gamepad_axis_value(0,gp_axislv) >
 left_key = keyboard_check(ord("A")) || gamepad_axis_value(0,gp_axislh) < -0.5
 right_key = keyboard_check( ord("D")) || gamepad_axis_value(0,gp_axislh) > 0.5
 dash_key = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(0,gp_face2)
-support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
+if os_type == os_ios || os_type == os_android
+{
+	support_key = keyboard_check(ord("Y"))
+}
+else
+{
+	support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
+}
 
 // ability to double jump and to dash without falling are activited
 
@@ -134,11 +141,11 @@ else if right_key && (dash_time == 0)
 else
 {
 	phy_speed_x = 0
-	if (!jump) && (!regen) && (dash_time == 0)
+	if (!jump) && (!support) && (dash_time == 0)
 	{
 		hero_state = "stand"
 	}
-	else if jump && (!regen) && (dash_time == 0)
+	else if jump && (!support) && (dash_time == 0)
 	{
 		hero_state = "jump"
 	}
@@ -271,17 +278,24 @@ if xp >= xpmax
 
 #endregion
 
-// Regen
+// Support
 #region
 
-if support_key && (hplost > 0) && (!jump) && (energylost <= energymax - energyconsomption) && can_abilities == true
+if support_key && (can_abilities == true)
 {
-	hero_state = "heal"
-	regen = true
+	if (chosen_support == "heal") && (hplost > 0) && (!jump) && (energylost <= (energymax - energyconsomption))
+	{
+		hero_state = "heal"
+		support = true
+	}
+	else
+	{
+		support = false
+	}	
 }
 else
 {
-	regen = false
+	support = false
 }
 
 #endregion
