@@ -17,5 +17,4 @@ else
 	image_blend = c_orange
 }
 
-
 draw_self()
