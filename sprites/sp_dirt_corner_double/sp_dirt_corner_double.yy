@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Grass_dirt",
-    "path": "folders/Sprites/Grass_dirt.yy",
+    "path": "folders/Sprites/deco/Grass_dirt.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_dirt_corner_double",

@@ -1,2 +1,3 @@
 event_inherited()
-name = "great_sword"
+instance = instance_find(o_great_sword,0)
+button_name = "great_sword"

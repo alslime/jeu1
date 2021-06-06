@@ -11,3 +11,11 @@ combo3_length = layer_sequence_get_length(punch3)*60 div 18
 layer_sequence_destroy(punch3)
 
 base_dmg = [0,1,2,3]
+
+item_name = "Fists"
+level = 1
+base_damage = base_dmg[1]
+weapon_speed = "Fast"
+range = "Short"
+special_attributes = "None"
+Description = "One punch might not be enough."

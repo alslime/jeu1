@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "deco",
+    "path": "folders/Sprites/deco.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_rock1",

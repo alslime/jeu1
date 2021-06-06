@@ -4,5 +4,5 @@ if inst_hero.equip_button_chosen != id
 }
 else
 {
-	inst_hero.chosen_weapon = name
+	inst_hero.chosen_weapon = button_name
 }

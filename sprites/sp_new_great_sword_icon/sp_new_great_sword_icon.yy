@@ -25,11 +25,9 @@
   "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"LayerId":{"name":"6123e215-c7e3-48f0-9046-dc405fe2af19","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"LayerId":{"name":"9cc2444d-f136-4a72-bd81-aa0df612b6ee","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"LayerId":{"name":"1ad01035-a846-4e17-8990-35eaa59dcc02","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"LayerId":{"name":"3814ba24-0baf-425c-ac03-bbaa7cbbcee0","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"LayerId":{"name":"052f4d90-6112-4c5a-8464-efc650d8e847","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"66b5f5bb-b330-47bc-99e4-864378c36fad","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"LayerId":{"name":"9cc2444d-f136-4a72-bd81-aa0df612b6ee","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_new_great_sword_icon","path":"sprites/sp_new_great_sword_icon/sp_new_great_sword_icon.yy",},"resourceVersion":"1.0","name":"66b5f5bb-b330-47bc-99e4-864378c36fad","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -75,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Icons",
+    "path": "folders/Sprites/Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_new_great_sword_icon",

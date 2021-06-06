@@ -1,2 +1,2 @@
 event_inherited()
-name = "heal"
+button_name = "heal"

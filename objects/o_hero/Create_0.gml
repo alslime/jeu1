@@ -6,9 +6,6 @@ randomize()
 // Init variables 
 #region
 
-vweapon = instance_create_layer(0,0,"lay_weapon",o_fist)
-vweapon.owner = id
-
 option_icon = instance_create_layer(x,y,"lay_front",o_option)
 gem_icon = instance_create_layer(x,y,"lay_front",o_gem_icon)
 weapon_icon = instance_create_layer(x,y,"lay_front",o_weapon_icon)
@@ -57,6 +54,7 @@ pickup_range = 100
 //Create weapons
 inst_fist = instance_create_layer(x,y,"lay_weapon",o_fist)
 inst_fist.owner = id
+vweapon = inst_fist
 
 inst_light_sword = instance_create_layer(x,y,"lay_weapon",o_light_sword)
 inst_light_sword.owner = id
@@ -70,7 +68,7 @@ inst_great_sword.owner = id
 //Weapon
 fist_aquired = true
 light_sword_aquired = true
-great_sword_aquired = false
+great_sword_aquired = true
 
 //Support
 heal_aquired = true
