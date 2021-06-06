@@ -121,28 +121,28 @@ if equip_menu == true
 		}
 		if !instance_exists(o_equip_inventory)
 		{
-			i_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_inventory)
+			i_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_inventory)
 			i_equip_icon.x_correct = 36
 			i_equip_icon.y_correct = 273
 		}
 		
 		if !instance_exists(o_equip_weapon)
 		{
-			w_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_weapon)
+			w_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_weapon)
 			w_equip_icon.x_correct = 36
 			w_equip_icon.y_correct = 387
 		}
 		
 		if !instance_exists(o_equip_support)
 		{
-			s_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_support)
+			s_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_support)
 			s_equip_icon.x_correct = 36
 			s_equip_icon.y_correct = 501
 		}
 		
 		if !instance_exists(o_equip_ability)
 		{
-			a_equip_icon = instance_create_layer(x,y,"lay_game_front",o_equip_ability)
+			a_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_ability)
 			a_equip_icon.x_correct = 36
 			a_equip_icon.y_correct = 615
 		}

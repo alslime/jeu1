@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_fist",
-    "path": "sprites/sp_fist/sp_fist.yy",
+    "name": "sp_hitbox",
+    "path": "sprites/sp_hitbox/sp_hitbox.yy",
   },
   "solid": false,
   "visible": true,

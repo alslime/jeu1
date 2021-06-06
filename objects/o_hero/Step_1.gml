@@ -265,6 +265,7 @@ if hplost >= hpmax
 if keyboard_check_pressed (ord("W"))
 {
 	xp += 1000
+	vweapon.familiarity_points += 10000
 }
 if xp >= xpmax
 {

@@ -391,6 +391,7 @@ if hplost >= hpmax
 	instance_destroy()
 	script_execute(create_gems,gem_drop_value,x,y)
 	inst_hero.xp += xp_drop_value
+	vweapon.familiarity_points += 1
 }
 
 #endregion

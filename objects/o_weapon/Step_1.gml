@@ -97,3 +97,10 @@ if attack_key && owner.can_attack == true
 }
 
 #endregion
+
+if (familiarity_points >= familiarity_max_points) && (familiarity_level < 100)
+{
+	familiarity_points = familiarity_points - familiarity_max_points
+	familiarity_max_points += 25
+	familiarity_level += 1
+}
