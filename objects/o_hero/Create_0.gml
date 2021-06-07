@@ -74,9 +74,11 @@ great_sword_aquired = true
 heal_aquired = true
 
 //Powers
-total_powers = 6
 double_jump_aquired = true
+double_jump_activated = false
+
 gravity_defy_dash_aquired = true
+gravity_defy_dash_activated = false
 
 #endregion
 
