@@ -4,6 +4,7 @@ y1 = camera_get_view_y(view_camera[0])
 x = x1 + x_correct
 y = y1 + y_correct
 
+draw_set_font(fontbig)
 if inst_hero.wpn_abi_pow_chosen == id
 {
 	image_blend = colour

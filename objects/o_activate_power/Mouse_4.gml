@@ -1,0 +1,1 @@
+owner.power_activated = true

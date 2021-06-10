@@ -11,10 +11,8 @@ if os_type == os_ios || os_type == os_android
 }
 else
 {
-	support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4)
+	support_key = mouse_check_button(mb_right) || gamepad_button_check(0,gp_face4) || keyboard_check(ord("L"))
 }
-
-// ability to double jump and to dash without falling are activited
 
 can_attack = true
 can_abilities = true

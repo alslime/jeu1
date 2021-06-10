@@ -4,7 +4,7 @@ if os_type == os_ios || os_type == os_android
 }
 else
 {
-	attack_key = mouse_check_button_pressed (mb_left) || gamepad_button_check_pressed(0,gp_face3)
+	attack_key = mouse_check_button_pressed (mb_left) || gamepad_button_check_pressed(0,gp_face3) || keyboard_check_pressed(ord("K"))
 }
 
 // Combo
