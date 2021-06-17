@@ -1,11 +1,6 @@
 event_inherited()
 
-image_blend = c_white
-if place_meeting(x,y,o_mouse)
-{
-	image_blend = c_orange
-}
-
+contour_colour = c_white
 if inst_hero.equip_button_chosen == id
 {
 	if !instance_exists(o_activate_power)
@@ -21,7 +16,7 @@ if inst_hero.equip_button_chosen == id
 	inst_deactivate = instance_find(o_deactivate_power,0)
 	inst_deactivate.owner = id	
 	
-	image_blend = colour
+	contour_colour = colour
 
 	draw_sprite(sprite,0,x1+camera_get_view_width(view_camera[0])/2+13+16,y1+72+20)
 	
@@ -40,6 +35,4 @@ if inst_hero.equip_button_chosen == id
 	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 188,description3,1,1,0,c_white,c_white,c_white,c_white,1)
 	script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 219,description4)
 	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 220,description4,1,1,0,c_white,c_white,c_white,c_white,1)
-
-
 }

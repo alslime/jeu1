@@ -11,8 +11,12 @@ else
 if inst_hero.double_jump_activated == true
 {
 	power_activated = true
-	image_blend = c_red
+	contour_colour = c_red
+}
+if place_meeting(x,y,o_mouse)
+{
+	contour_colour = c_orange
 }
 
-
 draw_self()
+draw_sprite_ext(sprite_contour,0,x,y,1,1,0,contour_colour,1)

@@ -7,6 +7,7 @@ if chosen_weapon == "fists"
 {	
 	weapon_icon.weapon_selected = "Fists"
 	weapon_icon.sprite_index = sp_new_fist_icon
+	weapon_icon.sprite_contour = sp_contour_new_fist_icon
 	vweapon = inst_fist
 	se_1 = se_punch1
 	se_2 = se_punch2
@@ -16,6 +17,7 @@ else if chosen_weapon == "light_sword"
 {
 	weapon_icon.weapon_selected = "Light Sword"
 	weapon_icon.sprite_index = sp_new_light_sword_icon
+	weapon_icon.sprite_contour = sp_contour_light_sword_icon
 	vweapon = inst_light_sword
 	se_1 = se_light_sword1
 	se_2 = se_light_sword2
@@ -25,6 +27,7 @@ else if chosen_weapon == "great_sword"
 {
 	weapon_icon.weapon_selected = "Great Sword"
 	weapon_icon.sprite_index = sp_new_great_sword_icon
+	weapon_icon.sprite_contour = sp_contour_great_sword_icon
 	vweapon = inst_great_sword
 	se_1 = se_great_sword1
 	se_2 = se_great_sword2

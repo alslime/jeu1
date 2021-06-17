@@ -80,7 +80,7 @@ if equip_menu == true
 		draw_rectangle_color(x1+41,y1+77,x1 + camera_get_view_width(view_camera[0])/2 - 13,y1 + 255,c_black,c_black,c_black,c_black,false)
 		draw_set_alpha(1)
 		
-		draw_set_font(fontbig)
+		draw_set_font(fontsmall)
 		script_execute(text_outline,x1 + 36, y1 + 24-9,"Character")
 		draw_text_transformed_color(x1 + 36, y1 + 24-8,"Character",1,1,0,c_white,c_white,c_white,c_white,1)
 		
@@ -124,27 +124,31 @@ if equip_menu == true
 			i_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_inventory)
 			i_equip_icon.x_correct = 36
 			i_equip_icon.y_correct = 273
+			
+			i_equip_icon2 = instance_create_layer(x,y,"lay_game_front_1",o_equip_inventory)
+			i_equip_icon2.x_correct = 36
+			i_equip_icon2.y_correct = 665
 		}
 		
 		if !instance_exists(o_equip_weapon)
 		{
 			w_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_weapon)
 			w_equip_icon.x_correct = 36
-			w_equip_icon.y_correct = 387
+			w_equip_icon.y_correct = 371
 		}
 		
 		if !instance_exists(o_equip_support)
 		{
 			s_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_support)
 			s_equip_icon.x_correct = 36
-			s_equip_icon.y_correct = 501
+			s_equip_icon.y_correct = 469
 		}
 		
 		if !instance_exists(o_equip_ability)
 		{
 			a_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_ability)
 			a_equip_icon.x_correct = 36
-			a_equip_icon.y_correct = 615
+			a_equip_icon.y_correct = 567
 		}
 
 		surface_reset_target()

@@ -4,6 +4,7 @@ inst_hero.create_buttons = true
 
 name = "Inventory"
 sprite = sp_equip_inventory
+sprite_contour = sp_contour_equip_inventory
 
 total_inventory_items = 0
 inventory_array = array_create(total_inventory_items)
