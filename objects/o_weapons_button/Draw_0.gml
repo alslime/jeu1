@@ -48,6 +48,13 @@ if inst_hero.equip_button_chosen == id
 if inst_hero.chosen_weapon == button_name
 {
 	contour_colour = c_red
+	if inst_hero.equip_button_chosen == id
+	{
+		//Equipped or not
+		draw_set_font(fontbig)
+		script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+130 + string_width(instance.item_name), y1 + 77," (Equipped)")
+		draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130 + string_width(instance.item_name), y1 + 78," (Equipped)",1,1,0,c_red,c_red,c_red,c_red,1)
+	}
 }
 if place_meeting(x,y,o_mouse)
 {

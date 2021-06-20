@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_equip_menu_button",
-    "path": "sprites/sp_equip_menu_button/sp_equip_menu_button.yy",
+    "name": "sp_equip_powers",
+    "path": "sprites/sp_equip_powers/sp_equip_powers.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,17 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menu categories",
-    "path": "folders/Objects/Equip_menu/menu categories.yy",
+    "name": "Equip_menu",
+    "path": "folders/Objects/Equip_menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_equip_support",
+  "name": "o_equip_ability",
   "tags": [],
   "resourceType": "GMObject",
 }

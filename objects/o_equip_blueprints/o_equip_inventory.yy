@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menu categories",
-    "path": "folders/Objects/Equip_menu/menu categories.yy",
+    "name": "Equip_menu",
+    "path": "folders/Objects/Equip_menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_equip_support",
+  "name": "o_equip_inventory",
   "tags": [],
   "resourceType": "GMObject",
 }

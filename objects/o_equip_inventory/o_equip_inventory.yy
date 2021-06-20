@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Equip_menu",
-    "path": "folders/Objects/Equip_menu.yy",
+    "name": "menu categories",
+    "path": "folders/Objects/Equip_menu/menu categories.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_equip_inventory",

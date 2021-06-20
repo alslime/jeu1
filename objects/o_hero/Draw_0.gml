@@ -69,40 +69,41 @@ if equip_menu == true
 		draw_rectangle_color(x1+20,y1+20,x1 + camera_get_view_width(view_camera[0])-20,y1 + camera_get_view_height(view_camera[0])-20,c_black,c_black,c_black,c_black,false)
 		draw_set_alpha(1)
 		
-		draw_rectangle_color(x1+36,y1+72,x1 + camera_get_view_width(view_camera[0])/2 - 8,y1 + 260,c_white,c_white,c_white,c_white,false)
-		draw_rectangle_color(x1+36,y1+72,x1 + camera_get_view_width(view_camera[0])/2 - 8,y1 + 260,c_black,c_black,c_black,c_black,true)
+		draw_rectangle_color(x1+36,y1+72,x1 + camera_get_view_width(view_camera[0])/2 - 8,y1 + 221,c_white,c_white,c_white,c_white,false)
+		draw_rectangle_color(x1+36,y1+72,x1 + camera_get_view_width(view_camera[0])/2 - 8,y1 + 221,c_black,c_black,c_black,c_black,true)
 		
 		gpu_set_blendmode(bm_subtract)
-		draw_rectangle_color(x1+41,y1+77,x1 + camera_get_view_width(view_camera[0])/2 - 13,y1 + 255,c_black,c_black,c_black,c_black,false)
+		draw_rectangle_color(x1+41,y1+77,x1 + camera_get_view_width(view_camera[0])/2 - 13,y1 + 216,c_black,c_black,c_black,c_black,false)
 		gpu_set_blendmode(bm_normal)
 		
 		draw_set_alpha(0.75)
-		draw_rectangle_color(x1+41,y1+77,x1 + camera_get_view_width(view_camera[0])/2 - 13,y1 + 255,c_black,c_black,c_black,c_black,false)
+		draw_rectangle_color(x1+41,y1+77,x1 + camera_get_view_width(view_camera[0])/2 - 13,y1 + 216,c_black,c_black,c_black,c_black,false)
 		draw_set_alpha(1)
 		
-		draw_set_font(fontsmall)
+		draw_set_font(fontbig)
 		script_execute(text_outline,x1 + 36, y1 + 24-9,"Character")
 		draw_text_transformed_color(x1 + 36, y1 + 24-8,"Character",1,1,0,c_white,c_white,c_white,c_white,1)
-		
-		script_execute(text_outline,x1 + 52, y1 + 71,"Level")
-		draw_text_transformed_color(x1 + 52, y1 + 72,"Level",1,1,0,c_white,c_white,c_white,c_white,1)
-		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(level)), y1 + 71,level)
-		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(level)), y1 + 72,level,1,1,0,c_white,c_white,c_white,c_white,1)
+
+		draw_set_font(fontsmall)
+		script_execute(text_outline,x1 + 52, y1 + 75,"Level")
+		draw_text_transformed_color(x1 + 52, y1 + 76,"Level",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(level)), y1 + 75,level)
+		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(level)), y1 + 76,level,1,1,0,c_white,c_white,c_white,c_white,1)
 	
-		script_execute(text_outline,x1 + 52, y1 + 113,"Max Health")
-		draw_text_transformed_color(x1 + 52, y1 + 114,"Max Health",1,1,0,c_white,c_white,c_white,c_white,1)
-		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(hpmax)), y1 + 113,hpmax)
-		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(hpmax)), y1 + 114,hpmax,1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + 52, y1 + 107,"Max Health")
+		draw_text_transformed_color(x1 + 52, y1 + 108,"Max Health",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(hpmax)), y1 + 107,hpmax)
+		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(hpmax)), y1 + 108,hpmax,1,1,0,c_white,c_white,c_white,c_white,1)
 		
-		script_execute(text_outline,x1 + 52, y1 + 155,"Max Energy")
-		draw_text_transformed_color(x1 + 52, y1 + 156,"Max Energy",1,1,0,c_white,c_white,c_white,c_white,1)
-		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(energymax)), y1 + 155,energymax)
-		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(energymax)), y1 + 156,energymax,1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + 52, y1 + 139,"Max Energy")
+		draw_text_transformed_color(x1 + 52, y1 + 140,"Max Energy",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(energymax)), y1 + 139,energymax)
+		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(energymax)), y1 + 140,energymax,1,1,0,c_white,c_white,c_white,c_white,1)
 		
-		script_execute(text_outline,x1 + 52, y1 + 197,"Experience")
-		draw_text_transformed_color(x1 + 52, y1 + 198,"Experience",1,1,0,c_white,c_white,c_white,c_white,1)
-		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(xp) + "/" + string(xpmax)), y1 + 197,string(xp) + "/" + string(xpmax))
-		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(xp) + "/" + string(xpmax)), y1 + 198,string(xp) + "/" + string(xpmax),1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + 52, y1 + 171,"Experience")
+		draw_text_transformed_color(x1 + 52, y1 + 172,"Experience",1,1,0,c_white,c_white,c_white,c_white,1)
+		script_execute(text_outline,x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(xp) + "/" + string(xpmax)), y1 + 171,string(xp) + "/" + string(xpmax))
+		draw_text_transformed_color(x1 + camera_get_view_width(view_camera[0])/2 - 20 - string_width(string(xp) + "/" + string(xpmax)), y1 + 172,string(xp) + "/" + string(xpmax),1,1,0,c_white,c_white,c_white,c_white,1)
 		
 		draw_rectangle_color(x1 + camera_get_view_width(view_camera[0])/2+8,y1+72,x1 + camera_get_view_width(view_camera[0]) - 36,y1 + camera_get_view_height(view_camera[0]) - 36,c_white,c_white,c_white,c_white,false)
 		draw_rectangle_color(x1 + camera_get_view_width(view_camera[0])/2+8,y1+72,x1 + camera_get_view_width(view_camera[0]) - 36,y1 + camera_get_view_height(view_camera[0]) - 36,c_black,c_black,c_black,c_black,true)
@@ -119,36 +120,40 @@ if equip_menu == true
 		{
 			instance_create_layer(x1+camera_get_view_width(view_camera[0])/2+13+16,y1+387-19-16,"lay_game_front",o_menu_scroll)
 		}
+		
 		if !instance_exists(o_equip_inventory)
 		{
 			i_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_inventory)
 			i_equip_icon.x_correct = 36
-			i_equip_icon.y_correct = 273
-			
-			i_equip_icon2 = instance_create_layer(x,y,"lay_game_front_1",o_equip_inventory)
-			i_equip_icon2.x_correct = 36
-			i_equip_icon2.y_correct = 665
+			i_equip_icon.y_correct = 235
+		}
+		
+		if !instance_exists(o_equip_blueprints)
+		{
+			b_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_blueprints)
+			b_equip_icon.x_correct = 36
+			b_equip_icon.y_correct = 332
 		}
 		
 		if !instance_exists(o_equip_weapon)
 		{
 			w_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_weapon)
 			w_equip_icon.x_correct = 36
-			w_equip_icon.y_correct = 371
+			w_equip_icon.y_correct = 429
 		}
 		
 		if !instance_exists(o_equip_support)
 		{
 			s_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_support)
 			s_equip_icon.x_correct = 36
-			s_equip_icon.y_correct = 469
+			s_equip_icon.y_correct = 526
 		}
 		
 		if !instance_exists(o_equip_ability)
 		{
 			a_equip_icon = instance_create_layer(x,y,"lay_game_front_1",o_equip_ability)
 			a_equip_icon.x_correct = 36
-			a_equip_icon.y_correct = 567
+			a_equip_icon.y_correct = 623
 		}
 
 		surface_reset_target()
