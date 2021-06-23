@@ -70,7 +70,7 @@ dmg = vweapon.base_dmg[current_weapon_combo]
 if instance_exists(o_weapon_hitbox)
 {
 	// Do we need to decrement our HP ?
-	if	col_with_weapon && current_weapon_combo != 0
+	if	col_with_weapon
 	{
 		can_be_hit = true
 		for (z = 0; z < array_length(id_array); z += 1)

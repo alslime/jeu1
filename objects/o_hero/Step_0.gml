@@ -1,5 +1,3 @@
-equip_menu_key = keyboard_check_pressed(vk_tab) || gamepad_button_check_pressed(0,gp_select)
-
 //Weapon Chosen
 #region
 
@@ -47,22 +45,7 @@ if chosen_support == "heal"
 
 #endregion
 
-//Equip menu on/off
-#region
 
-if equip_menu_key
-{
-	if equip_menu == false
-	{
-		equip_menu = true
-	}
-	else
-	{
-		equip_menu = false
-	}
-}
-
-#endregion
 
 //Parralax Background
 #region

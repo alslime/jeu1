@@ -44,8 +44,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Weapons",
-    "path": "folders/Objects/Weapons.yy",
+    "name": "Weapons & Support",
+    "path": "folders/Objects/Weapons & Support.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_weapon",

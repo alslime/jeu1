@@ -29,6 +29,24 @@ if equip_menu
 	can_abilities = false
 }
 
+//Equip menu on/off
+#region
+
+equip_menu_key = keyboard_check_pressed(vk_tab) || gamepad_button_check_pressed(0,gp_select)
+if equip_menu_key
+{
+	if equip_menu == false
+	{
+		equip_menu = true
+	}
+	else
+	{
+		equip_menu = false
+	}
+}
+
+#endregion
+
 // Jump
 #region
 
@@ -71,7 +89,7 @@ if jump_key && can_double_jump && jump
 // Movments left/right && Dash && check current combo
 #region
 
-if (hero_state != "dash") || (hero_state != "crouch_dash") || (hero_state != "heal")
+if (hero_state != "dash") || (hero_state != "crouch_dash") || (hero_state != "support")
 {
 	if left_key_pressed == true
 	{
@@ -280,11 +298,16 @@ if xp >= xpmax
 // Support
 #region
 
+inst_support = instance_find(o_support,0)
 if support_key && (can_abilities == true)
 {
-	if (chosen_support == "heal") && (hplost > 0) && (!jump) && (energylost <= (energymax - energyconsomption))
+	if (chosen_support == "heal")
 	{
-		hero_state = "heal"
+		energyconsomption = inst_support.energyconsomption_heal
+	}
+	if (hplost > 0) && (!jump) && (energylost <= (energymax - energyconsomption))
+	{
+		hero_state = "support"
 		support = true
 	}
 	else
@@ -494,29 +517,38 @@ if hero_state == "combo3"
 	}
 }
 
-if hero_state == "heal"
+if hero_state == "support"
 {
-	if last_sequence_type != se_heal
+	//Heal
+	if chosen_support == "heal"
 	{
-		layer_sequence_destroy(last_sequence)
-		heal = layer_sequence_create("lay_hero",x,y,se_heal)
-		last_sequence = heal
-		last_sequence_type = se_heal
+		if last_sequence_type != se_heal
+		{
+			layer_sequence_destroy(last_sequence)
+			heal = layer_sequence_create("lay_hero",x,y,se_heal)
+			last_sequence = heal
+			last_sequence_type = se_heal
 		
-		vweapon.combo_0 = 1
+			vweapon.combo_0 = 1
 		
-		heal_interval = 2
+			heal_interval = inst_support.heal_interval
+		}
+		if heal_interval > 0
+		{
+			heal_interval -= 1
+		}
+		if heal_interval == 0
+		{
+			hplost -= inst_support.regen_value
+			energylost += inst_support.energyconsomption_heal
+			heal_interval = inst_support.heal_interval
+			in_regen_text = instance_create_layer(x,y,"lay_front",o_heal_text)
+			in_regen_text.regen_value = inst_support.regen_value
+			in_regen_text.x = x + sprite_width - 8
+			in_regen_text.y = y - 16
+		}
 	}
-	if heal_interval > 0
-	{
-		heal_interval -= 1
-	}
-	if heal_interval == 0
-	{
-		hplost -= 1
-		energylost += energyconsomption
-		heal_interval = 2
-	}
+	
 	phy_speed_x = 0
 }
 

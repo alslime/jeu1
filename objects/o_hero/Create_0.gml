@@ -6,10 +6,11 @@ randomize()
 // Init variables 
 #region
 
-option_icon = instance_create_layer(x,y,"lay_front",o_option)
-gem_icon = instance_create_layer(x,y,"lay_front",o_gem_icon)
-weapon_icon = instance_create_layer(x,y,"lay_front",o_weapon_icon)
-utility_icon = instance_create_layer(x,y,"lay_front",o_utility_icon)
+support_obj = instance_create_layer(x,y,"lay_shape_deco",o_support)
+option_icon = instance_create_layer(x,y,"lay_game_front_1",o_option)
+gem_icon = instance_create_layer(x,y,"lay_game_front_1",o_gem_icon)
+weapon_icon = instance_create_layer(x,y,"lay_game_front_1",o_weapon_icon)
+utility_icon = instance_create_layer(x,y,"lay_game_front_1",o_utility_icon)
 
 inst_for_camera = instance_create_layer(x,y,"lay_shape_deco",o_for_camera)
 inst_for_camera.owner = id
@@ -84,5 +85,5 @@ gravity_defy_dash_activated = false
 
 if os_type == os_ios || os_type == os_android
 {
-	window_set_size(448,252)
+	window_set_size(672,378)
 }
