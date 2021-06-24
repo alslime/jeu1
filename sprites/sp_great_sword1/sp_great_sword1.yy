@@ -153,7 +153,7 @@
   "nineSlice": null,
   "parent": {
     "name": "great_sowrd",
-    "path": "folders/Sprites/hero/great_sowrd.yy",
+    "path": "folders/Sprites/hero/Weapons/great_sowrd.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_great_sword1",

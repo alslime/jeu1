@@ -73,7 +73,7 @@
   "eventStubScript": null,
   "parent": {
     "name": "great_sword",
-    "path": "folders/Sequences/Hero/great_sword.yy",
+    "path": "folders/Sequences/Hero/Weapons/great_sword.yy",
   },
   "resourceVersion": "1.3",
   "name": "se_great_sword1",

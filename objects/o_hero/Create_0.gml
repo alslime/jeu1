@@ -73,6 +73,7 @@ great_sword_aquired = true
 
 //Support
 heal_aquired = true
+instant_heal_aquired = true
 
 //Powers
 double_jump_aquired = true

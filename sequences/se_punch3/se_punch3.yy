@@ -85,7 +85,7 @@
   "eventStubScript": null,
   "parent": {
     "name": "Punch",
-    "path": "folders/Sequences/Hero/Punch.yy",
+    "path": "folders/Sequences/Hero/Weapons/Punch.yy",
   },
   "resourceVersion": "1.3",
   "name": "se_punch3",

@@ -8,6 +8,11 @@ support_array = array_create(total_support)
 
 if inst_hero.heal_aquired
 {
-	support_array[0] = o_heal_button
+	support_array[total_support] = o_heal_button
+	total_support ++
+}
+if inst_hero.instant_heal_aquired
+{
+	support_array[total_support] = o_instant_heal_button
 	total_support ++
 }

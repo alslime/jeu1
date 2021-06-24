@@ -42,8 +42,19 @@ if chosen_support == "heal"
 	utility_icon.utility_selected = "Heal"
 	utility_icon.sprite_index = sp_new_heal_icon
 }
+else if chosen_support == "instant_heal"
+{
+	utility_icon.utility_selected = "Instant Heal"
+	utility_icon.sprite_index = sp_instant_heal_icon
+}
+
 
 #endregion
+
+if hplost < 0
+{
+	hplost = 0
+}
 
 //Parralax Background
 #region

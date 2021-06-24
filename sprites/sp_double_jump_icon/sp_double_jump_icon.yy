@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Demonstrations",
+    "path": "folders/Sprites/Menu/Demonstrations.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_double_jump_icon",

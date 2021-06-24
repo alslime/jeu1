@@ -92,7 +92,7 @@
   "nineSlice": null,
   "parent": {
     "name": "light_sword",
-    "path": "folders/Sprites/hero/light_sword.yy",
+    "path": "folders/Sprites/hero/Weapons/light_sword.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_new_hero_lightsword2",

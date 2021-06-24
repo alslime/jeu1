@@ -135,7 +135,7 @@
   "eventStubScript": null,
   "parent": {
     "name": "light_sword",
-    "path": "folders/Sequences/Hero/light_sword.yy",
+    "path": "folders/Sequences/Hero/Weapons/light_sword.yy",
   },
   "resourceVersion": "1.3",
   "name": "se_light_sword3",

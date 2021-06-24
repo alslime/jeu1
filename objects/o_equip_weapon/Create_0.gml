@@ -6,19 +6,19 @@ sprite_contour = sp_contour_new_fist_icon
 total_weapons = 0
 weapons_array = array_create(total_weapons)
 
-if instance_exists(o_fist)
+if inst_hero.fist_aquired
 {
-	weapons_array[0] = o_fist_button
+	weapons_array[total_weapons] = o_fist_button
 	total_weapons ++
 }
-if instance_exists(o_light_sword)
+if inst_hero.light_sword_aquired
 {
-	weapons_array[1] = o_light_sword_button
+	weapons_array[total_weapons] = o_light_sword_button
 	total_weapons ++
 }
 
-if instance_exists(o_fist)
+if inst_hero.great_sword_aquired
 {
-	weapons_array[2] = o_great_sword_button
+	weapons_array[total_weapons] = o_great_sword_button
 	total_weapons ++
 }
