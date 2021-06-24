@@ -26,6 +26,7 @@
     {"id":{"name":"se_dash","path":"sequences/se_dash/se_dash.yy",},"order":8,},
     {"id":{"name":"sp_activate_button","path":"sprites/sp_activate_button/sp_activate_button.yy",},"order":4,},
     {"id":{"name":"sp_crate_piece3","path":"sprites/sp_crate_piece3/sp_crate_piece3.yy",},"order":7,},
+    {"id":{"name":"sp_heal","path":"sprites/sp_heal/sp_heal.yy",},"order":28,},
     {"id":{"name":"o_blood","path":"objects/o_blood/o_blood.yy",},"order":3,},
     {"id":{"name":"o_activate_power","path":"objects/o_activate_power/o_activate_power.yy",},"order":11,},
     {"id":{"name":"sp_dirt_new","path":"sprites/sp_dirt_new/sp_dirt_new.yy",},"order":4,},

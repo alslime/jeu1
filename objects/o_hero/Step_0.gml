@@ -45,8 +45,6 @@ if chosen_support == "heal"
 
 #endregion
 
-
-
 //Parralax Background
 #region
 
