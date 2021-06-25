@@ -6,6 +6,7 @@ randomize()
 // Init variables 
 #region
 
+inventory_obj = instance_create_layer(x,y,"lay_shape_deco",o_inventory)
 support_obj = instance_create_layer(x,y,"lay_shape_deco",o_support)
 option_icon = instance_create_layer(x,y,"lay_game_front_1",o_option)
 gem_icon = instance_create_layer(x,y,"lay_game_front_1",o_gem_icon)

@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Icons",
-    "path": "folders/Sprites/Icons.yy",
+    "path": "folders/Sprites/Menu/Icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_anti_gravity_dash",

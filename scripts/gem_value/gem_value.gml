@@ -3,7 +3,7 @@
 function gem_value()
 {
 	argument0.phy_speed_x = irandom_range(-6,6)
-	argument0.phy_speed_y = irandom_range(-6,6)
+	argument0.phy_speed_y = irandom_range(-6,-1)
 	argument0.countdown = 120
 	argument0.gemValue = argument1
 

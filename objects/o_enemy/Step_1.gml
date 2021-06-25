@@ -392,6 +392,11 @@ if hplost >= hpmax
 	script_execute(create_gems,gem_drop_value,x,y)
 	inst_hero.xp += xp_drop_value
 	vweapon.familiarity_points += 1
+	instance_create_layer(x,y,"lay_gems",o_wpn_stone_1)
+	instance_create_layer(x,y,"lay_gems",o_wpn_stone_2)
+	instance_create_layer(x,y,"lay_gems",o_wpn_stone_3)
+	instance_create_layer(x,y,"lay_gems",o_wpn_stone_4)
+	instance_create_layer(x,y,"lay_gems",o_wpn_stone_5)
 }
 
 #endregion
