@@ -26,4 +26,7 @@ if begin_follow == true
 	}
 }
 
+//n = 0
+//instance_create_layer(x,y,"lay_hero",o_walking_dust2)
+
 splash_water(id)
