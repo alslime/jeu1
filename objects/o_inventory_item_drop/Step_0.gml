@@ -26,7 +26,21 @@ if begin_follow == true
 	}
 }
 
-//n = 0
-//instance_create_layer(x,y,"lay_hero",o_walking_dust2)
+if z > 0
+{
+	z--
+}
+if z == 0
+{
+	pixel_smoke = instance_create_layer(x,y,"lay_gems_back",o_walking_dust2)
+	z = 7
+	pixel_smoke.time_to_destroy_pixel = 100
+	pixel_smoke.phy_speed_x = random_range(-0.5,0.5)
+	pixel_smoke.phy_speed_y = -1
+	if irandom(1) == 0
+	{
+		pixel_smoke.image_blend = pixel_smoke_col
+	}
+}
 
 splash_water(id)

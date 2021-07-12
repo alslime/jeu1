@@ -10,19 +10,21 @@ if inst_hero.equip_button_chosen == id
 	draw_set_font(fontbig)
 	draw_set_alpha(1)
 	//Name
-	//script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 77,name)
-	//draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 78,name,1,1,0,c_white,c_white,c_white,c_white,1)
+	script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 77,name)
+	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 78,name,1,1,0,c_white,c_white,c_white,c_white,1)
+	//Type
+	draw_set_font(fontsmall)
+	script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 123,type)
+	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 124,type,1,1,0,c_white,c_white,c_white,c_white,1)
 	//Description
-	//draw_set_font(fontsmall)
-	//script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 123,"Level")
-	//draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130, y1 + 124,"Level",1,1,0,c_white,c_white,c_white,c_white,1)
-	//script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+130+229-string_width(level), y1 + 123,level)
-	//draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+130+229-string_width(level), y1 + 124,level,1,1,0,c_white,c_white,c_white,c_white,1)
-	//Lore
-	//script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 267,description1)
-	//draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 268,description1,1,1,0,c_white,c_white,c_white,c_white,1)
-	//script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 299,description2)
-	//draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 300,description2,1,1,0,c_white,c_white,c_white,c_white,1)
+	script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 187+12,description1)
+	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 188+12,description1,1,1,0,c_white,c_white,c_white,c_white,1)
+	script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 219+12,description2)
+	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 220+12,description2,1,1,0,c_white,c_white,c_white,c_white,1)
+	script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 251+12,description3)
+	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 252+12,description3,1,1,0,c_white,c_white,c_white,c_white,1)
+	script_execute(text_outline,x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 283+12,description4)
+	draw_text_transformed_color(x1+camera_get_view_width(view_camera[0])/2+13+17, y1 + 284+12,description4,1,1,0,c_white,c_white,c_white,c_white,1)
 }
 if place_meeting(x,y,o_mouse)
 {

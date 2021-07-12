@@ -392,7 +392,11 @@ if hplost >= hpmax
 	script_execute(create_gems,gem_drop_value,x,y)
 	inst_hero.xp += xp_drop_value
 	vweapon.familiarity_points += 1
-	script_execute(create_drop,drop_type,drop_subtype,drop_number)
+	
+	for (q=0; q < total_possible_drop; q++)
+	{
+		script_execute(create_drop,drops_array[q,0],drops_array[q,1],drops_array[q,2])
+	}
 }
 
 #endregion

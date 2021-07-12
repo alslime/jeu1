@@ -1,5 +1,9 @@
 enum inventory_item_type
 {
+	//Blueprints
+	
+	
+	//Inventory
 	wpn_stone_1 = 0,
 	wpn_stone_2 = 1,
 	wpn_stone_3 = 2,
@@ -12,7 +16,20 @@ enum inventory_item_type
 	support_crystal_4 = 8,
 	support_crystal_5 = 9,
 	
-	last = 10
+	//Powers
+	heal = 10,
+	instant_heal = 11,
+	
+	//Support
+	double_jump = 10,
+	gravity_defy_dash = 11,
+	
+	//Weapon
+	fist = 12,
+	light_sword = 13,
+	great_sword =14,
+	
+	last = 15
 }
 
 items_owned = array_create(inventory_item_type.last)

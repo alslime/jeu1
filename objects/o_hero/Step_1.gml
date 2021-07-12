@@ -435,7 +435,8 @@ if hero_state == "walk"
 	walk_dust_count += 1
 	if walk_dust_count > 12
 	{
-		instance_create_layer(x + sprite_width/2,y + sprite_height - 4,"lay_hero",o_walking_dust2)
+		pixel_trail = instance_create_layer(x + sprite_width/2,y + sprite_height - 4,"lay_hero",o_walking_dust2)
+		pixel_trail.time_to_destroy_pixel = 25
 		walk_dust_count = 0
 	}
 }

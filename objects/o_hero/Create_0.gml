@@ -68,19 +68,19 @@ inst_great_sword.owner = id
 #region
 
 //Weapon
-fist_aquired = true
-light_sword_aquired = true
-great_sword_aquired = true
+inventory_obj.items_owned[inventory_item_type.fist] = 1
+inventory_obj.items_owned[inventory_item_type.light_sword] = 1
+inventory_obj.items_owned[inventory_item_type.great_sword] = 1
 
 //Support
-heal_aquired = true
-instant_heal_aquired = true
+inventory_obj.items_owned[inventory_item_type.heal] = 1
+inventory_obj.items_owned[inventory_item_type.instant_heal] = 1
 
 //Powers
-double_jump_aquired = true
+inventory_obj.items_owned[inventory_item_type.double_jump] = 1
 double_jump_activated = false
 
-gravity_defy_dash_aquired = true
+inventory_obj.items_owned[inventory_item_type.gravity_defy_dash] = 1
 gravity_defy_dash_activated = false
 
 #endregion

@@ -33,7 +33,9 @@
     {"x":16.0,"y":68.0,},
   ],
   "eventList": [],
-  "properties": [],
+  "properties": [
+    {"varType":7,"value":"$FF0062A3","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"pixel_smoke_col","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "Inventory and drops",
