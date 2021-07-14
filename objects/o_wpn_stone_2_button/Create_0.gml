@@ -8,3 +8,6 @@ description3 = ""
 description4 = ""
 sprite_icon = sp_wpn_stone_2
 sprite_contour = sp_contour_wpn_stone_2
+
+inventory_instance = instance_find(o_inventory,0)
+number_of_item = inventory_instance.items_owned[inventory_item_type.wpn_stone_2]
