@@ -66,10 +66,12 @@ inst_great_sword.owner = id
 
 //Items in possesion
 #region
+//Blueprint
+inventory_obj.items_owned[inventory_item_type.bp_light_sword] = 1
 
 //Weapon
 inventory_obj.items_owned[inventory_item_type.fist] = 1
-inventory_obj.items_owned[inventory_item_type.light_sword] = 1
+inventory_obj.items_owned[inventory_item_type.light_sword] = 9
 inventory_obj.items_owned[inventory_item_type.great_sword] = 1
 
 //Support

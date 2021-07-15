@@ -7,5 +7,8 @@ sprite_contour = sp_contour_blueprints_icon
 total_blueprints = 0
 blueprints_array = array_create(total_blueprints)
 
-total_items = total_blueprints
-items_array = blueprints_array
+if inst_inventory.items_owned[inventory_item_type.bp_light_sword] !=0
+{
+	blueprints_array[total_blueprints] = o_bp_light_sword
+	total_blueprints ++
+}

@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "inventory",
-    "path": "folders/Sprites/inventory.yy",
+    "path": "folders/Sprites/Menu/Icons/inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_contour_wpn_stone_3",

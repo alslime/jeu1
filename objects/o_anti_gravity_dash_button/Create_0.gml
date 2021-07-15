@@ -7,5 +7,6 @@ description1 = "Prevents falling when dashing."
 description2 = ""
 description3 = ""
 description4 = ""
+
 inventory_instance = instance_find(o_inventory,0)
 number_of_item = inventory_instance.items_owned[inventory_item_type.gravity_defy_dash]
