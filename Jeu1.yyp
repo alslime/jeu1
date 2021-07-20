@@ -205,6 +205,7 @@
     {"id":{"name":"o_water_splash_long","path":"objects/o_water_splash_long/o_water_splash_long.yy",},"order":2,},
     {"id":{"name":"se_boulder_demon_stand","path":"sequences/se_boulder_demon_stand/se_boulder_demon_stand.yy",},"order":3,},
     {"id":{"name":"o_inventory_drop","path":"objects/o_inventory_drop/o_inventory_drop.yy",},"order":3,},
+    {"id":{"name":"save_game","path":"scripts/save_game/save_game.yy",},"order":8,},
     {"id":{"name":"se_punch3","path":"sequences/se_punch3/se_punch3.yy",},"order":2,},
     {"id":{"name":"o_menu_scroll","path":"objects/o_menu_scroll/o_menu_scroll.yy",},"order":8,},
     {"id":{"name":"sp_bush1","path":"sprites/sp_bush1/sp_bush1.yy",},"order":1,},
@@ -246,6 +247,7 @@
     {"id":{"name":"sp_hero_crouch_walk","path":"sprites/sp_hero_crouch_walk/sp_hero_crouch_walk.yy",},"order":10,},
     {"id":{"name":"sp_inventory_drop2","path":"sprites/sp_inventory_drop2/sp_inventory_drop2.yy",},"order":4,},
     {"id":{"name":"sp_double_jump_icon","path":"sprites/sp_double_jump_icon/sp_double_jump_icon.yy",},"order":2,},
+    {"id":{"name":"load_game","path":"scripts/load_game/load_game.yy",},"order":9,},
     {"id":{"name":"o_heal_button","path":"objects/o_heal_button/o_heal_button.yy",},"order":0,},
     {"id":{"name":"sp_wpn_stone_4","path":"sprites/sp_wpn_stone_4/sp_wpn_stone_4.yy",},"order":7,},
     {"id":{"name":"o_water","path":"objects/o_water/o_water.yy",},"order":0,},
@@ -345,7 +347,9 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"save.ini","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2.3.3.570",
   },
