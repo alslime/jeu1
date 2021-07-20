@@ -5,6 +5,6 @@ function load_game()
 		file_delete("save.ini")
 	}
 	ini_open("save.ini")
-	total_gems = ini_read_real("Save 1","Number of Gems",0)
+	total_gems = ini_read_real("save_1","number_of_gems",0)
 	ini_close()
 }

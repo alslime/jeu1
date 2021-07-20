@@ -8,6 +8,6 @@ function save_game()
 	}
 	ini_open("save.ini")
 	var saved_gems = inst_hero.total_gems
-	ini_write_real("Save 1","Number of Gems",saved_gems)
+	ini_write_real("save_1","number_of_gems",saved_gems)
 	ini_close()
 }
