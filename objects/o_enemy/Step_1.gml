@@ -101,12 +101,8 @@ if instance_exists(o_weapon_hitbox)
 }
 if prevhp_lost != hplost
 {
-	// Blood
-	for (i = 0; i < amount_of_blood; i += 1)
-	{
-		inst_blood = instance_create_layer(x,y,"lay_front",o_blood_particules)
-		script_execute (create_blood,id,inst_blood)
-	}
+// Blood
+script_execute(create_blood,amount_of_blood)
 }
 prevhp_lost = hplost
 
@@ -393,8 +389,11 @@ if hplost >= hpmax
 	inst_hero.xp += xp_drop_value
 	vweapon.familiarity_points += 1
 	
-	q = irandom(total_possible_drop-1)
-	script_execute(create_drop,drops_array[q,0],drops_array[q,1],drops_array[q,2])
+	q = irandom(50)
+	if q <= total_possible_drop-1
+	{
+		script_execute(create_drop,drops_array[q,0],drops_array[q,1],drops_array[q,2])
+	}
 }
 
 #endregion

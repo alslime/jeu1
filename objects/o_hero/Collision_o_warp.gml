@@ -10,5 +10,3 @@ if near_warp.place == "left"
 }
 
 y = near_warp.targety
-
-save_game()

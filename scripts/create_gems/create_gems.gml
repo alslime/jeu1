@@ -1,4 +1,4 @@
-// argument0 = gear value
+// argument0 = gem value
 // argument1 = x
 // argument2 = y
 function create_gems()

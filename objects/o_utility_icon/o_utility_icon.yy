@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_new_heal_icon",
-    "path": "sprites/sp_new_heal_icon/sp_new_heal_icon.yy",
+    "name": "sp_empty",
+    "path": "sprites/sp_empty/sp_empty.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,6 +1,7 @@
 event_inherited()
 name = "Support"
-sprite = sp_new_heal_icon
+icon = instance_find(o_utility_icon,0)
+sprite = sp_equip_support
 sprite_contour = sp_contour_heal_icon
 
 total_support = 0

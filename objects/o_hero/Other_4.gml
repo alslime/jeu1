@@ -15,3 +15,5 @@ fix_binded = physics_fixture_bind(fix,id)
 current_fix = "fix"
 change_fixture_for_crouching = false
 change_fixture_for_standing = false
+
+save_game()

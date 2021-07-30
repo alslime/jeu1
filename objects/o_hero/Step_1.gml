@@ -278,11 +278,11 @@ if hplost >= hpmax
 // Level up
 #region
 
-if keyboard_check_pressed (ord("W"))
+/*if keyboard_check_pressed (ord("W"))
 {
 	xp += 1000
 	vweapon.familiarity_points += 10000
-}
+}*/
 if xp >= xpmax
 {
 	xp = xp - xpmax
@@ -299,7 +299,7 @@ if xp >= xpmax
 // Support
 #region
 inst_support = instance_find(o_support,0)
-if support_key && (can_abilities == true)
+if support_key && (can_abilities == true) && (chosen_support != "")
 {
 	if (chosen_support == "heal")
 	{
@@ -309,6 +309,7 @@ if support_key && (can_abilities == true)
 	{
 		energyconsomption = inst_support.energyconsomption_instant_heal
 	}
+	
 	if (hplost > 0) && (!jump) && (energylost <= (energymax - energyconsomption))
 	{
 		hero_state = "support"

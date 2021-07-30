@@ -5,7 +5,6 @@ randomize()
 
 // Init variables 
 #region
-load_game()
 
 inventory_obj = instance_create_layer(x,y,"lay_shape_deco",o_inventory)
 support_obj = instance_create_layer(x,y,"lay_shape_deco",o_support)
@@ -24,8 +23,8 @@ last_sequence = stand
 last_sequence_type = se_stand
 
 xp = 0
-level = 1
 xpmax = 50
+level = 1
 walk_dust_count = 0
 dash_time = 0
 before_was_crouch_dashing = false
@@ -45,14 +44,18 @@ se_2 = se_punch2
 se_3 = se_punch3
 
 chosen_weapon = "fists"
-chosen_support = "heal"
+chosen_support = ""
 
 #endregion
 
+//IMPORTANT VARIABLES
 dash_init_speed = 12
 jump_init_value = 16
 walk_init_speed = 6
 pickup_range = 100
+
+double_jump_activated = false
+gravity_defy_dash_activated = false
 
 //Create weapons
 inst_fist = instance_create_layer(x,y,"lay_weapon",o_fist)
@@ -65,30 +68,9 @@ inst_light_sword.owner = id
 inst_great_sword = instance_create_layer(x,y,"lay_weapon",o_great_sword)
 inst_great_sword.owner = id
 
-//Items in possesion
-#region
-//Blueprint
-inventory_obj.items_owned[inventory_item_type.bp_light_sword] = 1
-
-//Weapon
-inventory_obj.items_owned[inventory_item_type.fist] = 1
-inventory_obj.items_owned[inventory_item_type.light_sword] = 9
-inventory_obj.items_owned[inventory_item_type.great_sword] = 1
-
-//Support
-inventory_obj.items_owned[inventory_item_type.heal] = 1
-inventory_obj.items_owned[inventory_item_type.instant_heal] = 1
-
-//Powers
-inventory_obj.items_owned[inventory_item_type.double_jump] = 1
-double_jump_activated = false
-
-inventory_obj.items_owned[inventory_item_type.gravity_defy_dash] = 1
-gravity_defy_dash_activated = false
-
-#endregion
-
 if os_type == os_ios || os_type == os_android
 {
 	window_set_size(672,378)
 }
+
+load_game()

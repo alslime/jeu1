@@ -31,11 +31,11 @@ enum inventory_item_type
 	gravity_defy_dash = 19,
 	
 	//Weapon
-	fist = 20,
-	light_sword = 21,
-	great_sword =22,
+	//Fist cannot change
+	light_sword = 20,
+	great_sword =21,
 	
-	last = 23
+	last = 22
 }
 
 items_owned = array_create(inventory_item_type.last)

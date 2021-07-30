@@ -307,8 +307,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "drops",
-    "path": "folders/Sprites/drops.yy",
+    "name": "old",
+    "path": "folders/Sprites/drops/old.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_weapon_drop2",

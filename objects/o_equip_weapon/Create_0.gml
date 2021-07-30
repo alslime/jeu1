@@ -1,16 +1,15 @@
 event_inherited()
 name = "Weapons"
-sprite = sp_new_fist_icon
-sprite_contour = sp_contour_new_fist_icon
+sprite = sp_equip_weapons
+sprite_contour = sp_contour_equip_weapons
 
 total_weapons = 0
 weapons_array = array_create(total_weapons)
 
-if inst_inventory.items_owned[inventory_item_type.fist] != 0
-{
-	weapons_array[total_weapons] = o_fist_button
-	total_weapons ++
-}
+//Fist
+weapons_array[total_weapons] = o_fist_button
+total_weapons ++
+
 if inst_inventory.items_owned[inventory_item_type.light_sword] != 0
 {
 	weapons_array[total_weapons] = o_light_sword_button
