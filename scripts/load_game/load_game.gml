@@ -17,7 +17,7 @@ function load_game()
 	}
 	
 	//Items equipped
-	chosen_weapon = ini_read_string("save_1","weapon_equipped","fist")
+	chosen_weapon = ini_read_string("save_1","weapon_equipped","fists")
 	chosen_support = ini_read_string("save_1","support_equipped","")
 
 	//Weapons
@@ -36,6 +36,14 @@ function load_game()
 		inst_light_sword.familiarity_level = ini_read_real("save_1","light_sword_familiarity_level",1);
 		inst_light_sword.familiarity_max_points = ini_read_real("save_1","light_sword_familiarity_max_points",50);
 		inst_light_sword.familiarity_points = ini_read_real("save_1","light_sword_familiarity_points",0);
+	}
+	if instance_exists(o_light_sword)
+	{
+		inst_great_sword = instance_find(o_great_sword,0);
+		inst_great_sword.level = ini_read_real("save_1","great_sword_level",1);
+		inst_great_sword.familiarity_level = ini_read_real("save_1","great_sword_familiarity_level",1);
+		inst_great_sword.familiarity_max_points = ini_read_real("save_1","great_sword_familiarity_max_points",50);
+		inst_great_sword.familiarity_points = ini_read_real("save_1","great_sword_familiarity_points",0);
 	}
 
 
