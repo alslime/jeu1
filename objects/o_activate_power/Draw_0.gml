@@ -12,7 +12,7 @@ else
 {
 	image_blend = c_white
 }
-if owner.power_activated == true
+if owner.power_activated == 1
 {
 	image_blend = colour
 }

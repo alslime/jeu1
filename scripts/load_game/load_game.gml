@@ -45,7 +45,10 @@ function load_game()
 		inst_great_sword.familiarity_max_points = ini_read_real("save_1","great_sword_familiarity_max_points",50);
 		inst_great_sword.familiarity_points = ini_read_real("save_1","great_sword_familiarity_points",0);
 	}
-
+	
+	//Powers equipped
+	gravity_defy_dash_activated = ini_read_string("save_1","gravity_defy_dash_activated",0)
+	double_jump_activated = ini_read_string("save_1","double_jump_activated",0)
 
 	ini_close()
 }

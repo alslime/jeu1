@@ -91,6 +91,16 @@ function save_game()
 	ini_write_string("save_1","support_equipped",saved_chosen_support);
 	
 	#endregion
+	//Powers equipped
+	#region
+	
+	var saved_gravity_defy_dash_activated = inst_hero.gravity_defy_dash_activated;
+	ini_write_real("save_1","gravity_defy_dash_activated",saved_gravity_defy_dash_activated);
+	
+	var saved_double_jump_activated = inst_hero.double_jump_activated;
+	ini_write_real("save_1","double_jump_activated",saved_double_jump_activated);
+	
+	#endregion
 	
 	ini_close();
 }

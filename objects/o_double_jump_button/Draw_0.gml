@@ -1,16 +1,16 @@
 event_inherited()
-if power_activated
+if power_activated == 1
 {
-	inst_hero.double_jump_activated = true
+	inst_hero.double_jump_activated = 1
 }
 else
 {
-	inst_hero.double_jump_activated = false
+	inst_hero.double_jump_activated = 0
 }
 
-if inst_hero.double_jump_activated == true
+if inst_hero.double_jump_activated == 1
 {
-	power_activated = true
+	power_activated = 1
 	contour_colour = c_red
 }
 if place_meeting(x,y,o_mouse)

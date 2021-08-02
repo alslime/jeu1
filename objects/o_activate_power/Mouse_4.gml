@@ -1,1 +1,1 @@
-owner.power_activated = true
+owner.power_activated = 1

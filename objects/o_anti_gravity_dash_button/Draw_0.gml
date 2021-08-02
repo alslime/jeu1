@@ -1,16 +1,16 @@
 event_inherited()
-if power_activated
+if power_activated == 1
 {
-	inst_hero.gravity_defy_dash_activated = true
+	inst_hero.gravity_defy_dash_activated = 1
 }
 else
 {
-	inst_hero.gravity_defy_dash_activated = false
+	inst_hero.gravity_defy_dash_activated = 0
 }
 
-if inst_hero.gravity_defy_dash_activated == true
+if inst_hero.gravity_defy_dash_activated == 1
 {
-	power_activated = true
+	power_activated = 1
 	contour_colour = c_red
 }
 if place_meeting(x,y,o_mouse)

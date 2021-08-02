@@ -54,8 +54,8 @@ jump_init_value = 16
 walk_init_speed = 6
 pickup_range = 100
 
-double_jump_activated = false
-gravity_defy_dash_activated = false
+double_jump_activated = 0
+gravity_defy_dash_activated = 0
 
 //Create weapons
 inst_fist = instance_create_layer(x,y,"lay_weapon",o_fist)
