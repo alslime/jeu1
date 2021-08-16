@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "deco",
-    "path": "folders/Sprites/deco.yy",
+    "name": "Back_grounds",
+    "path": "folders/Sprites/deco/Back_grounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_plainsback",

@@ -20,44 +20,37 @@ function create_gems()
 	
 	for (i = d1000; i > 0; i -= 1)
 	{
-		inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
 		evalue = 1000
-		script_execute(gem_value,inst_gem,evalue)
+		script_execute(gem_value,evalue,argument1,argument2)
 	}
 	for (i = d500; i > 0; i -= 1)
 	{
-		inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
 		evalue = 500
-		script_execute(gem_value,inst_gem,evalue)
+		script_execute(gem_value,evalue,argument1,argument2)
 	}
 	for (i = d100; i > 0; i-=1)
 	{
-		inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
 		evalue = 100
-		script_execute(gem_value,inst_gem,evalue)
+		script_execute(gem_value,evalue,argument1,argument2)
 	}
 	for (i = d50; i > 0; i-=1)
 	{
-		inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
 		evalue = 50
-		script_execute(gem_value,inst_gem,evalue)
+		script_execute(gem_value,evalue,argument1,argument2)
 	}
 	for (i = d10; i > 0; i-=1)
 	{
-		inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
 		evalue = 10
-		script_execute(gem_value,inst_gem,evalue)
+		script_execute(gem_value,evalue,argument1,argument2)
 	}
 	for (i = d5; i > 0; i-=1)
 	{
-		inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
 		evalue = 5
-		script_execute(gem_value,inst_gem,evalue)
+		script_execute(gem_value,evalue,argument1,argument2)
 	}
 	for (i = d1; i > 0; i-=1)
 	{
-		inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
 		evalue = 1
-		script_execute(gem_value,inst_gem,evalue)
+		script_execute(gem_value,evalue,argument1,argument2)
 	}
 }

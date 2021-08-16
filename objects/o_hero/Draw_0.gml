@@ -9,10 +9,13 @@ if instance_exists(o_front_surface) && equip_menu == false
 	{	
 		draw_set_font(fontbig)
 		surface_set_target(inst_front_surface.front_surf)	
-
-		draw_healthbar(x1 + 16, y1 + 16, x1 + 250 + (level), y1 + 51, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,true,true)
+		
+		//Damage rectangle
+		draw_healthbar(x1 + 16, y1 + 16, x1 + 250 + (level), y1 + 51, ((hpmax-damage_rectangle_length)/hpmax)*100,hp_bar_col,c_white,c_white,0,true,true)
+		draw_healthbar(x1 + 16, y1 + 16, x1 + 250 + (level), y1 + 51, ((hpmax-hplost)/hpmax)*100,hp_bar_col,c_red,c_red,0,false,true)
 		draw_healthbar(x1 + 16, y1 + 59, x1 + 200 + (level div 2), y1 + 94, ((energymax-energylost)/energymax)*100,hp_bar_col,c_blue,c_blue,0,true,true)
 		draw_healthbar(x1 + 16, y1 + 102, x1 + 150, y1 + 116, ((xp)/xpmax)*100,hp_bar_col,c_white,c_white,0,true,true)
+
 		
 		script_execute(text_outline,x1+58+4, y1+124-13,total_gems)
 		script_execute(text_outline,x1+18+4, y1+16-13,string(hpmax-hplost))

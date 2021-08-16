@@ -1,38 +1,40 @@
-// argument0 = inst_essence
-// argument1 = evalue
+// argument0 = evalue
+// argument1 = x
+// argument2 = y
 function gem_value()
 {
-	argument0.phy_speed_x = irandom_range(-6,6)
-	argument0.phy_speed_y = irandom_range(-6,-1)
-	argument0.countdown = 120
-	argument0.gemValue = argument1
+	inst_gem = instance_create_layer(argument1,argument2,"lay_gems",o_gem)
+	inst_gem.phy_speed_x = irandom_range(-6,6)
+	inst_gem.phy_speed_y = irandom_range(-6,-1)
+	inst_gem.countdown = 120
+	inst_gem.gemValue = argument0
 
-	if argument1 = 1000
+	if argument0 = 1000
 	{
-		argument0.sprite_index = sp_gem_1000
+		inst_gem.sprite_index = sp_gem_1000
 	}
-	else if argument1 = 500
+	else if argument0 = 500
 	{
-		argument0.sprite_index = sp_gem_500
+		inst_gem.sprite_index = sp_gem_500
 	}
-	else if argument1 = 100
+	else if argument0 = 100
 	{
-		argument0.sprite_index = sp_gem_100
+		inst_gem.sprite_index = sp_gem_100
 	}
-	else if argument1 = 50
+	else if argument0 = 50
 	{
-		argument0.sprite_index = sp_gem_50
+		inst_gem.sprite_index = sp_gem_50
 	}
-	else if argument1 = 10
+	else if argument0 = 10
 	{
-		argument0.sprite_index = sp_gem_10
+		inst_gem.sprite_index = sp_gem_10
 	}
-	else if argument1 = 5
+	else if argument0 = 5
 	{
-		argument0.sprite_index = sp_gem_5
+		inst_gem.sprite_index = sp_gem_5
 	}
-	else if argument1 = 1
+	else if argument0 = 1
 	{
-		argument0.sprite_index = sp_gem_1
+		inst_gem.sprite_index = sp_gem_1
 	}
 }

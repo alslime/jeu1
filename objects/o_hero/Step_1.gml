@@ -334,9 +334,14 @@ if place_meeting (x,y,o_enemy) && dash_time == 0
 {
 	if countdown == 0
 	{
+		damage_rectangle_length = hplost
 		hplost += nearest_enemy.enemy_dmg
 		countdown = 10
 	}
+}
+if damage_rectangle_length < hplost
+{
+	damage_rectangle_length += 0.5
 }
 
 #endregion

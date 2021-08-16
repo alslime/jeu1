@@ -25,6 +25,7 @@ last_sequence_type = se_stand
 xp = 0
 xpmax = 50
 level = 1
+damage_rectangle_length = 0
 walk_dust_count = 0
 dash_time = 0
 before_was_crouch_dashing = false

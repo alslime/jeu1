@@ -72,37 +72,44 @@ if instance_exists(o_weapon_hitbox)
 	// Do we need to decrement our HP ?
 	if	col_with_weapon
 	{
-		can_be_hit = true
-		for (z = 0; z < array_length(id_array); z += 1)
+		for	(z = 0; z < instance_number(o_weapon_hitbox); z++)
 		{
-			if id_array[z] == col_id
+			inst_hitbox = instance_find(o_weapon_hitbox,z)
+			if place_meeting(x,y,inst_hitbox)				
 			{
-				can_be_hit = false
-				break
-			}
-		}
-		if can_be_hit == true
-		{
-			prevhp_lost = hplost
-			hplost += dmg
-			in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
-			in_hit_text.dmg = dmg
-			in_hit_text.x = x + sprite_width/2
-			in_hit_text.y = y - 32
-			array_insert(id_array,0,col_id)
-			hit_state_begin = true
-			countdown = 45
-			if inst_hero.energylost > 0
-			{
-				inst_hero.energylost -= 1
+				can_be_hit = true
+				for (t = 0; t < array_length(id_array); t += 1)
+				{
+					if id_array[t] == inst_hitbox.id
+					{
+						can_be_hit = false
+						break
+					}
+				}
+				if can_be_hit == true
+				{
+					prevhp_lost = hplost
+					hplost += dmg
+					in_hit_text = instance_create_layer(x,y,"lay_front",o_hit_text)
+					in_hit_text.dmg = dmg
+					in_hit_text.x = x + sprite_width/2
+					in_hit_text.y = y - 32
+					array_insert(id_array,0,inst_hitbox.id)
+					hit_state_begin = true
+					countdown = 45
+					if inst_hero.energylost > 0
+					{
+						inst_hero.energylost -= 1
+					}
+				}
 			}
 		}
 	}
 }
 if prevhp_lost != hplost
 {
-// Blood
-script_execute(create_blood,amount_of_blood)
+	// Blood
+	script_execute(create_blood,amount_of_blood)
 }
 prevhp_lost = hplost
 
