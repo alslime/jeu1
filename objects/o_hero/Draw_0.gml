@@ -1,3 +1,25 @@
+//Parralax Background
+#region
+
+if layer_exists("bg_1")
+{
+	layer_x("bg_1",camera_get_view_x(view_camera[0])/5)
+}
+if layer_exists("bg_2")
+{
+	layer_x("bg_2",camera_get_view_x(view_camera[0])/6)
+}
+if layer_exists("bg_3")
+{
+	layer_x("bg_3",camera_get_view_x(view_camera[0])/8)
+}
+if layer_exists("bg_4")
+{
+	layer_x("bg_4",camera_get_view_x(view_camera[0])/10)
+}
+
+#endregion
+
 x1 = camera_get_view_x(view_camera[0])
 y1 = camera_get_view_y(view_camera[0])
 

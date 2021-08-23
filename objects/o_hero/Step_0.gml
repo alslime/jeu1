@@ -56,20 +56,6 @@ if hplost < 0
 	hplost = 0
 }
 
-//Parralax Background
-#region
-
-if layer_exists("bg_1")
-{
-	layer_x("bg_1",camera_get_view_x(view_camera[0])/8)
-}
-if layer_exists("bg_2")
-{
-	layer_x("bg_2",camera_get_view_x(view_camera[0])/10)
-}
-
-#endregion
-
 // Disable rotation
 phy_fixed_rotation = true
 

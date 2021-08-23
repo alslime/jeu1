@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 32,
-  "bbox_right": 379,
+  "bbox_left": 0,
+  "bbox_right": 51,
   "bbox_top": 0,
-  "bbox_bottom": 559,
+  "bbox_bottom": 69,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 416,
-  "height": 560,
+  "width": 52,
+  "height": 70,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a5226489-6fef-4065-b0f2-6361d2141cd0","path":"sprites/sp_tree/sp_tree.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a5226489-6fef-4065-b0f2-6361d2141cd0","path":"sprites/sp_tree/sp_tree.yy",},"LayerId":{"name":"3ed7379f-fdeb-4ab4-a0db-4cdf4fb75e92","path":"sprites/sp_tree/sp_tree.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"a5226489-6fef-4065-b0f2-6361d2141cd0","path":"sprites/sp_tree/sp_tree.yy",},"LayerId":{"name":"44e4b8ce-0b17-4a51-9bb4-9684d481d593","path":"sprites/sp_tree/sp_tree.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sp_tree","path":"sprites/sp_tree/sp_tree.yy",},"resourceVersion":"1.0","name":"a5226489-6fef-4065-b0f2-6361d2141cd0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -66,13 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"44e4b8ce-0b17-4a51-9bb4-9684d481d593","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)","resourceVersion":"1.0","name":"3ed7379f-fdeb-4ab4-a0db-4cdf4fb75e92","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "deco",
-    "path": "folders/Sprites/deco.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sp_tree",
