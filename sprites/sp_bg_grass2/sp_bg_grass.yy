@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 4,
-  "gridY": 4,
+  "gridX": 0,
+  "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a1d3ad58-1bc9-4e49-a09a-b0cc6b739cbf","path":"sprites/sp_bg_grass/sp_bg_grass.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a1d3ad58-1bc9-4e49-a09a-b0cc6b739cbf","path":"sprites/sp_bg_grass/sp_bg_grass.yy",},"LayerId":{"name":"f1d71e7a-db76-4e13-a1fc-edbec10044b7","path":"sprites/sp_bg_grass/sp_bg_grass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

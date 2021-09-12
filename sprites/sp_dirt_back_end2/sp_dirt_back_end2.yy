@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 8,
-  "bbox_right": 51,
-  "bbox_top": 40,
+  "bbox_left": 0,
+  "bbox_right": 63,
+  "bbox_top": 20,
   "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"da27f4db-05e5-421d-a7dd-953fa555e689","path":"sprites/sp_bush2/sp_bush2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"da27f4db-05e5-421d-a7dd-953fa555e689","path":"sprites/sp_bush2/sp_bush2.yy",},"LayerId":{"name":"f085444d-2e3d-49a0-9b7c-b36ec08ec1a4","path":"sprites/sp_bush2/sp_bush2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sp_bush2","path":"sprites/sp_bush2/sp_bush2.yy",},"resourceVersion":"1.0","name":"da27f4db-05e5-421d-a7dd-953fa555e689","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"da27f4db-05e5-421d-a7dd-953fa555e689","path":"sprites/sp_dirt_back_end2/sp_dirt_back_end2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"da27f4db-05e5-421d-a7dd-953fa555e689","path":"sprites/sp_dirt_back_end2/sp_dirt_back_end2.yy",},"LayerId":{"name":"f085444d-2e3d-49a0-9b7c-b36ec08ec1a4","path":"sprites/sp_dirt_back_end2/sp_dirt_back_end2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sp_dirt_back_end2","path":"sprites/sp_dirt_back_end2/sp_dirt_back_end2.yy",},"resourceVersion":"1.0","name":"da27f4db-05e5-421d-a7dd-953fa555e689","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sp_bush2","path":"sprites/sp_bush2/sp_bush2.yy",},
+    "spriteId": {"name":"sp_dirt_back_end2","path":"sprites/sp_dirt_back_end2/sp_dirt_back_end2.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"90283100-6f17-45cd-bff1-22b0cf670dd8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da27f4db-05e5-421d-a7dd-953fa555e689","path":"sprites/sp_bush2/sp_bush2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6eb307f1-c830-4a40-9968-8425dc9cafda","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da27f4db-05e5-421d-a7dd-953fa555e689","path":"sprites/sp_dirt_back_end2/sp_dirt_back_end2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sp_bush2","path":"sprites/sp_bush2/sp_bush2.yy",},
+    "parent": {"name":"sp_dirt_back_end2","path":"sprites/sp_dirt_back_end2/sp_dirt_back_end2.yy",},
     "resourceVersion": "1.3",
-    "name": "sp_bush2",
+    "name": "sp_dirt_back_end2",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -69,11 +69,11 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "deco",
-    "path": "folders/Sprites/deco.yy",
+    "name": "Grass_dirt",
+    "path": "folders/Sprites/deco/Grass_dirt.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sp_bush2",
+  "name": "sp_dirt_back_end2",
   "tags": [],
   "resourceType": "GMSprite",
 }
