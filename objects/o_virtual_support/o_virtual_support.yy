@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_Ground",
-    "path": "sprites/sp_Ground/sp_Ground.yy",
+    "name": "SupportButton",
+    "path": "sprites/SupportButton/SupportButton.yy",
   },
   "solid": false,
   "visible": true,

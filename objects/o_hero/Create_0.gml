@@ -73,5 +73,9 @@ if os_type == os_ios || os_type == os_android
 {
 	window_set_size(672,378)
 }
+else
+{
+	show_message("Move : A D\nCrouch : S\nDash : Shift\nJump : Space\nAttack: Mouse Left\nSpecial : Mouse Right\nInventory : Tab")
+}
 
 load_game()

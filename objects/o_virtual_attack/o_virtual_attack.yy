@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_Ground",
-    "path": "sprites/sp_Ground/sp_Ground.yy",
+    "name": "AttackButton",
+    "path": "sprites/AttackButton/AttackButton.yy",
   },
   "solid": false,
   "visible": true,

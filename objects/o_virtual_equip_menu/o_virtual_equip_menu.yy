@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sp_Ground",
-    "path": "sprites/sp_Ground/sp_Ground.yy",
+    "name": "EquipMenuButton",
+    "path": "sprites/EquipMenuButton/EquipMenuButton.yy",
   },
   "solid": false,
   "visible": true,
